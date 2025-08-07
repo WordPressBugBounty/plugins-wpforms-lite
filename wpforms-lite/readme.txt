@@ -3,7 +3,7 @@ Contributors: wpforms, jaredatch, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form
 Requires at least: 5.5
 Tested up to: 6.8
-Stable tag: 1.9.7.1
+Stable tag: 1.9.7.2
 Requires PHP: 7.2
 License: GNU General Public License v2.0 or later
 
@@ -387,10 +387,10 @@ Syed Balkhi
 
 == Changelog ==
 
-= 1.9.7.1 =
-- Fixed: Various RTL problems on the form builder screen.
+= 1.9.7.2 =
+- Fixed: JS errors might affect the form submission on some environments with installed plugins for caching.
 
-= 1.9.7 =
+= 1.9.7.1 =
 - Added: Ability to apply Styles and Themes directly within the WPForms Form Builder.
 - Added: Ability to copy whole Smart Tags input content if it contains smart tags.
 - Added: Number field validation messages control on the Settings > Validation page.
@@ -402,6 +402,7 @@ Syed Balkhi
 - Changed: Improved compatibility with the Paid Memberships Pro plugin.
 - Fixed: The spacing between the template badge and the form name was too small.
 - Fixed: Square Credit Card field error was still displayed after entering valid details.
+- Fixed: Various RTL problems on the form builder screen.
 
 = 1.9.6.2 =
 - Fixed: "Please enable JavaScript" message was displayed over a form even when JavaScript was enabled.
