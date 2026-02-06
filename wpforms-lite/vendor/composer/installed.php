@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'awesomemotive/wpforms',
-        'pretty_version' => 'dev-develop',
-        'version' => 'dev-develop',
-        'reference' => '8f98661243102181a838961e288da4ae6f310ef0',
+        'pretty_version' => 'dev-master',
+        'version' => 'dev-master',
+        'reference' => 'e41df082113f820306f6eae58b37ee7383ab7f90',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -29,9 +29,9 @@
             'dev_requirement' => false,
         ),
         'apimatic/jsonmapper' => array(
-            'pretty_version' => '3.1.6',
-            'version' => '3.1.6.0',
-            'reference' => 'c6cc21bd56bfe5d5822bbd08f514be465c0b24e7',
+            'pretty_version' => '3.1.7',
+            'version' => '3.1.7.0',
+            'reference' => '61e45f6021e4a4e07497be596b4787c3c6b39bea',
             'type' => 'library',
             'install_path' => __DIR__ . '/../apimatic/jsonmapper',
             'aliases' => array(),
@@ -47,9 +47,9 @@
             'dev_requirement' => false,
         ),
         'awesomemotive/wpforms' => array(
-            'pretty_version' => 'dev-develop',
-            'version' => 'dev-develop',
-            'reference' => '8f98661243102181a838961e288da4ae6f310ef0',
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => 'e41df082113f820306f6eae58b37ee7383ab7f90',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -65,9 +65,9 @@
             'dev_requirement' => false,
         ),
         'ezyang/htmlpurifier' => array(
-            'pretty_version' => 'v4.18.0',
-            'version' => '4.18.0.0',
-            'reference' => 'cb56001e54359df7ae76dc522d08845dc741621b',
+            'pretty_version' => 'v4.19.0',
+            'version' => '4.19.0.0',
+            'reference' => 'b287d2a16aceffbf6e0295559b39662612b77fcf',
             'type' => 'library',
             'install_path' => __DIR__ . '/../ezyang/htmlpurifier',
             'aliases' => array(),
@@ -103,7 +103,7 @@
         'roave/security-advisories' => array(
             'pretty_version' => 'dev-latest',
             'version' => 'dev-latest',
-            'reference' => '684ef27cdce62b6562f77a92dc76bdfb46542a2d',
+            'reference' => 'c4162b6092bc6170cc6d0758ba6ee7d29d0dfbb8',
             'type' => 'metapackage',
             'install_path' => null,
             'aliases' => array(
