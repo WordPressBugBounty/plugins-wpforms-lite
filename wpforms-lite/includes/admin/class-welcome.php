@@ -121,7 +121,7 @@ class WPForms_Welcome {
 			return;
 		}
 
-		// Only do this for single site installs.
+		// Only do this for a single site installs.
 		// phpcs:ignore WordPress.Security.NonceVerification.Recommended
 		if ( isset( $_GET['activate-multi'] ) || is_network_admin() ) {
 			return;
@@ -144,6 +144,13 @@ class WPForms_Welcome {
 			return;
 		}
 
+		// The Setup Wizard owns the first-run experience. Defer to it when it
+		// auto-launches on this request and stands down entirely once it has finished.
+		// This page is only the fallback when the wizard cannot run.
+		if ( $this->setup_wizard_handles_first_run() ) {
+			return;
+		}
+
 		// Check if this is an update or first install.
 		$upgrade = get_option( MigrationsBase::PREVIOUS_CORE_VERSION_OPTION_NAME );
 
@@ -153,6 +160,80 @@ class WPForms_Welcome {
 
 			exit;
 		}
+	}
+
+	/**
+	 * Whether the Setup Wizard, not this page, owns the first-run experience.
+	 *
+	 * True when the wizard will auto-launch on this request or has already
+	 * finished. Guarded so the page degrades to its legacy behaviour if the
+	 * wizard class is unavailable (e.g. filtered out).
+	 *
+	 * @since 2.0.0
+	 *
+	 * @return bool
+	 * @noinspection ClassConstantCanBeUsedInspection
+	 */
+	private function setup_wizard_handles_first_run(): bool {
+
+		$wizard = '\WPForms\SetupWizard\SetupWizard';
+
+		if ( ! class_exists( $wizard ) || ! method_exists( $wizard, 'will_auto_launch' ) ) {
+			return false;
+		}
+
+		// Already finished: never bounce the user to the getting-started screen.
+		if ( get_option( $wizard::OPTION_COMPLETED ) ) {
+			return true;
+		}
+
+		return $wizard::will_auto_launch();
+	}
+
+	/**
+	 * Output a notice offering to launch the Setup Wizard manually.
+	 *
+	 * Shown on the Welcome page so users who landed here as the wizard fallback
+	 * can still start the guided setup on demand. Hidden when the wizard class is
+	 * unavailable (e.g. filtered out).
+	 *
+	 * @since 2.0.0
+	 */
+	private function output_setup_wizard_notice(): void {
+
+		$wizard = '\WPForms\SetupWizard\SetupWizard';
+
+		if ( ! class_exists( $wizard ) || ! method_exists( $wizard, 'get_manual_launch_url' ) ) {
+			return;
+		}
+
+		$url = $wizard::get_manual_launch_url();
+		?>
+		<div class="wpforms-welcome-setup-wizard-notice">
+			<p>
+				<?php
+				$wizard_link = sprintf(
+					'<a href="%1$s">%2$s</a>',
+					esc_url( $url ),
+					esc_html__( 'WPForms Setup Wizard', 'wpforms-lite' )
+				);
+
+				printf(
+					wp_kses(
+						/* translators: %s - WPForms Setup Wizard link. */
+						__( 'Prefer a guided setup? Launch the %s to configure your site step-by-step.', 'wpforms-lite' ),
+						[
+							'a' => [
+								'href' => [],
+							],
+						]
+					),
+					$wizard_link // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				);
+				?>
+			</p>
+		</div>
+		<?php
 	}
 
 	/**
@@ -168,6 +249,8 @@ class WPForms_Welcome {
 		<div id="wpforms-welcome" class="<?php echo sanitize_html_class( $class ); ?>">
 
 			<div class="container">
+
+				<?php $this->output_setup_wizard_notice(); ?>
 
 				<div class="intro">
 

@@ -675,7 +675,7 @@ class WPForms_Builder {
 			'dom-purify',
 			WPFORMS_PLUGIN_URL . 'assets/lib/purify.min.js',
 			[],
-			'3.4.1',
+			'3.4.11',
 			false
 		);
 
@@ -1223,6 +1223,7 @@ class WPForms_Builder {
 			'MultiSelect'                       => "multi-select/multi-select$min.js",
 			'MultiSelectKeyboardShortcuts'      => "multi-select/keyboard-shortcuts$min.js",
 			'CopyPaste'                         => "copy-paste$min.js",
+			'TemplatesInfiniteScroll'           => "templates-infinite-scroll$min.js",
 			'Deprecated'                        => "deprecated$min.js",
 		];
 
@@ -1481,6 +1482,10 @@ class WPForms_Builder {
 			$entry_obj             = wpforms()->obj( 'entry' );
 			$args['has_entries']   = $entry_obj && $entry_obj->get_entries( [ 'form_id' => $this->form->ID ], true );
 			$args['can_duplicate'] = $this->can_duplicate();
+
+			// Form Analytics is a Pro/Elite feature. Basic and Plus see the upgrade
+			// upsell in the Pro context-menu template, mirroring Lite.
+			$args['has_analytics_access'] = in_array( wpforms_get_license_type(), [ 'pro', 'elite', 'agency', 'ultimate' ], true );
 		}
 
 		return $args;

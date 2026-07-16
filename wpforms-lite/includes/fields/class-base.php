@@ -192,6 +192,18 @@ abstract class WPForms_Field {
 
 		// Common field hooks.
 		$this->common_hooks();
+
+		/**
+		 * Fires once a field object has been fully initialized.
+		 *
+		 * Used by the fields registry to collect every available field type
+		 * (Lite, Pro, and addons) without reaching into the container here.
+		 *
+		 * @since 2.0.0
+		 *
+		 * @param WPForms_Field $field The initialized field object.
+		 */
+		do_action( 'wpforms_field_registered', $this );
 	}
 
 	/**
@@ -4838,6 +4850,84 @@ abstract class WPForms_Field {
 				$placeholder,
 				$key
 			);
+	}
+
+	/**
+	 * Remove fully-empty leftover choices from a choice-type field before it is saved.
+	 *
+	 * Public seam used by the form-save flow. Skips dynamic-choice fields, whose
+	 * choices come from posts or taxonomies and are not the persisted source of
+	 * truth, and bails when the field has no choices array to prune.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @param array $field_data Field data being saved.
+	 *
+	 * @return array
+	 */
+	public function remove_empty_choices_on_save( array $field_data ): array {
+
+		// Bail when there are no choices to prune.
+		if ( empty( $field_data['choices'] ) || ! is_array( $field_data['choices'] ) ) {
+			return $field_data;
+		}
+
+		// Dynamic choices are sourced from posts or taxonomies, not the persisted choices array.
+		if ( ! empty( $field_data['dynamic_choices'] ) ) {
+			return $field_data;
+		}
+
+		$field_data['choices'] = $this->remove_empty_choices( $field_data['choices'] );
+
+		return $field_data;
+	}
+
+	/**
+	 * Prune fully-empty leftover choices from a saved choices array.
+	 *
+	 * A choice is removed only when its label and value are both missing or
+	 * empty, and it is not the real "Other" choice. A blank label paired with a
+	 * non-empty value is preserved because it legitimately renders as a numbered
+	 * choice (see PR #8654), and a value of '0' is treated as non-empty.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @param array $choices Choices array keyed by choice ID.
+	 *
+	 * @return array
+	 */
+	protected function remove_empty_choices( array $choices ): array {
+
+		$filtered = array_filter(
+			$choices,
+			static function ( $choice, $key ) {
+
+				// Always keep the real "Other" choice.
+				if ( $key === 'other' || ( is_array( $choice ) && ! empty( $choice['other'] ) ) ) {
+					return true;
+				}
+
+				$label = $choice['label'] ?? null;
+				$value = $choice['value'] ?? null;
+
+				// A value of '0' must survive, so test for unset/empty string rather than empty().
+				$has_label = isset( $label ) && $label !== '';
+				$has_value = isset( $value ) && $value !== '';
+
+				return $has_label || $has_value;
+			},
+			ARRAY_FILTER_USE_BOTH
+		);
+
+		/**
+		 * Filter the pruned choices array.
+		 *
+		 * @since 2.0.0
+		 *
+		 * @param array $filtered Choices remaining after empty entries were removed.
+		 * @param array $choices  Original choices array before pruning.
+		 */
+		return (array) apply_filters( 'wpforms_field_remove_empty_choices', $filtered, $choices );
 	}
 
 	/**

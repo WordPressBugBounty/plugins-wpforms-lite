@@ -6,6 +6,12 @@ use WPForms\Admin\Builder\Templates;
 use WPForms\Integrations\AI\Helpers as AIHelpers;
 use WPForms\Integrations\IntegrationInterface;
 use WPForms\Integrations\LiteConnect\Integration;
+use WPForms\SetupChecklist\Checklist;
+use WPForms\SetupChecklist\CompletionDetector;
+use WPForms\SetupChecklist\Config;
+use WPForms\SetupChecklist\State;
+use WPForms\SetupWizard\Service\PluginCatalog;
+use WPForms\SetupWizard\Service\PluginDetector;
 
 /**
  * Usage Tracker functionality to understand what's going on client's sites.
@@ -216,6 +222,7 @@ class UsageTracking implements IntegrationInterface {
 			'wpforms_ai_killswitch'          => AIHelpers::is_disabled(),
 			'wpforms_disabled_entries_count' => count( $this->get_forms_with_disabled_entries( $forms ) ),
 			'wpforms_addons_dates'           => $this->get_addons_dates_data(),
+			'wpforms_setup_checklist'        => $this->get_setup_checklist_data(),
 		];
 
 		$data = $this->add_promotion_plugin_data( $data );
@@ -229,6 +236,47 @@ class UsageTracking implements IntegrationInterface {
 		}
 
 		return $data;
+	}
+
+	/**
+	 * Setup Checklist engagement metrics, for the Lite-only onboarding checklist.
+	 *
+	 * @since 2.0.0
+	 *
+	 * @return array
+	 */
+	private function get_setup_checklist_data(): array {
+
+		if ( wpforms()->is_pro() ) {
+			return [];
+		}
+
+		$plugin_detector = new PluginDetector();
+
+		$state     = new State();
+		$checklist = new Checklist(
+			new Config(),
+			new CompletionDetector( $state, $plugin_detector ),
+			$plugin_detector,
+			new PluginCatalog()
+		);
+
+		$completed_items = [];
+
+		foreach ( $checklist->get_sections() as $section ) {
+			foreach ( $section['items'] as $item ) {
+				if ( ! empty( $item['complete'] ) ) {
+					$completed_items[] = $item['id'];
+				}
+			}
+		}
+
+		return [
+			'is_dismissed'          => $state->is_dismissed(),
+			'progress_percent'      => $checklist->get_progress()['percent'],
+			'progress_at_dismissal' => $state->get_progress_at_dismissal(),
+			'completed_items'       => $completed_items,
+		];
 	}
 
 	/**
@@ -544,7 +592,11 @@ class UsageTracking implements IntegrationInterface {
 				$enabled = [];
 
 				foreach ( $form->post_content['payments'] as $key => $value ) {
-					if ( ! empty( $value['enable'] ) ) {
+					if (
+						! empty( $value['enable'] )              // Authorize.Net and PayPal Standard always, plus legacy Stripe forms.
+						|| ! empty( $value['enable_one_time'] )  // Modern one-time payments.
+						|| ! empty( $value['enable_recurring'] ) // Modern recurring payments.
+					) {
 						$enabled[] = $key;
 					}
 				}
