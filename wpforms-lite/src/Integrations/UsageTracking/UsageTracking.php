@@ -215,6 +215,7 @@ class UsageTracking implements IntegrationInterface {
 			'wpforms_order_summaries'        => $this->count_fields_with_setting( $forms, 'payment-total', 'summary' ),
 			'wpforms_multiple_confirmations' => count( $this->get_forms_with_multiple_confirmations( $forms ) ),
 			'wpforms_multiple_notifications' => count( $this->get_forms_with_multiple_notifications( $forms ) ),
+			'wpforms_conditional_logic'      => count( $this->get_forms_with_conditional_logic( $forms ) ),
 			'wpforms_ajax_form_submissions'  => count( $this->get_ajax_form_submissions( $forms ) ),
 			'wpforms_notification_count'     => wpforms()->obj( 'notifications' )->get_count(),
 			'wpforms_stats'                  => $this->get_additional_stats(),
@@ -651,6 +652,34 @@ class UsageTracking implements IntegrationInterface {
 			static function ( $form ) {
 
 				return ! empty( $form->post_content['settings']['confirmations'] ) && count( $form->post_content['settings']['confirmations'] ) > 1;
+			}
+		);
+	}
+
+	/**
+	 * Forms with field-level conditional logic.
+	 *
+	 * @since 2.0.0.2
+	 *
+	 * @param array $forms List of forms to check.
+	 *
+	 * @return array List of forms with at least one field using conditional logic.
+	 */
+	private function get_forms_with_conditional_logic( array $forms ): array {
+
+		return array_filter(
+			$forms,
+			static function ( $form ) {
+
+				$fields = $form->post_content['fields'] ?? [];
+
+				foreach ( (array) $fields as $field ) {
+					if ( ! empty( $field['conditional_logic'] ) && ! empty( $field['conditionals'] ) ) {
+						return true;
+					}
+				}
+
+				return false;
 			}
 		);
 	}

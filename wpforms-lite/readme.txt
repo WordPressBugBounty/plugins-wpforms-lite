@@ -3,7 +3,7 @@ Contributors: wpforms, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form
 Requires at least: 5.5
 Tested up to: 7.0
-Stable tag: 2.0.0.1
+Stable tag: 2.0.0.2
 Requires PHP: 7.2
 License: GNU General Public License v2.0 or later
 
@@ -392,6 +392,10 @@ Thank you,
 Syed Balkhi
 
 == Changelog ==
+= 2.0.0.2 =
+- Fixed: Form submissions could still be blocked by stricter web application firewall configurations that flagged the JSON structure of the Form Analytics data; the data attached to each submission is now base64-encoded.
+- Fixed: A cross-site scripting vulnerability when a page combined a WPForms captcha with a specially crafted OptinMonster campaign.
+
 = 2.0.0.1 =
 - Fixed: Form submissions could be blocked by a web application firewall, such as Cloudflare's OWASP ruleset, because of the format of the Form Analytics data attached to each submission.
 

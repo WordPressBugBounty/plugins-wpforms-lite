@@ -216,6 +216,16 @@ class Process {
 		// phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 		$payload_raw = wp_unslash( $this->to_scalar_string( $post['payload'] ?? '' ) );
 
+		// Auto-detect base64: JSON payloads start with '{', base64 does not.
+		if ( $payload_raw !== '' && isset( $payload_raw[0] ) && $payload_raw[0] !== '{' ) {
+			// phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
+			$decoded = base64_decode( $payload_raw, true );
+
+			if ( $decoded !== false ) {
+				$payload_raw = $decoded;
+			}
+		}
+
 		// For the three integer inputs we can't simply cast and keep the value: (int) and absint()
 		// coerce non-empty arrays to 1, which would let shapes like form_id[]=x slip past validation.
 		// scalar_int()/scalar_absint() guard with is_scalar first; non-scalars resolve to values
@@ -503,7 +513,19 @@ class Process {
 			return null;
 		}
 
-		$envelope = json_decode( wp_unslash( $raw ), true );
+		$unslashed = wp_unslash( $raw );
+
+		// Auto-detect encoding: JSON starts with '{', base64 does not.
+		if ( isset( $unslashed[0] ) && $unslashed[0] !== '{' ) {
+			// phpcs:ignore WordPress.PHP.DiscouragedPHPFunctions.obfuscation_base64_decode
+			$unslashed = base64_decode( $unslashed, true );
+
+			if ( $unslashed === false ) {
+				return null;
+			}
+		}
+
+		$envelope = json_decode( $unslashed, true );
 
 		return is_array( $envelope ) ? $envelope : null;
 	}

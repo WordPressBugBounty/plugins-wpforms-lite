@@ -144,6 +144,13 @@ class WPForms_Welcome {
 			return;
 		}
 
+		// The wizard kill switch disables the whole first-run experience: when
+		// the Setup Wizard is disabled via its option, constant, or filter,
+		// this fallback redirect must not fire either.
+		if ( $this->is_setup_wizard_disabled() ) {
+			return;
+		}
+
 		// The Setup Wizard owns the first-run experience. Defer to it when it
 		// auto-launches on this request and stands down entirely once it has finished.
 		// This page is only the fallback when the wizard cannot run.
@@ -188,6 +195,32 @@ class WPForms_Welcome {
 		}
 
 		return $wizard::will_auto_launch();
+	}
+
+	/**
+	 * Whether the Setup Wizard kill switch suppresses this redirect too.
+	 *
+	 * The `wpforms_setup_wizard_disabled` option, the
+	 * `WPFORMS_SETUP_WIZARD_DISABLED` constant, and the
+	 * `wpforms_setup_wizard_setup_wizard_is_disabled` filter disable the whole
+	 * first-run experience, not only the wizard, so provisioning flows get zero
+	 * unintended screens from a single switch. Guarded so the page degrades to
+	 * its legacy behaviour if the wizard class is unavailable.
+	 *
+	 * @since 2.0.0.2
+	 *
+	 * @return bool
+	 * @noinspection ClassConstantCanBeUsedInspection
+	 */
+	private function is_setup_wizard_disabled(): bool {
+
+		$wizard = '\WPForms\SetupWizard\SetupWizard';
+
+		if ( ! class_exists( $wizard ) || ! method_exists( $wizard, 'is_disabled' ) ) {
+			return false;
+		}
+
+		return $wizard::is_disabled();
 	}
 
 	/**

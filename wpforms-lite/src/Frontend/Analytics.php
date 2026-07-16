@@ -70,6 +70,22 @@ class Analytics {
 			$field_types
 		);
 
+		/**
+		 * Filters whether the analytics submission envelope is base64-encoded.
+		 *
+		 * When true, the hidden analytics input is base64-encoded instead of raw
+		 * JSON. This prevents WAF products (e.g. Cloudflare OWASP CRS) from
+		 * flagging the nested JSON structure as a false-positive anomaly.
+		 *
+		 * @since 2.0.0.2
+		 *
+		 * @param bool $enabled Whether to base64-encode the analytics envelope.
+		 */
+		$strings['analytics_base64'] = (bool) apply_filters(
+			'wpforms_frontend_analytics_base64_envelope',
+			true
+		);
+
 		return $strings;
 	}
 

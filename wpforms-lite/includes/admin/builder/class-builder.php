@@ -983,6 +983,7 @@ class WPForms_Builder {
 			'upload_image_remove'                     => esc_html__( 'Remove Image', 'wpforms-lite' ),
 			'upload_image_extensions'                 => $image_extensions,
 			'upload_image_extensions_error'           => esc_html__( 'You tried uploading a file type that is not allowed. Please try again.', 'wpforms-lite' ),
+			'add_media'                               => esc_html__( 'Add Media', 'wpforms-lite' ),
 			'provider_add_new_acc_btn'                => esc_html__( 'Add', 'wpforms-lite' ),
 			'pro'                                     => wpforms()->is_pro(),
 			'is_gutenberg'                            => ! is_plugin_active( 'classic-editor/classic-editor.php' ),

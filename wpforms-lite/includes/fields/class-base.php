@@ -993,6 +993,7 @@ abstract class WPForms_Field {
 			$fields              = ! empty( $args['smarttags']['fields'] ) ? esc_attr( $args['smarttags']['fields'] ) : '';
 			$is_repeater_allowed = ! empty( $args['smarttags']['allow-repeated-fields'] ) ? esc_attr( $args['smarttags']['allow-repeated-fields'] ) : '';
 			$allowed_smarttags   = ! empty( $args['smarttags']['allowed'] ) ? esc_attr( $args['smarttags']['allowed'] ) : '';
+			$custom_smarttags    = ! empty( $args['smarttags']['custom'] ) ? esc_attr( wp_json_encode( $args['smarttags']['custom'] ) ) : '';
 			$location            = ! empty( $args['location'] ) ? esc_attr( $args['location'] ) : '';
 
 			$args['data'] = [
@@ -1001,6 +1002,7 @@ abstract class WPForms_Field {
 				'fields'                => $fields,
 				'allowed-smarttags'     => $allowed_smarttags,
 				'allow-repeated-fields' => $is_repeater_allowed,
+				'custom-smarttags'      => $custom_smarttags,
 			];
 		}
 
@@ -4832,7 +4834,7 @@ abstract class WPForms_Field {
 	 */
 	protected function get_choices_label( $label, int $key, array $field ) {
 
-		$is_payment_field     = ! empty( $field ) && ( $field['type'] === 'payment-checkbox' || $field['type'] === 'payment-multiple' );
+		$is_payment_field     = ! empty( $field ) && ( $field['type'] === 'payment-checkbox' || $field['type'] === 'payment-multiple' || $field['type'] === 'payment-select' );
 		$label                = trim( $label );
 		$is_icon_image_choice = ! empty( $field['choices_icons'] ) || ! empty( $field['choices_images'] );
 
