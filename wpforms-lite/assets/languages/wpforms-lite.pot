@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPForms Lite 2.0.0.3\n"
+"Project-Id-Version: WPForms Lite 2.0.0.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpforms-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-11T14:47:26+00:00\n"
+"POT-Creation-Date: 2026-08-12T09:46:03+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: wpforms-lite\n"
@@ -21,7 +21,7 @@ msgstr ""
 #: includes/admin/class-menu.php:170
 #: includes/class-form.php:154
 #: includes/integrations.php:49
-#: lite/templates/admin/setup-wizard/shell.php:38
+#: lite/templates/admin/setup-wizard/shell.php:42
 #: src/Admin/PluginsCategory.php:155
 #: src/Emails/Templates/General.php:94
 #: src/Integrations/Abilities/Abilities.php:82
@@ -2628,7 +2628,7 @@ msgstr ""
 
 #: includes/admin/class-about.php:1775
 #: includes/admin/class-welcome.php:425
-#: lite/templates/admin/setup-wizard/welcome.php:41
+#: lite/templates/admin/setup-wizard/welcome.php:42
 #: src/Admin/Builder/Help.php:108
 msgid "Payment Forms"
 msgstr ""
@@ -3239,12 +3239,12 @@ msgstr ""
 #: includes/admin/class-welcome.php:74
 #: includes/admin/class-welcome.php:75
 #: includes/admin/class-welcome.php:295
-#: lite/templates/admin/setup-wizard/welcome.php:64
+#: lite/templates/admin/setup-wizard/welcome.php:65
 msgid "Welcome to WPForms"
 msgstr ""
 
 #: includes/admin/class-welcome.php:251
-#: lite/templates/admin/setup-wizard/shell.php:27
+#: lite/templates/admin/setup-wizard/shell.php:31
 #: src/SetupWizard/Bridge.php:67
 msgid "WPForms Setup Wizard"
 msgstr ""
@@ -3353,7 +3353,7 @@ msgid "Easily embed your forms in blog posts, pages, sidebar widgets, footer, et
 msgstr ""
 
 #: includes/admin/class-welcome.php:399
-#: lite/templates/admin/setup-wizard/welcome.php:51
+#: lite/templates/admin/setup-wizard/welcome.php:52
 msgid "Spam Protection"
 msgstr ""
 
@@ -6495,12 +6495,12 @@ msgstr ""
 msgid "Back to All Entries"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/shell.php:44
-#: lite/templates/admin/setup-wizard/shell.php:45
+#: lite/templates/admin/setup-wizard/shell.php:48
+#: lite/templates/admin/setup-wizard/shell.php:49
 msgid "Close Setup Wizard"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:31
+#: lite/templates/admin/setup-wizard/welcome.php:32
 #: lite/templates/education/builder/lite-connect/ai-modal.php:24
 #: lite/templates/education/lite-connect-modal.php:46
 #: src/Integrations/AI/Admin/Builder/FormEditor.php:264
@@ -6511,70 +6511,74 @@ msgstr ""
 msgid "WPForms AI"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:32
+#: lite/templates/admin/setup-wizard/welcome.php:33
 msgid "Let AI build your forms for you in a matter of seconds."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:36
+#: lite/templates/admin/setup-wizard/welcome.php:37
 msgid "Dozens of Form Templates"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:37
+#: lite/templates/admin/setup-wizard/welcome.php:38
 msgid "Customize with drag & drop form builder."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:42
+#: lite/templates/admin/setup-wizard/welcome.php:43
 msgid "Accept payments with Stripe, Square & PayPal."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:46
+#: lite/templates/admin/setup-wizard/welcome.php:47
 msgid "Form Styles & Themes"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:47
+#: lite/templates/admin/setup-wizard/welcome.php:48
 msgid "Easily customize the look & feel of your forms."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:52
+#: lite/templates/admin/setup-wizard/welcome.php:53
 msgid "Smart spam protection & captcha built-in."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:56
+#: lite/templates/admin/setup-wizard/welcome.php:57
 msgid "Form Notifications"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:57
+#: lite/templates/admin/setup-wizard/welcome.php:58
 msgid "Notify customers & employees via email, text & more."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:66
+#: lite/templates/admin/setup-wizard/welcome.php:67
 msgid "The most powerful and user-friendly form builder for WordPress. This quick setup tailors WPForms to your site. It only takes a minute."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:84
+#: lite/templates/admin/setup-wizard/welcome.php:85
 msgid "Set Up My Forms"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:88
+#: lite/templates/admin/setup-wizard/welcome.php:90
+msgid "The Setup Wizard requires JavaScript. Enable it and reload this page, or continue without the wizard."
+msgstr ""
+
+#: lite/templates/admin/setup-wizard/welcome.php:94
 msgid "Skip Guided Setup"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:90
+#: lite/templates/admin/setup-wizard/welcome.php:96
 msgid "Note: You will be transferred to a WPForms.com site to complete the setup wizard."
 msgstr ""
 
 #. translators: %1$s - bold Lite Connect label, %2$s - Terms of Service link.
-#: lite/templates/admin/setup-wizard/welcome.php:104
+#: lite/templates/admin/setup-wizard/welcome.php:110
 #, php-format
 msgid "I agree to enable %1$s to securely back up my entries and unlock the WPForms AI experience, per the %2$s. You can disable this at any time in WPForms settings."
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:105
+#: lite/templates/admin/setup-wizard/welcome.php:111
 #: src/Lite/Integrations/LiteConnect/LiteConnect.php:115
 msgid "Lite Connect"
 msgstr ""
 
-#: lite/templates/admin/setup-wizard/welcome.php:106
+#: lite/templates/admin/setup-wizard/welcome.php:112
 msgid "Terms of Service"
 msgstr ""
 
@@ -13806,7 +13810,7 @@ msgstr ""
 
 #: src/Integrations/AI/Admin/Chat/Chat.php:438
 #: src/Integrations/AiMcp/AiMcp.php:208
-#: src/Lite/SetupWizard/Screen.php:144
+#: src/Lite/SetupWizard/Screen.php:196
 msgid "Something went wrong. Please try again."
 msgstr ""
 
@@ -17010,11 +17014,19 @@ msgstr ""
 msgid "There was an error while installing WPForms Pro. Please download it from wpforms.com and install it manually."
 msgstr ""
 
-#: src/Lite/SetupWizard/Screen.php:86
+#: src/Lite/SetupWizard/Screen.php:90
+msgid "Your session has expired. Please reload the page and try again."
+msgstr ""
+
+#: src/Lite/SetupWizard/Screen.php:96
 msgid "You are not allowed to run the Setup Wizard."
 msgstr ""
 
-#: src/Lite/SetupWizard/Screen.php:90
+#: src/Lite/SetupWizard/Screen.php:103
+msgid "The Setup Wizard is disabled on this site."
+msgstr ""
+
+#: src/Lite/SetupWizard/Screen.php:107
 msgid "The Setup Wizard is temporarily unavailable. Please try again in a few minutes."
 msgstr ""
 

@@ -54,7 +54,11 @@ class PluginInstaller {
 		$failed       = [];
 
 		foreach ( $plugin_files as $plugin_file ) {
-			$result = wpforms_install_plugin( $this->catalog->main_file( $plugin_file ) );
+			// Never upgrade a plugin that is already present. The user asked to install
+			// it, not to update it, and `wpforms_install_plugin()` otherwise overwrites
+			// an existing copy with the current wp.org release — a version jump nobody
+			// requested, on a plugin someone may be holding back deliberately.
+			$result = wpforms_install_plugin( $this->catalog->main_file( $plugin_file ), true, false );
 
 			if ( is_wp_error( $result ) ) {
 				$failed[ $plugin_file ] = $result->get_error_message();
@@ -63,39 +67,11 @@ class PluginInstaller {
 			}
 
 			$installed[] = $plugin_file;
-
-			$this->suppress_activation_redirect( $plugin_file );
 		}
 
 		return [
 			'installed' => $installed,
 			'failed'    => $failed,
 		];
-	}
-
-	/**
-	 * Suppress a freshly activated cross-plugin's own "just activated" redirect.
-	 *
-	 * A handful of cross-plugins arm their own onboarding redirect on
-	 * activation and check it on `admin_init` at a priority earlier than the
-	 * wizard's own launch hook (`PHP_INT_MAX`), hijacking the request back to
-	 * their own wizard instead of ours when the user navigates back to the
-	 * Setup Wizard.
-	 *
-	 * @since 2.0.0.3
-	 *
-	 * @param string $plugin_file Plugin file just installed and activated.
-	 */
-	private function suppress_activation_redirect( string $plugin_file ): void {
-
-		switch ( $plugin_file ) {
-			case 'wp-mail-smtp/wp_mail_smtp.php':
-				update_option( 'wp_mail_smtp_activation_prevent_redirect', true );
-				break;
-
-			case 'wpconsent-cookies-banner-privacy-suite/wpconsent.php':
-				delete_transient( 'wpconsent_onboarding_redirect' );
-				break;
-		}
 	}
 }

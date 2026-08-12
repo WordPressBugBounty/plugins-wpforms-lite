@@ -8,7 +8,8 @@
  *
  * @since 2.0.0.3
  *
- * @var string $exit_url Skip Guided Setup destination.
+ * @var bool   $is_consent_checked Whether the Lite Connect consent box starts checked.
+ * @var string $exit_url           Skip Guided Setup destination.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -72,7 +73,7 @@ $features = [
 				<div class="wpforms-feature-card">
 					<div class="wpforms-feature-card__icon"><?php echo $icons[ $feature['icon'] ]; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></div>
 					<div class="wpforms-feature-card__text">
-						<h3 class="wpforms-feature-card__title"><?php echo esc_html( $feature['title'] ); ?></h3>
+						<h2 class="wpforms-feature-card__title"><?php echo esc_html( $feature['title'] ); ?></h2>
 						<p class="wpforms-feature-card__description"><?php echo esc_html( $feature['description'] ); ?></p>
 					</div>
 				</div>
@@ -84,6 +85,11 @@ $features = [
 					<span class="wpforms-button__label"><?php esc_html_e( 'Set Up My Forms', 'wpforms-lite' ); ?></span>
 					<span class="wpforms-button__icon-slot" aria-hidden="true"><?php echo $icons['arrow-right']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
 				</button></div>
+			<noscript>
+				<div class="wpforms-welcome__noscript">
+					<?php esc_html_e( 'The Setup Wizard requires JavaScript. Enable it and reload this page, or continue without the wizard.', 'wpforms-lite' ); ?>
+				</div>
+			</noscript>
 			<div>
 				<a href="<?php echo esc_url( $exit_url ); ?>" class="wpforms-welcome__skip"><?php esc_html_e( 'Skip Guided Setup', 'wpforms-lite' ); ?></a>
 			</div>
@@ -93,7 +99,7 @@ $features = [
 
 	<footer class="wpforms-welcome__consent">
 		<label class="wpforms-checkbox">
-			<input type="checkbox" class="wpforms-checkbox__input" id="wpforms-consent" <?php checked( true ); ?> />
+			<input type="checkbox" class="wpforms-checkbox__input" id="wpforms-consent" <?php checked( $is_consent_checked ); ?> />
 			<span class="wpforms-checkbox__box" aria-hidden="true">
 				<svg class="wpforms-checkbox__check" xmlns="http://www.w3.org/2000/svg" width="7" height="7" viewBox="0 0 7 7" fill="none" aria-hidden="true"><path d="M6.28813 0.600088L2.68775 5.44221L0.600033 3.88988" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 			</span>

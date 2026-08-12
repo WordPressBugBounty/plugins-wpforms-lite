@@ -3,6 +3,7 @@
 namespace WPForms\SetupWizard;
 
 use WPForms\Migrations\Base as MigrationsBase;
+use WPForms\SetupWizard\Service\CrossPluginOnboarding;
 use WPForms\SetupWizard\Service\StateManager;
 
 /**
@@ -130,6 +131,15 @@ class SetupWizard {
 	private $screen;
 
 	/**
+	 * Cross-plugin onboarding suppression service.
+	 *
+	 * @since 2.0.0.4
+	 *
+	 * @var CrossPluginOnboarding
+	 */
+	private $cross_plugin_onboarding;
+
+	/**
 	 * Initialize the orchestrator.
 	 *
 	 * Wires services and hooks. The capability gate lives in `maybe_launch()`
@@ -157,11 +167,12 @@ class SetupWizard {
 		$auth    = $this->load_dependency( Auth::class );
 		$service = $this->load_dependency( StateManager::class );
 
-		$this->stripe_connect         = $this->load_dependency( StripeConnect::class );
-		$this->bridge                 = $this->load_dependency( Bridge::class, [ $auth ] );
-		$this->rest_api               = $this->load_dependency( RestApi::class, [ $auth, $service ] );
-		$this->failed_installs_notice = $this->load_dependency( FailedInstallsNotice::class );
-		$this->screen                 = $this->load_dependency( Screen::class, [ $this->bridge, $service ] );
+		$this->stripe_connect          = $this->load_dependency( StripeConnect::class );
+		$this->bridge                  = $this->load_dependency( Bridge::class, [ $auth ] );
+		$this->rest_api                = $this->load_dependency( RestApi::class, [ $auth, $service ] );
+		$this->failed_installs_notice  = $this->load_dependency( FailedInstallsNotice::class );
+		$this->screen                  = $this->load_dependency( Screen::class, [ $this->bridge, $service ] );
+		$this->cross_plugin_onboarding = $this->load_dependency( CrossPluginOnboarding::class );
 	}
 
 	/**
@@ -201,6 +212,13 @@ class SetupWizard {
 
 		$this->stripe_connect->hooks();
 		$this->screen->hooks();
+
+		// Suppression is permanent, so it is scoped to the wizard's own install
+		// call: users installing through the Setup Checklist or an Education
+		// one-click link never entered our onboarding and keep their own.
+		if ( RestApi::is_install_request() ) {
+			$this->cross_plugin_onboarding->hooks();
+		}
 	}
 
 	/**

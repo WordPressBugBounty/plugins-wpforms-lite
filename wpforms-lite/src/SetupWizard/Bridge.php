@@ -148,15 +148,14 @@ class Bridge {
 	 *
 	 * @param string $exit_url    Where to send the user on close.
 	 * @param string $restart_url Where to send the user on restart.
-	 * @param array  $extra       Extra handshake fields merged over the payload.
 	 *
 	 * @return array{action: string, payload: array}
 	 */
-	public function get_handoff_data( string $exit_url, string $restart_url, array $extra = [] ): array {
+	public function get_handoff_data( string $exit_url, string $restart_url ): array {
 
 		return [
 			'action'  => $this->get_handoff_url(),
-			'payload' => array_merge( $this->build_payload( $exit_url, $restart_url ), $extra ),
+			'payload' => $this->build_payload( $exit_url, $restart_url ),
 		];
 	}
 

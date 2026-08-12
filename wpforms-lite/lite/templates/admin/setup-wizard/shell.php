@@ -6,6 +6,10 @@
  * https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0,
  * Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.
  *
+ * The `dir` attribute below is as far as RTL support goes here: physical
+ * padding and margins in setup-wizard.scss still will not mirror, because
+ * WPForms has no RTL CSS pipeline. Revisit if one is adopted.
+ *
  * @since 2.0.0.3
  *
  * @var string $view     Screen view HTML.
@@ -19,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <!DOCTYPE html>
-<html lang="<?php echo esc_attr( get_bloginfo( 'language' ) ); ?>">
+<html lang="<?php echo esc_attr( get_bloginfo( 'language' ) ); ?>" dir="<?php echo is_rtl() ? 'rtl' : 'ltr'; ?>">
 <head>
 	<meta charset="<?php echo esc_attr( get_bloginfo( 'charset' ) ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
