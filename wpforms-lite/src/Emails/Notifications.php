@@ -842,13 +842,16 @@ class Notifications extends Mailer {
 			'email-html'
 		);
 
+		// The filtered value may contain markup built from stored submission data, so sanitize it before it enters the email body.
 		/** This filter is documented in src/SmartTags/SmartTag/FieldHtmlId.php.*/
-		$field_val = (string) apply_filters( // phpcs:ignore WPForms.PHP.ValidateHooks.InvalidHookName
-			'wpforms_html_field_value',
-			$field_val,
-			$this->fields[ $field_id ] ?? $field,
-			$this->form_data,
-			'email-html'
+		$field_val = wpforms_esc_entry_field_value(
+			apply_filters( // phpcs:ignore WPForms.PHP.ValidateHooks.InvalidHookName, WPForms.Comments.PHPDocHooks.RequiredHookDocumentation
+				'wpforms_html_field_value',
+				$field_val,
+				$this->fields[ $field_id ] ?? $field,
+				$this->form_data,
+				'email-html'
+			)
 		);
 
 		$field_val = str_replace( [ "\r\n", "\r", "\n" ], '<br/>', $field_val );

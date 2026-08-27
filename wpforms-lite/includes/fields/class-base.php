@@ -740,13 +740,16 @@ abstract class WPForms_Field {
 
 		// Do not populate if there are errors for that field.
 
-		// Require form id being the same for submitted and currently rendered form.
+		// Require form id being submitted and the same for submitted and currently rendered form.
+		// Without the id requirement, a submission that omits it populates every rendered form silently.
+		// phpcs:disable WordPress.Security.NonceVerification.Missing
 		if (
-			! empty( $_POST['wpforms']['id'] ) && // phpcs:ignore
-			(int) $_POST['wpforms']['id'] !== (int) $this->form_data['id'] // phpcs:ignore
+			empty( $_POST['wpforms']['id'] ) ||
+			(int) $_POST['wpforms']['id'] !== (int) $this->form_data['id']
 		) {
 			$allowed = false;
 		}
+		// phpcs:enable WordPress.Security.NonceVerification.Missing
 
 		// Require $_POST of the submitted field.
 		if ( empty( $_POST['wpforms']['fields'] ) ) { // phpcs:ignore

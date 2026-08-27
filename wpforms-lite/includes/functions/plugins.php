@@ -144,6 +144,23 @@ function wpforms_activate_plugin( string $plugin ) {
 }
 
 /**
+ * Normalize a version number string.
+ *
+ * Removes any "-RCn", "-beta" suffix from the version number.
+ *
+ * @since 2.0.1
+ *
+ * @param string $version Version number.
+ *
+ * @return string
+ */
+function wpforms_normalize_version( string $version ): string {
+
+	// Strip dash and anything after it.
+	return (string) preg_replace( '/-.+/', '', $version );
+}
+
+/**
  * Compares two "PHP-standardized" version number strings.
  *
  * Removes any "-RCn", "-beta" from version numbers first.
@@ -163,14 +180,9 @@ function wpforms_version_compare( $version1, $version2, $operator ): bool {
 		return false;
 	}
 
-	// Strip dash and anything after it.
-	$clean_version_number = function ( $version ) {
-		return preg_replace( '/-.+/', '', $version );
-	};
-
 	return version_compare(
-		$clean_version_number( $version1 ),
-		$clean_version_number( $version2 ),
+		wpforms_normalize_version( $version1 ),
+		wpforms_normalize_version( $version2 ),
 		$operator
 	);
 }

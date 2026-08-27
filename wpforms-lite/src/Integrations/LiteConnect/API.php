@@ -193,7 +193,7 @@ class API {
 	 * The remote API rejects empty first/last name params, but a blank profile name
 	 * (or an email with no WordPress user behind it) is a valid state.
 	 *
-	 * @since 2.0.0.4
+	 * @since 2.0.1
 	 *
 	 * @param WP_User|false $user        User matched by the Lite Connect email.
 	 * @param string|false  $admin_email Email that enabled Lite Connect.
@@ -227,7 +227,7 @@ class API {
 	/**
 	 * Get a non-empty name to register the site with.
 	 *
-	 * @since 2.0.0.4
+	 * @since 2.0.1
 	 *
 	 * @param WP_User|false $user        User matched by the Lite Connect email.
 	 * @param string|false  $admin_email Email that enabled Lite Connect.

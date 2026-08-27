@@ -341,15 +341,16 @@ class Integration extends API {
 	 * Append the Lite Connect site ID as a referral arg on lite-upgrade URLs.
 	 *
 	 * Hooked into the `wpforms_upgrade_link` filter so every URL built through
-	 * `wpforms_admin_upgrade_link()` carries an opaque `ref` value that lets the
+	 * `wpforms_admin_upgrade_link()` carries an opaque `wpf_ref` value that lets the
 	 * marketing side attribute upgrade traffic back to the originating site
 	 * without exposing a recognisable identifier in the URL.
 	 *
 	 * @since 2.0.0
+	 * @since 2.0.1 Renamed the appended query arg from `ref` to `wpf_ref`.
 	 *
 	 * @param string $url Upgrade URL produced by `wpforms_admin_upgrade_link()`.
 	 *
-	 * @return string URL with the `ref` arg appended when applicable.
+	 * @return string URL with the `wpf_ref` arg appended when applicable.
 	 */
 	public function add_lite_connect_site_id_param( $url ) {
 
@@ -369,7 +370,7 @@ class Integration extends API {
 			return $url;
 		}
 
-		return add_query_arg( 'ref', rawurlencode( $this->site_id ), $url );
+		return add_query_arg( 'wpf_ref', rawurlencode( $this->site_id ), $url );
 	}
 
 	/**

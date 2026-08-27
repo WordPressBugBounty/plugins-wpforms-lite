@@ -3,7 +3,7 @@ Contributors: wpforms, smub, slaFFik
 Tags: contact form, contact form plugin, forms, form builder, custom form
 Requires at least: 5.5
 Tested up to: 7.0
-Stable tag: 2.0.0.5
+Stable tag: 2.0.1.1
 Requires PHP: 7.2
 License: GNU General Public License v2.0 or later
 
@@ -304,21 +304,20 @@ Here is a list of our popular marketing integrations:
 * Brevo (ex Sendinblue)
 * MailerLite
 * MailPoet
-
-Using our Zapier integration, you can easily connect WPForms with over 7,000+ marketing apps including:
-
-* PipeDrive CRM
+* Pipedrive
 * Google Sheets
-* Active Campaign
+* Slack
+* Dropbox
+
+Using our Zapier integration, you can easily connect WPForms with over 9,000+ marketing apps including:
+
 * Zoho CRM
 * Zoho Mail
 * Zoho Invoice
 * Agile CRM
-* Slack
 * Trello
 * Infusionsoft by Keap
 * Microsoft Excel
-* Dropbox
 * HelpScout
 * Zendesk
 * Freshbooks
@@ -393,8 +392,30 @@ Thank you,
 Syed Balkhi
 
 == Changelog ==
+= 2.0.1.1 =
+- Added: New QR Code setting generates a downloadable code for a chosen page or URL.
+- Added: New Add Media button in the Confirmation Message editor allows inserting images from the Media Library.
+- Added: Buttons in the Form Builder and on WPForms admin pages now show a visible focus indicator during keyboard navigation, and it no longer appears on mouse click.
+- Changed: Stripe Radar-blocked payments now appear in the payment log with a distinct label instead of the generic decline message.
+- Changed: Updated DOMPurify library to 3.4.13.
+- Fixed: The Smart Tags widget in the Form Builder did not highlight required fields with a red border when validation failed.
+- Fixed: A PHP notice was logged on the front-end when a payment field (Multiple Items, Checkbox Items, or Dropdown Items) contained a choice saved without a label.
+- Fixed: Form templates in the Form Builder Setup panel were not filtered by the form's selected category, showing all templates instead.
+- Fixed: Some button icons were misaligned on WordPress 7.0.
+- Fixed: Incorrect spacing between the icon and text in the Form Builder top bar buttons.
+- Fixed: Choice checkboxes and radio buttons in the Form Builder had no visible border and appeared stretched into ovals in Safari.
+- Fixed: Collapsible settings sections in the Form Builder, such as AI MCP, did not stay closed after the page was reloaded.
+- Fixed: Reordering choices in a Checkbox field in the Form Builder caused a browser console error and stopped the field preview from updating.
+- Fixed: Square payments failed on every retry after a submission with an invalid credit card expiration date, even once the card details were corrected.
+- Fixed: The Payments page showed too much space between elements when no payments had been collected yet.
+- Fixed: PayPal Commerce subscription checkout failed with a fatal error when the account was disconnected while the form was loaded.
+- Fixed: Visitors were not taken to the destination set in the form's Confirmations settings after submitting a form when a plugin or custom code supplied an invalid redirect address.
+- Fixed: No warning appeared for empty or invalid notification email addresses in the Form Builder.
+- Fixed: Various buttons across plugin admin pages showed the default blue focus outline instead of their custom focus styles after being clicked.
+- Fixed: Pages rendered in response to a form submission are no longer cacheable, and submitted values are no longer written back into the form when a submission is rejected.
+
 = 2.0.0.5 =
-- The WPForms admin menu left a large empty gap below it on mobile screens when viewing non-WPForms admin pages.
+- Fixed: The WPForms admin menu left a large empty gap below it on mobile screens when viewing non-WPForms admin pages.
 
 = 2.0.0.4 =
 - Fixed: Lite Connect site registration failed permanently when the admin user profile had an empty first or last name, blocking entry backups.

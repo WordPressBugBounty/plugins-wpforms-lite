@@ -741,6 +741,11 @@ class Loader {
 				'hook' => 'wpforms_builder_init',
 			],
 			[
+				'name' => 'Admin\Builder\Settings\QrCode',
+				'hook' => 'admin_init',
+				'id'   => 'builder_settings_qr_code',
+			],
+			[
 				'name' => 'Admin\Builder\Notifications\Advanced\EmailTemplate',
 				'hook' => 'wpforms_builder_init',
 			],
@@ -1026,6 +1031,7 @@ class Loader {
 			'Builder\Captcha',
 			'Builder\Fields',
 			'Builder\Settings',
+			'Builder\AddonBanners',
 			'Builder\Providers',
 			'Builder\Payments',
 			'Builder\DidYouKnow',
@@ -1035,6 +1041,8 @@ class Loader {
 			'Builder\Confirmations',
 			'Builder\Notifications',
 			'Builder\PDF',
+			'Builder\AdoptionTooltips',
+			'Builder\QrCode',
 			'Admin\DidYouKnow',
 			'Admin\Settings\Integrations',
 			'Admin\Settings\Geolocation',

@@ -164,7 +164,7 @@ class SMTP extends Page {
 	 */
 	protected function get_heading_image_url(): string {
 
-		return WPFORMS_PLUGIN_URL . 'assets/images/smtp/wpforms-wpmailsmtp.png';
+		return WPFORMS_PLUGIN_URL . 'assets/images/smtp/wpforms-wpmailsmtp.svg';
 	}
 
 	/**

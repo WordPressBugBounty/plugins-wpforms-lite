@@ -443,7 +443,7 @@ class Page implements PaymentsViewsInterface {
 	/**
 	 * Append the Mercado Pago tile to the Get Started gateway list.
 	 *
-	 * @since 2.0.0.3
+	 * @since 2.0.1
 	 *
 	 * @return array
 	 */
@@ -535,7 +535,7 @@ class Page implements PaymentsViewsInterface {
 	/**
 	 * Determine whether the Mercado Pago addon is active and has a valid connection.
 	 *
-	 * @since 2.0.0.3
+	 * @since 2.0.1
 	 *
 	 * @return bool
 	 */

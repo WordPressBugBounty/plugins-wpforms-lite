@@ -2,7 +2,7 @@
 
 namespace WPForms\Integrations\Stripe;
 
-use Stripe\Exception\ApiErrorException;
+use WPForms\Vendor\Stripe\Exception\ApiErrorException;
 use WPForms\Helpers\Transient;
 use WPForms\Integrations\Stripe\Protections\LowAmountSurgeDetector;
 use WPForms\Integrations\Stripe\Protections\RateLimit;
@@ -1040,8 +1040,12 @@ class Process {
 	protected function log_error( $title, $message = '', $level = 'error' ) {
 
 		if ( $message instanceof ApiErrorException ) {
-			$body    = $message->getJsonBody();
+			$body    = (array) $message->getJsonBody();
 			$message = isset( $body['error']['message'] ) ? $body['error'] : $message->getMessage();
+
+			if ( $this->is_radar_blocked( $body ) ) {
+				$title = esc_html__( 'Stripe payment blocked as high-risk (Radar)', 'wpforms-lite' );
+			}
 		}
 
 		wpforms_log(
@@ -1052,6 +1056,22 @@ class Process {
 				'form_id' => $this->form_id,
 			]
 		);
+	}
+
+	/**
+	 * Whether Stripe Radar blocked the charge.
+	 *
+	 * @since 2.0.1
+	 *
+	 * @param array $body Stripe exception JSON body.
+	 *
+	 * @return bool
+	 */
+	private function is_radar_blocked( array $body ): bool {
+
+		$outcome = (array) ( $body['error']['payment_intent']['charges']['data'][0]['outcome'] ?? [] );
+
+		return ( $outcome['type'] ?? '' ) === 'blocked';
 	}
 
 	/**
