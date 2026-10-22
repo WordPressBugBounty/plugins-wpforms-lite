@@ -5,49 +5,49 @@ namespace WPForms\Emails\Summaries\Slot;
 /**
  * Block defaults: identity from constants, always visible, nothing to record on send.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 abstract class AbstractBlock implements Block {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = '';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority within the slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 100;
 
 	/**
 	 * UTM medium every summary email link carries.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const UTM_MEDIUM = 'Weekly Summary Email';
 
 	/**
 	 * UTM campaign the summary email admin links carry.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const UTM_CAMPAIGN = 'weekly-summary';
 
 	/**
 	 * Unique block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -59,7 +59,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * The id, whatever the variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Variant rendered.
 	 *
@@ -73,7 +73,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * Slot the block renders in.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -85,7 +85,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * Priority within the slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */
@@ -97,7 +97,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * Visible by default, single variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -113,7 +113,7 @@ abstract class AbstractBlock implements Block {
 	 *
 	 * Zero-entry weeks suppress promotional blocks unless forced in preview.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -127,7 +127,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * Nothing to record by default.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Variant that was sent.
@@ -141,7 +141,7 @@ abstract class AbstractBlock implements Block {
 	 * The single builder for every admin link the weekly summary and its re-engagement
 	 * alert send out, so the parameter set stays identical across them.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $admin_path Path relative to wp-admin, or to network admin when `$network` is true.
 	 * @param string $content    UTM content identifier.
@@ -168,7 +168,7 @@ abstract class AbstractBlock implements Block {
 	/**
 	 * Marketing site URL carrying the summary email UTM parameters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $url     Destination URL.
 	 * @param string $content UTM content identifier.

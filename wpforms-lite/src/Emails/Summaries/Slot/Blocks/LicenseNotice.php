@@ -13,42 +13,42 @@ use WPForms\Pro\Emails\LicenseBanner;
  *
  * The rules and copy stay in LicenseBanner; this block only places them in the top slot.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class LicenseNotice extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'license_notice';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 10;
 
 	/**
 	 * Variant shown when the preview forces the block.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const PREVIEW_VARIANT = 'expire_soon';
 
 	/**
 	 * Visible when the license needs attention; the variant is the license status.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -74,7 +74,7 @@ class LicenseNotice extends AbstractBlock {
 	/**
 	 * Banner arguments.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant License status.

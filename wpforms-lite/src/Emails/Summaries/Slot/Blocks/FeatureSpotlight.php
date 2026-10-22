@@ -16,42 +16,42 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
  * out the next two summaries, and enough recent keys sit out for a pool of N entries to cycle through
  * all N before repeating. Suppressed on a zero-entry week.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class FeatureSpotlight extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'spotlight';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_BOTTOM;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 20;
 
 	/**
 	 * UTM content for a feed link that carries none of its own.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const UTM_CONTENT = 'Feature Spotlight';
 
 	/**
 	 * Entry picked by get_state().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array|null
 	 */
@@ -60,7 +60,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Eligible keys from the feed used for this summary.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var string[]
 	 */
@@ -69,7 +69,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Visible on a week with entries when a still-new entry is not sitting out the rotation.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -120,7 +120,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Keep the eligible pool's rotation separate from the other bottom-slot blocks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.
@@ -138,7 +138,7 @@ class FeatureSpotlight extends AbstractBlock {
 	 * a pool of N entries cycles through all N before repeating. Among the candidates the highest
 	 * version wins.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array    $blocks   Prepared splash blocks.
 	 * @param string[] $cooldown Keys sent in the previous two successful summaries.
@@ -182,7 +182,7 @@ class FeatureSpotlight extends AbstractBlock {
 	 * Keys sitting out the rotation: everything sent in the previous two successful summaries plus
 	 * the newest `pool - 1` sent keys.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string[] $cooldown Keys sent in the previous two successful summaries.
 	 * @param array    $recent   Rotation history records (`week`, `key`), most recent last.
@@ -205,7 +205,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Entry fields the template needs, with the buttons re-attributed to email.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.
@@ -237,7 +237,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Swap the splash campaign on a feed link for the summary email one, keeping the entry's own content value.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $url Button URL as the splash feed wrote it.
 	 *
@@ -261,7 +261,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Whether a splash URL points at the network admin, so the Plugins fallback stays on that screen.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $url Button URL as the splash feed wrote it.
 	 *
@@ -281,7 +281,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * The entry key: the block id plus the title slug, readable in the tracking payload, until the feed carries an id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Unused.
 	 *
@@ -295,7 +295,7 @@ class FeatureSpotlight extends AbstractBlock {
 	/**
 	 * Key of a feed entry.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $entry Feed entry.
 	 *

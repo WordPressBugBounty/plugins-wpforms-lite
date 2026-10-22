@@ -8,28 +8,28 @@ namespace WPForms\Emails\Summaries;
  * Written only after a successful send, so "the previous two summaries" means the two the
  * recipient actually got, whatever the calendar did in between.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class ShownBlocks {
 
 	/**
 	 * Option: slot => [ [ 'week' => Y-m-d, 'key' => block key ], ... ], oldest first.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const OPTION = 'wpforms_email_summaries_shown_blocks';
 
 	/**
 	 * Records kept per exclusive slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const KEEP = 10;
 
 	/**
 	 * Record that a block went out in a slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot Slot.
 	 * @param string $key  Block key.
@@ -51,7 +51,7 @@ class ShownBlocks {
 	/**
 	 * Keys of the blocks that went out in a slot during the last N summaries, most recent last.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot  Slot.
 	 * @param int    $count Number of summaries to look back.
@@ -75,7 +75,7 @@ class ShownBlocks {
 	 *
 	 * The slot history mixes the keys of every block it showed; the prefix narrows it down to one block.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot   Slot.
 	 * @param string $prefix Block key prefix.
@@ -99,7 +99,7 @@ class ShownBlocks {
 	/**
 	 * Record a successful summary, including an empty slot, retaining the cooldown window.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot Slot.
 	 * @param array  $keys Sent block keys.
@@ -128,7 +128,7 @@ class ShownBlocks {
 	/**
 	 * Keys sent in the last two successful summaries, restricted to one block.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot   Slot.
 	 * @param string $prefix Block key prefix.
@@ -153,7 +153,7 @@ class ShownBlocks {
 	/**
 	 * Retain one block's rotation independently, bounded by its current eligible pool.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot     Slot.
 	 * @param string $prefix   Block key prefix.
@@ -187,7 +187,7 @@ class ShownBlocks {
 	/**
 	 * Summary snapshots, grouping the earlier flat records by their reported week when necessary.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $slot Slot.
 	 *
@@ -213,7 +213,7 @@ class ShownBlocks {
 	/**
 	 * The whole store.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */

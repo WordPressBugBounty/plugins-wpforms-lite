@@ -9,35 +9,35 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
 /**
  * Baseline recap: the plain intro every summary falls back to when no other top block fires.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class BaselineRecap extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'baseline_recap';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority. Last, so it only shows when nothing else does.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 100;
 
 	/**
 	 * Intro copy.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.

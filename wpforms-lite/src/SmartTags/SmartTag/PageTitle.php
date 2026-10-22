@@ -13,7 +13,7 @@ class PageTitle extends SmartTag {
 	 * Get smart tag value.
 	 *
 	 * @since 1.6.7
-	 * @since {VERSION} Return the page title as plain text in every branch.
+	 * @since 2.0.3 Return the page title as plain text in every branch.
 	 *
 	 * @param array  $form_data Form data.
 	 * @param array  $fields    List of fields.

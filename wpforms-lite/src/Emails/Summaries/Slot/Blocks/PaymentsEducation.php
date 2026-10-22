@@ -12,28 +12,28 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
  *
  * Retires after five sends or on the first payment, whichever comes first.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class PaymentsEducation extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'payments_education';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_MIDDLE;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 10;
 
@@ -43,21 +43,21 @@ class PaymentsEducation extends AbstractBlock {
 	 * Deliberately separate from the Tracking shown counter: retiring the block is product
 	 * behavior and must not depend on telemetry data.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const OPTION = 'wpforms_email_summaries_payments_education_sent';
 
 	/**
 	 * Sends after which the block retires.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const MAX_SENDS = 5;
 
 	/**
 	 * Visible while a gateway is connected, nothing has been paid, and the send cap is not reached.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -75,7 +75,7 @@ class PaymentsEducation extends AbstractBlock {
 	/**
 	 * Education copy.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.
@@ -99,7 +99,7 @@ class PaymentsEducation extends AbstractBlock {
 	/**
 	 * Count the send.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.
@@ -112,7 +112,7 @@ class PaymentsEducation extends AbstractBlock {
 	/**
 	 * Sends the block has gone out in.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */

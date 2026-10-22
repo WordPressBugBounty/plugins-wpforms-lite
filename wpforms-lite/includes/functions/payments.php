@@ -615,7 +615,7 @@ function wpforms_get_currency() {
 /**
  * Get the currency the form's payment amounts were saved in.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param array $form_data Form data and settings.
  *
@@ -641,7 +641,7 @@ function wpforms_get_form_currency( array $form_data ): string {
  * Unlike a submitted amount, a stored one is not in the current currency's format but in the
  * format of the currency the form was saved in, so it is parsed with that currency.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param mixed $amount    Stored amount, cast to a string.
  * @param array $form_data Form data and settings.

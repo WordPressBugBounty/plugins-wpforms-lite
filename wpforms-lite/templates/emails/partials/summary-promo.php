@@ -2,7 +2,7 @@
 /**
  * Email Summary promo partial: the bottom-slot card used by Tip, Feature Spotlight and Get More Responses.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @var string $badge Small uppercase label, e.g. "Tip" or "New".
  * @var string $tone  `orange` or `blue`.

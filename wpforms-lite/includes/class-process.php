@@ -2081,7 +2081,7 @@ class WPForms_Process {
 	/**
 	 * Get the valid Send To addresses of a notification, logging the invalid ones removed.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array      $notification    Notification settings.
 	 * @param array      $form_data       Form data and settings.
@@ -2117,7 +2117,7 @@ class WPForms_Process {
 	/**
 	 * Get the valid CC addresses of a notification, logging the invalid ones removed.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array      $notification    Notification settings.
 	 * @param array      $form_data       Form data and settings.
@@ -2164,7 +2164,7 @@ class WPForms_Process {
 	/**
 	 * Log a notification not sent for having no valid recipient address.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string     $send_to         Configured Send To value.
 	 * @param string     $context         In which context this email is sent.
@@ -2191,7 +2191,7 @@ class WPForms_Process {
 	/**
 	 * Log a notification recipients issue.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string     $title           Title format string with notification ID and name placeholders.
 	 * @param array      $details         Log record details.

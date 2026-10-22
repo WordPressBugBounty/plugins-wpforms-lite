@@ -18,7 +18,7 @@ class InfoBlocks {
 	/**
 	 * Option holding the ids of the blocks already sent.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	const SENT_OPTION = 'wpforms_email_summaries_info_blocks_sent';
 
@@ -208,7 +208,7 @@ class InfoBlocks {
 	/**
 	 * A random block for the license, skipping the given ids. Empty when that leaves nothing.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int[] $exclude_ids Block ids shown recently.
 	 *

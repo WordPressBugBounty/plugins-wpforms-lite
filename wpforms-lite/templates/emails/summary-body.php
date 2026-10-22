@@ -6,7 +6,7 @@
  *
  * @since 1.5.4
  * @since 1.8.8 Added `$notification_block` and `$icons` parameters.
- * @since {VERSION} Rebuilt around `$tiles`, `$forms`, `$columns`, `$blocks` and `$cta`.
+ * @since 2.0.3 Rebuilt around `$tiles`, `$forms`, `$columns`, `$blocks` and `$cta`.
  *
  * @var array  $tiles              Rows of stat tiles: each tile has `label`, `value`, `delta` (int|null), `note`.
  * @var array  $forms              Per-form rows: `title`, `edit_url`, `entries`, `trends`, `views`, `conversion`, `payments`.
@@ -15,7 +15,7 @@
  * @var array  $blocks             Resolved slot blocks: `top` (one), `middle` (one), `bottom` (list); each `id`, `args`.
  * @var array  $cta                Primary call to action: `text`, `url`.
  * @var array  $notification_block Notification block shown before the promos.
- * @var array  $entries            Deprecated. `$forms` in the pre-{VERSION} shape, kept for overridden templates.
+ * @var array  $entries            Deprecated. `$forms` in the pre-2.0.3 shape, kept for overridden templates.
  * @var bool   $has_trends         Deprecated. Whether any `$entries` row has trends, kept for overridden templates.
  * @var array  $icons              Icons used for the design purposes.
  */
@@ -51,7 +51,7 @@ $promo_badges  = [
  *
  * The license notice is red once the license is gone, orange while it is only expiring.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param array $slot_block Slot block: `id`, `args`, optional `variant`.
  */
@@ -87,7 +87,7 @@ $render_callout = static function ( array $slot_block ) {
 /**
  * Format a week-over-week change: arrow icon plus the absolute percentage.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param int   $delta Signed percentage change.
  * @param array $icons Icon URLs keyed by direction.

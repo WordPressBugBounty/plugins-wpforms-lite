@@ -12,49 +12,49 @@ use WPForms\Forms\AntiSpam;
  * token to modern anti-spam, capturing the pre-upgrade state as a form
  * revision first.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class AntiSpamUpgradeTask extends UpgradeBaseTask {
 
 	/**
 	 * Option holding the run counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const STATS_OPTION = 'wpforms_antispam_upgrade';
 
 	/**
 	 * Option set when an admin consented to upgrading the skipped forms.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const FORCE_OPTION = 'wpforms_antispam_upgrade_force';
 
 	/**
 	 * Post meta stamped on every upgraded form.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const UPGRADED_META = '_wpforms_antispam_upgraded';
 
 	/**
 	 * Post meta holding the map of auto-saved revision IDs to their source.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const REVISION_MAP_META = '_wpforms_ai_revisions';
 
 	/**
 	 * Source key identifying this task's checkpoint revisions.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const REVISION_SOURCE = 'antispam_upgrade';
 
 	/**
 	 * Number of forms handled per Action Scheduler action.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const CHUNK_SIZE = 50;
 
@@ -65,21 +65,21 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * fewer slots the trim inside wp_save_post_revision() deletes the oldest
 	 * row, which is the checkpoint, and the rollback is silently lost.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const REQUIRED_REVISION_SLOTS = 2;
 
 	/**
 	 * Priority the link rel neutralizer is registered at.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const LINK_REL_PRIORITY = 50;
 
 	/**
 	 * Counter defaults, also the zeroed shape a batch accumulates deltas into.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const STATS_DEFAULTS = [
 		'upgraded_total'    => 0,
@@ -92,7 +92,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Whether the retention gate is waived because an admin consented.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var bool
 	 */
@@ -101,7 +101,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Run counters, loaded per batch and flushed once.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array
 	 */
@@ -110,7 +110,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Form IDs handled in the current batch, keyed by outcome.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array
 	 */
@@ -119,7 +119,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Content filters removed for the duration of a write, as [ callback, priority ] pairs.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array
 	 */
@@ -128,7 +128,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Get the run counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -145,7 +145,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Take a form off the skipped count once its legacy protection was turned off by hand.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form ID.
 	 */
@@ -166,7 +166,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Re-arm the task after an admin consented to upgrading the skipped forms.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function force(): void {
 
@@ -185,7 +185,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Set task properties.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	protected function set_task_properties(): void {
 
@@ -195,7 +195,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Enumerate the candidate forms and queue them in batches.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	protected function init_migration(): void {
 
@@ -221,7 +221,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * concurrently can lose one set of counters. The counters only drive the
 	 * admin notice wording, so an undercount costs a notice, never a form.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Form IDs.
 	 */
@@ -280,7 +280,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * The base class deletes its status option inside is_completed(), so
 	 * completion cannot be read back from it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	protected function finish_migration(): void {
 
@@ -308,7 +308,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * too, since wp_save_post_revision() refuses them a checkpoint and they would
 	 * land in the skipped count that raises the action-needed notice.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -339,7 +339,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Upgrade one form, if every gate allows it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form ID.
 	 */
@@ -384,7 +384,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * A form whose checkpoint could not be written is left alone on an automatic
 	 * run, since the completion notice promises a restorable revision.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param WP_Post $post      Form post as it is before the upgrade.
 	 * @param array   $form_data Form data as it is before the upgrade.
@@ -422,7 +422,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Determine whether the site retains enough revisions for a rollback.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param WP_Post $post Form post.
 	 *
@@ -439,7 +439,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Increment the per-cohort counters. A form can belong to both.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $form_data Form data.
 	 */
@@ -460,7 +460,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Capture the pre-upgrade state as a form revision.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param WP_Post $post Form post.
 	 *
@@ -509,7 +509,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * the function name, so removing __return_false would also drop an identical
 	 * callback a third party registered at the same priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -524,7 +524,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * A method rather than __return_empty_string, for the same reason as
 	 * filter_force_revision() above.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -547,7 +547,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * real edit. A form last saved in the same second as its own migration write
 	 * would still tie with the mirror, so that case is stepped back one more second.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int     $revision_id Checkpoint revision ID.
 	 * @param WP_Post $post        Form post as it was before the upgrade.
@@ -591,7 +591,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Record the checkpoint revision so the Revisions panel can label it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id     Form ID.
 	 * @param int $revision_id Revision ID.
@@ -629,7 +629,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	 * unfiltered_html, which under Action Scheduler is every actor, and it
 	 * injects setting defaults this migration must not change.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int   $form_id   Form ID.
 	 * @param array $form_data Form data.
@@ -672,7 +672,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Remove the content filters that damage stored form JSON.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function remove_content_filters(): void { // phpcs:ignore WPForms.PHP.HooksMethod.InvalidPlaceForAddingHooks
 
@@ -697,7 +697,7 @@ class AntiSpamUpgradeTask extends UpgradeBaseTask {
 	/**
 	 * Put back exactly the filters that were removed.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function restore_content_filters(): void { // phpcs:ignore WPForms.PHP.HooksMethod.InvalidPlaceForAddingHooks
 

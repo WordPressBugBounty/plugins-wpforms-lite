@@ -12,21 +12,21 @@ use WPForms\Admin\Dashboard\Cache;
  * Every date-bound query in the summary takes its bounds from here, so the window is
  * defined in exactly one place.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Week {
 
 	/**
 	 * Days in a week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const DAYS = 7;
 
 	/**
 	 * Week start, Monday 00:00:00.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var DateTimeImmutable
 	 */
@@ -35,7 +35,7 @@ class Week {
 	/**
 	 * Week end, Sunday 23:59:59.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var DateTimeImmutable
 	 */
@@ -44,7 +44,7 @@ class Week {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param DateTimeImmutable $end Any moment of the week's last day.
 	 */
@@ -59,7 +59,7 @@ class Week {
 	 *
 	 * Matches the window the Pro entries query and the re-engagement alert already use.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return Week
 	 */
@@ -71,7 +71,7 @@ class Week {
 	/**
 	 * Step back a whole number of weeks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $weeks_back Number of weeks to step back. Default 1.
 	 *
@@ -87,7 +87,7 @@ class Week {
 	/**
 	 * Get the week start.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return DateTimeImmutable
 	 */
@@ -99,7 +99,7 @@ class Week {
 	/**
 	 * Get the week end.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return DateTimeImmutable
 	 */
@@ -111,7 +111,7 @@ class Week {
 	/**
 	 * Week bounds in UTC, for queries against `date_created_gmt` columns.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array Start and end as `Y-m-d H:i:s`.
 	 */
@@ -128,7 +128,7 @@ class Week {
 	/**
 	 * Formatted end date (Y-m-d), used as date key in histories.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -140,7 +140,7 @@ class Week {
 	/**
 	 * Stable Dashboard cache key for this week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */

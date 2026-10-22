@@ -463,7 +463,7 @@ class AntiSpam {
 	/**
 	 * Output a note about the state of this form's legacy anti-spam protection.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function legacy_upgrade_note(): void {
 
@@ -512,7 +512,7 @@ class AntiSpam {
 	/**
 	 * Get the note text for the current form state.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param bool $upgraded   Whether this form was upgraded by the migration.
 	 * @param bool $has_legacy Whether this form still carries legacy anti-spam.

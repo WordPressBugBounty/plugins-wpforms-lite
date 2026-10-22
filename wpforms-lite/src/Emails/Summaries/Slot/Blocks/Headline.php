@@ -12,35 +12,35 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
 /**
  * Data-driven headline: the most notable thing that happened this week.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Headline extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'headline';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 40;
 
 	/**
 	 * Tier rules and anti-repeat store.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Headlines
 	 */
@@ -49,7 +49,7 @@ class Headline extends AbstractBlock {
 	/**
 	 * Headline resolved by get_state().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array|null
 	 */
@@ -58,7 +58,7 @@ class Headline extends AbstractBlock {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Headlines|null $headlines Rules and store. Defaults to a new instance.
 	 */
@@ -70,7 +70,7 @@ class Headline extends AbstractBlock {
 	/**
 	 * Visible when a tier qualifies; the variant is the tier key.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -95,7 +95,7 @@ class Headline extends AbstractBlock {
 	/**
 	 * Headline copy; a forced preview renders the requested tier with sample numbers.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Tier key.
@@ -124,7 +124,7 @@ class Headline extends AbstractBlock {
 	/**
 	 * The tier key, e.g. `headline_tier_3`.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Tier key.
 	 *

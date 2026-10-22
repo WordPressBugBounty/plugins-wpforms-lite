@@ -21,7 +21,7 @@ class Helpers {
 	/**
 	 * Option name holding the Stripe Connect access token per mode.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const OPTION_NAME_CONNECTIONS = 'wpforms_stripe_connections';
 
@@ -157,7 +157,7 @@ class Helpers {
 	 * Get Stripe key from the WPForms settings.
 	 *
 	 * @since 1.8.2
-	 * @since {VERSION} A secret key comes from the encrypted connection when one exists.
+	 * @since 2.0.3 A secret key comes from the encrypted connection when one exists.
 	 *
 	 * @param string $type Key type (e.g. 'publishable' or 'secret').
 	 * @param string $mode Stripe mode (e.g. 'live' or 'test').
@@ -194,7 +194,7 @@ class Helpers {
 	/**
 	 * Get the decrypted Stripe Connect access token for a mode.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $mode Stripe mode (e.g. 'live' or 'test').
 	 *
@@ -223,7 +223,7 @@ class Helpers {
 	/**
 	 * Store or remove the Stripe Connect access token for a mode.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $token Plain access token. An empty value removes the connection.
 	 * @param string $mode  Stripe mode (e.g. 'live' or 'test').
@@ -251,7 +251,7 @@ class Helpers {
 	 * Set Stripe key from the WPForms settings.
 	 *
 	 * @since 1.8.2
-	 * @since {VERSION} A secret key is stored as an encrypted connection instead of a setting.
+	 * @since 2.0.3 A secret key is stored as an encrypted connection instead of a setting.
 	 *
 	 * @param string $value Key string to set.
 	 * @param string $type  Key type (e.g. 'publishable' or 'secret').

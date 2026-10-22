@@ -5,7 +5,7 @@
  * This template can be overridden by copying it to yourtheme/wpforms/emails/summary-body-plain.php.
  *
  * @since 1.5.4
- * @since {VERSION} Rebuilt around `$tiles`, `$forms`, `$columns`, `$blocks` and `$cta`.
+ * @since 2.0.3 Rebuilt around `$tiles`, `$forms`, `$columns`, `$blocks` and `$cta`.
  *
  * @var array  $tiles              Rows of stat tiles: each tile has `label`, `value`, `delta` (int|null), `note`.
  * @var array  $forms              Per-form rows: `title`, `entries`, `trends`, `views`, `conversion`, `payments`.
@@ -14,7 +14,7 @@
  * @var array  $blocks             Resolved slot blocks: `top` (one), `middle` (one), `bottom` (list); each `id`, `args`.
  * @var array  $cta                Primary call to action: `text`, `url`.
  * @var array  $notification_block Notification block shown before the promos.
- * @var array  $entries            Deprecated. `$forms` in the pre-{VERSION} shape, kept for overridden templates.
+ * @var array  $entries            Deprecated. `$forms` in the pre-2.0.3 shape, kept for overridden templates.
  * @var bool   $has_trends         Deprecated. Whether any `$entries` row has trends, kept for overridden templates.
  */
 
@@ -31,7 +31,7 @@ ob_start();
 /**
  * Print a block as plain text: title, paragraphs, then every button or link as "Text: URL".
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param array $args Block arguments.
  */

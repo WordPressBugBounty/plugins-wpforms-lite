@@ -368,7 +368,7 @@ abstract class WPForms_DB {
 	 * Clone of $wpdb->get_results() with caching.
 	 *
 	 * @since        1.9.0
-	 * @since {VERSION} Non-array cache hits are treated as misses.
+	 * @since 2.0.3 Non-array cache hits are treated as misses.
 	 *
 	 * @param string|null $query  SQL query.
 	 * @param string      $output Any of ARRAY_A | ARRAY_N | OBJECT | OBJECT_K constants.
@@ -404,7 +404,7 @@ abstract class WPForms_DB {
 	 * Clone of $wpdb->get_col() with caching.
 	 *
 	 * @since 1.9.4
-	 * @since {VERSION} Non-array cache hits are treated as misses.
+	 * @since 2.0.3 Non-array cache hits are treated as misses.
 	 *
 	 * @param string|null $query SQL query.
 	 * @param int         $x     Column to return. Indexed from 0.

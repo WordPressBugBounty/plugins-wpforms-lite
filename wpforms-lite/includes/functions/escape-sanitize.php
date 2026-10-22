@@ -858,7 +858,7 @@ function wpforms_sanitize_svg_file( string $file_path, string $file_name = '' ):
  * SVG-sanitize strips the DOCTYPE first, which leaves Illustrator-style
  * references like `&ns_extend;` undefined and the file refused.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param string $markup SVG markup.
  *

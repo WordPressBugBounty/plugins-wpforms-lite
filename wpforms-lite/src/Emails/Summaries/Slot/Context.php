@@ -8,14 +8,14 @@ use WPForms\Emails\Summaries\Week;
 /**
  * Everything a block needs to decide and render: the week, its metrics, and the preview state.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Context {
 
 	/**
 	 * Reported week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Week
 	 */
@@ -24,7 +24,7 @@ class Context {
 	/**
 	 * Metrics from Data::for_week().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array
 	 */
@@ -33,7 +33,7 @@ class Context {
 	/**
 	 * Block id forced to show in the preview, empty for none.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var string
 	 */
@@ -42,7 +42,7 @@ class Context {
 	/**
 	 * Variant the preview asks the forced block to render, empty for the block's own choice.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var string
 	 */
@@ -51,7 +51,7 @@ class Context {
 	/**
 	 * Shown-blocks history shared by the pipeline and the blocks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var ShownBlocks|null
 	 */
@@ -60,7 +60,7 @@ class Context {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week   $week            Reported week.
 	 * @param array  $data            Metrics from Data::for_week().
@@ -79,7 +79,7 @@ class Context {
 	/**
 	 * Reported week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return Week
 	 */
@@ -91,7 +91,7 @@ class Context {
 	/**
 	 * All metrics.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -103,7 +103,7 @@ class Context {
 	/**
 	 * One metric.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key      Metric key.
 	 * @param mixed  $fallback Value when the metric is absent.
@@ -118,7 +118,7 @@ class Context {
 	/**
 	 * Whether the reported week collected any entry.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -130,7 +130,7 @@ class Context {
 	/**
 	 * Shown-blocks history, one instance for the whole summary.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return ShownBlocks
 	 */
@@ -146,7 +146,7 @@ class Context {
 	/**
 	 * Whether the Pro edition is installed.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -158,7 +158,7 @@ class Context {
 	/**
 	 * Whether the preview forces a given block to show.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $block_id Block id.
 	 *
@@ -172,7 +172,7 @@ class Context {
 	/**
 	 * Variant the preview asks the forced block to render, empty for the block's own choice.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */

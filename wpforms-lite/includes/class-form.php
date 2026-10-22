@@ -852,7 +852,7 @@ class WPForms_Form_Handler {
 	/**
 	 * Record the currency the form's payment amounts are saved in.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data       Form data.
 	 * @param bool  $is_builder Whether the amounts were just re-emitted by the Form Builder.

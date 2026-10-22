@@ -9,98 +9,98 @@ namespace WPForms\Emails\Summaries;
  * Tiers that need the entries table or blocked-spam counts are Pro-edition only; the rest run
  * everywhere. One edition guard per tier, so flipping a tier is a one-line change.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Headlines {
 
 	/**
 	 * Weeks of history loaded for the best-week tiers, including the reported week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const HISTORY_WEEKS = 12;
 
 	/**
 	 * Prior weeks with activity required before a week can count as the best one.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_HISTORY_WEEKS = 4;
 
 	/**
 	 * Summaries after which the same headline may show again.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const REPEAT_WEEKS = 2;
 
 	/**
 	 * Entries a form needs this week for its best week, or last week for its jump, to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_FORM_ENTRIES = 5;
 
 	/**
 	 * Entries the site needs this week for its best week to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_SITE_ENTRIES = 10;
 
 	/**
 	 * Views a form needs this week for its conversion goal to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_GOAL_VIEWS = 50;
 
 	/**
 	 * Week-over-week entry growth, in percent, for a single form to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const FORM_GROWTH_PCT = 40;
 
 	/**
 	 * Leads saved in the week to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_LEADS = 5;
 
 	/**
 	 * Spam entries blocked in the week to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const MIN_SPAM = 10;
 
 	/**
 	 * Week-over-week view growth, in percent, to make the headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const VIEWS_GROWTH_PCT = 25;
 
 	/**
 	 * Highest tier.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const TIERS = 7;
 
 	/**
 	 * Tiers needing per-form weekly history, week-over-week form jumps, blocked spam counts or conversion rates, all Pro-only.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const PRO_TIERS = [ 1, 3, 5, 7 ];
 
 	/**
 	 * Shown-blocks history.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var ShownBlocks
 	 */
@@ -109,7 +109,7 @@ class Headlines {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param ShownBlocks|null $shown Shown-blocks history. Defaults to a new instance.
 	 */
@@ -121,7 +121,7 @@ class Headlines {
 	/**
 	 * The highest qualifying headline not shown in the last two summaries.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array    $data    Metrics from Data::for_week().
 	 * @param callable $history Returns Data::get_weekly_by_form() for the reported week; called only when a tier needs it.
@@ -162,7 +162,7 @@ class Headlines {
 	/**
 	 * Tracking and anti-repeat key of a tier.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $tier Tier number.
 	 *
@@ -176,7 +176,7 @@ class Headlines {
 	/**
 	 * Tier number of a key, or 0 when the key is not a headline.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key Block key.
 	 *
@@ -192,7 +192,7 @@ class Headlines {
 	/**
 	 * Copy for a tier. Placeholder wording pending the content review the spec mandates.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int   $tier Tier number.
 	 * @param array $vars Interpolation values: `form`, `n`, `pct` as the tier needs.
@@ -226,7 +226,7 @@ class Headlines {
 	 * through wp_kses() and the plain-text one through esc_html(), so escaping here would
 	 * reach the reader double-encoded.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $value Plain value.
 	 *
@@ -240,7 +240,7 @@ class Headlines {
 	/**
 	 * Join a two-sentence title so the second sentence starts its own line, as the design sets it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $first  First sentence.
 	 * @param string $second Second sentence.
@@ -255,7 +255,7 @@ class Headlines {
 	/**
 	 * Copy per tier with the numbers interpolated.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $form  Highlighted form name.
 	 * @param string $n     Highlighted formatted count.
@@ -324,7 +324,7 @@ class Headlines {
 	/**
 	 * Interpolation values for a tier when the week qualifies for it, null otherwise.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int      $tier   Tier number.
 	 * @param array    $data   Metrics from Data::for_week().
@@ -376,7 +376,7 @@ class Headlines {
 	/**
 	 * A count metric when it reaches a minimum.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array  $data Metrics.
 	 * @param string $key  Metric key.
@@ -394,7 +394,7 @@ class Headlines {
 	/**
 	 * The week-over-week view growth when it reaches the threshold, against a non-zero previous week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics.
 	 *
@@ -410,7 +410,7 @@ class Headlines {
 	/**
 	 * The form whose reported week beats all of its prior weeks, preferring the most entries.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $weekly Data::get_weekly_by_form() output.
 	 * @param array $forms  Form rows, for titles.
@@ -438,7 +438,7 @@ class Headlines {
 	/**
 	 * The site-wide reported week when it beats every prior week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $weekly Data::get_weekly_by_form() output.
 	 *
@@ -459,7 +459,7 @@ class Headlines {
 	/**
 	 * Whether a week beats every prior week, given enough prior weeks with activity to compare against.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int   $current Reported week count.
 	 * @param array $prior   Prior weekly counts, most recent first.
@@ -476,7 +476,7 @@ class Headlines {
 	/**
 	 * The form with the largest week-over-week jump above the growth threshold, from at least five entries last week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $forms Form rows.
 	 *
@@ -505,7 +505,7 @@ class Headlines {
 	/**
 	 * The first form that converted at or above the goal set for it, when the tier may see conversion.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics.
 	 *

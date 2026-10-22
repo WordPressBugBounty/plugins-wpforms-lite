@@ -12,35 +12,35 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
  * Tip: a random Info Block absent from the last two successful summaries.
  * Shows nothing when that leaves no block, or on a zero-entry week.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Tip extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'tip';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_BOTTOM;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 10;
 
 	/**
 	 * Feed reader.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var InfoBlocks
 	 */
@@ -49,7 +49,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * Block picked by get_state(), reused by get_args() and on_sent().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array|null
 	 */
@@ -58,7 +58,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param InfoBlocks|null $info_blocks Feed reader. Defaults to a new instance.
 	 */
@@ -70,7 +70,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * Visible when the week had entries and the feed has a block left to show.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -92,7 +92,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * The feed block's title, content and button.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.
@@ -122,7 +122,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * The block id prefixed with `tip_`, so the shown history can exclude it next time.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Unused.
 	 *
@@ -136,7 +136,7 @@ class Tip extends AbstractBlock {
 	/**
 	 * Pick once from the license's blocks, excluding tips in the previous two successful summaries.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *

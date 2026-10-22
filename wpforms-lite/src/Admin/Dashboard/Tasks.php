@@ -46,7 +46,7 @@ class Tasks {
 	 * while the rollup tables are missing.
 	 *
 	 * @since 2.0.2
-	 * @since {VERSION} Registers the rollup tasks without probing their tables.
+	 * @since 2.0.3 Registers the rollup tasks without probing their tables.
 	 *
 	 * @param array|mixed $tasks Task class list.
 	 *

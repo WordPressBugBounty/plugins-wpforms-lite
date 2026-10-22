@@ -40,7 +40,7 @@ class DB {
 	/**
 	 * Cache key prefix for exact-name lookups, so they never mix with the results of a LIKE pattern.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const EXACT_TABLE_CACHE_PREFIX = 'exact:';
 
@@ -121,7 +121,7 @@ class DB {
 	 * calling this on paths that run on every request, such as front-end page loads.
 	 *
 	 * @since 1.8.7
-	 * @since {VERSION} Finds an existing table with an exact-name lookup first.
+	 * @since 2.0.3 Finds an existing table with an exact-name lookup first.
 	 *
 	 * @param string $table_name Table name. Can have SQL wildcard.
 	 *
@@ -163,7 +163,7 @@ class DB {
 	 * `information_schema.TABLES` is an index lookup. A miss returns false, so the caller still runs the LIKE lookup and a `_` in the
 	 * name keeps its wildcard meaning.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $table_name Table name.
 	 *

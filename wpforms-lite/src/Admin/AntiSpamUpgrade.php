@@ -7,49 +7,49 @@ use WPForms\Migrations\Tasks\AntiSpamUpgradeTask;
 /**
  * Legacy anti-spam upgrade notices.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class AntiSpamUpgrade {
 
 	/**
 	 * Query arg carrying a one-click upgrade request.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const ACTION_ARG = 'wpforms_antispam_upgrade';
 
 	/**
 	 * Query arg set on the redirect after a one-click upgrade started.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const STARTED_ARG = 'wpforms_antispam_upgrade_started';
 
 	/**
 	 * Spam documentation URL used by both notice variants.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const DOCS_URL = 'https://wpforms.com/docs/how-to-prevent-spam-in-wpforms/';
 
 	/**
 	 * Upper bound on the forms listed in the notice.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const MAX_LISTED_FORMS = 100;
 
 	/**
 	 * Shared CSS class of both notice variants.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const NOTICE_CLASS = 'wpforms-notice-antispam-upgrade';
 
 	/**
 	 * Init class.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function init(): void {
 
@@ -59,7 +59,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Register hooks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function hooks(): void {
 
@@ -71,7 +71,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Re-run the upgrade over the forms the retention gate skipped.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function maybe_start_upgrade(): void {
 
@@ -107,7 +107,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Add the notice matching the state of the last upgrade run.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function maybe_add_notice(): void {
 
@@ -131,7 +131,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Load the notice styles, which admin.css carries only on the plugin's own screens.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function enqueue_styles(): void {
 
@@ -150,7 +150,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Determine which notice the state of the last upgrade run calls for.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $stats Run counters.
 	 *
@@ -181,7 +181,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Confirm a one-click upgrade was queued.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function add_started_notice(): void {
 
@@ -193,7 +193,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Report a completed automatic upgrade.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $count Number of upgraded forms.
 	 */
@@ -255,7 +255,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Get the forms the migration stamped as upgraded.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array Array of WP_Post objects.
 	 */
@@ -283,7 +283,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Build the collapsed list of upgraded forms.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $forms Array of WP_Post objects.
 	 *
@@ -314,7 +314,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Get the URL of a form's anti-spam settings.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form ID.
 	 *
@@ -336,7 +336,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Prompt for consent on installs that cannot hold a rollback revision.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $count Number of skipped forms.
 	 */
@@ -387,7 +387,7 @@ class AntiSpamUpgrade {
 	/**
 	 * Get the tracked documentation URL.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */

@@ -5,14 +5,14 @@ namespace WPForms\Emails\Summaries\Slot;
 /**
  * Block state value object: whether it renders, and which variant.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class BlockState {
 
 	/**
 	 * Whether the block renders.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var bool
 	 */
@@ -21,7 +21,7 @@ class BlockState {
 	/**
 	 * Template variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var string
 	 */
@@ -30,7 +30,7 @@ class BlockState {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param bool   $visible Whether the block renders.
 	 * @param string $variant Template variant.
@@ -44,7 +44,7 @@ class BlockState {
 	/**
 	 * Whether the block renders.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -56,7 +56,7 @@ class BlockState {
 	/**
 	 * Template variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */

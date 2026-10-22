@@ -10,35 +10,35 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
 /**
  * Get More Responses: takes the bottom slot on a zero-entry week instead of Tip and Feature Spotlight.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class GetMoreResponses extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'get_more_responses';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_BOTTOM;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 5;
 
 	/**
 	 * Visible only on a zero-entry week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -52,7 +52,7 @@ class GetMoreResponses extends AbstractBlock {
 	/**
 	 * Copy and CTA.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Unused.

@@ -11,7 +11,7 @@ use WPForms\Emails\Summaries\Tracking;
  * The top and middle slots are exclusive: blocks are walked by priority and the first
  * visible one wins. The bottom slot shows every visible block.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Pipeline {
 
@@ -21,35 +21,35 @@ class Pipeline {
 	 * Headlines and milestones replace the intro. Activity dropoff sits between
 	 * the intro and the tiles. The license notice sits above the white card.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT_TOP = 'top';
 
 	/**
 	 * Slot between the stat tiles and the forms table.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT_MIDDLE = 'middle';
 
 	/**
 	 * Slot below the forms table.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT_BOTTOM = 'bottom';
 
 	/**
 	 * Slots that show exactly one block.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private const EXCLUSIVE_SLOTS = [ self::SLOT_TOP, self::SLOT_MIDDLE ];
 
 	/**
 	 * Registered blocks keyed by id, sorted by priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Block[]
 	 */
@@ -58,7 +58,7 @@ class Pipeline {
 	/**
 	 * Shown-blocks history, null when the one the context carries is used.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var ShownBlocks|null
 	 */
@@ -67,7 +67,7 @@ class Pipeline {
 	/**
 	 * Usage tracking counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Tracking
 	 */
@@ -76,7 +76,7 @@ class Pipeline {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Block[]          $blocks   Blocks to register.
 	 * @param ShownBlocks|null $shown    Shown-blocks history. Defaults to the one the context carries.
@@ -123,7 +123,7 @@ class Pipeline {
 	/**
 	 * Resolve every slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -144,7 +144,7 @@ class Pipeline {
 	 * A block the preview forces wins its slot outright. The arguments of every resolved block
 	 * are normalized, so the partials render what they get.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string  $slot    Slot to resolve.
 	 * @param Context $context Summary context.
@@ -184,7 +184,7 @@ class Pipeline {
 	/**
 	 * Record the send: every rendered block goes into the shown history and the tracking counters, then gets its own callback.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array   $resolved Output of resolve_all().
 	 * @param Context $context  Summary context.
@@ -211,7 +211,7 @@ class Pipeline {
 	/**
 	 * Flatten the output of resolve_all() into one list of resolved blocks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $resolved Output of resolve_all().
 	 *
@@ -228,7 +228,7 @@ class Pipeline {
 	/**
 	 * Drop the secondary link when it repeats the main button, by label or by destination.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $args Block template arguments.
 	 *
@@ -246,7 +246,7 @@ class Pipeline {
 	/**
 	 * Whether a secondary link says the same as the main button.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $link Secondary link: `text`, `url`.
 	 * @param array $main Main button: `text`, `url`.
@@ -274,7 +274,7 @@ class Pipeline {
 	/**
 	 * Blocks registered for a slot, in priority order. A forced block is the only candidate.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string  $slot    Slot.
 	 * @param Context $context Summary context.

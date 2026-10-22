@@ -7,7 +7,7 @@ use WPForms\SetupWizard\Service\SettingsDetector;
 /**
  * Payment gateway configuration checks shared across admin surfaces.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class PaymentGatewayDetector {
 
@@ -15,7 +15,7 @@ class PaymentGatewayDetector {
 	 * Whether any supported payment gateway — Stripe, PayPal Commerce, Square,
 	 * Authorize.Net, Mercado Pago, or Paystack — is configured in the current payment mode.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */

@@ -449,7 +449,7 @@ class Field extends WPForms_Field {
 	 * Validate field on submitting the form.
 	 *
 	 * @since 1.8.2
-	 * @since {VERSION} Non-string values are rejected as an invalid payment option.
+	 * @since 2.0.3 Non-string values are rejected as an invalid payment option.
 	 *
 	 * @param int   $field_id     Field ID.
 	 * @param mixed $field_submit Submitted field value (raw data).
@@ -477,7 +477,7 @@ class Field extends WPForms_Field {
 	 * Format and sanitize field.
 	 *
 	 * @since 1.8.2
-	 * @since {VERSION} Non-string values are normalized to an empty string.
+	 * @since 2.0.3 Non-string values are normalized to an empty string.
 	 *
 	 * @param int   $field_id     Field ID.
 	 * @param mixed $field_submit Submitted form data.

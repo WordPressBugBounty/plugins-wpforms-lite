@@ -11,35 +11,35 @@ use WPForms\Integrations\LiteConnect\LiteConnect;
 /**
  * Lite Connect prompt: enable backups, or upgrade to keep them. Lite edition only.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class LiteConnectPrompt extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'lite_connect';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_MIDDLE;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 20;
 
 	/**
 	 * Visible on Lite; the variant says whether Lite Connect is on.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -53,7 +53,7 @@ class LiteConnectPrompt extends AbstractBlock {
 	/**
 	 * Copy and links for the variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Either `enabled` or `disabled`.

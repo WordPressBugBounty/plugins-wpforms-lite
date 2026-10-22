@@ -123,7 +123,7 @@ class PaymentStats {
 	 * The count clauses in `StatsAggregator` wrap `COUNT(*)` in MySQL's two-argument `FORMAT()`,
 	 * which groups thousands with a comma whatever the site locale is, so it has to come back off.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int|string $tile Raw count tile value.
 	 *
@@ -140,7 +140,7 @@ class PaymentStats {
 	 * The live aggregator concatenates has-count tiles into one `AMOUNT (COUNT)` string, while the
 	 * empty state and the Pro rollup use an `[ 'amount' => …, 'count' => … ]` array.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int|string|array $tile Raw tile value.
 	 *

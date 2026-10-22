@@ -1,20 +1,19 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPForms Lite 2.0.3-RC5\n"
+"Project-Id-Version: WPForms Lite 2.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpforms-lite\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-10-22T11:52:42+00:00\n"
+"POT-Creation-Date: 2026-10-16T08:59:51+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"X-Generator: WP-CLI 2.12.0\n"
+"X-Generator: WP-CLI 2.7.1\n"
 "X-Domain: wpforms-lite\n"
 
 #. Plugin Name of the plugin
 #. Author of the plugin
-#: wpforms.php
 #: includes/admin/class-menu.php:64
 #: includes/admin/class-menu.php:65
 #: includes/admin/class-menu.php:103
@@ -36,12 +35,10 @@ msgstr ""
 
 #. Plugin URI of the plugin
 #. Author URI of the plugin
-#: wpforms.php
 msgid "https://wpforms.com"
 msgstr ""
 
 #. Description of the plugin
-#: wpforms.php
 msgid "Beginner friendly WordPress contact form plugin. Use our Drag & Drop form builder to create your WordPress forms."
 msgstr ""
 
@@ -113,7 +110,6 @@ msgstr ""
 #. translators: %1$s - addon download URL, %2$s - link to a manual installation guide, %3$s - link to contact support.
 #: includes/admin/admin.php:213
 #: includes/admin/ajax-actions.php:924
-#, php-format
 msgid "Could not install the addon. Please <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">download it from wpforms.com</a> and <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">install it manually</a>, or <a href=\"%3$s\" target=\"_blank\" rel=\"noopener noreferrer\">contact support</a> for assistance."
 msgstr ""
 
@@ -189,7 +185,6 @@ msgstr ""
 
 #. translators: %s - entry count.
 #: includes/admin/admin.php:239
-#, php-format
 msgid "Are you sure you want to delete %s entries? This will also remove all associated files, notes, and logs."
 msgstr ""
 
@@ -203,7 +198,6 @@ msgstr ""
 
 #. translators: %s - entry count.
 #: includes/admin/admin.php:245
-#, php-format
 msgid "Are you sure you want to trash %s entries? This will also remove all associated files, notes, and logs."
 msgstr ""
 
@@ -347,13 +341,11 @@ msgstr ""
 
 #. translators: %s - WPForms.com docs page URL.
 #: includes/admin/admin.php:284
-#, php-format
 msgid "You've selected <strong>Base Styling Only</strong>, which may result in styling issues. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Please check out our tutorial</a> for common issues and recommendations."
 msgstr ""
 
 #. translators: %s - WPForms.com docs page URL.
 #: includes/admin/admin.php:298
-#, php-format
 msgid "You've selected <strong>No Styling</strong>, which will likely result in significant styling issues and is recommended only for developers. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Please check out our tutorial</a> for more details and recommendations."
 msgstr ""
 
@@ -409,13 +401,11 @@ msgstr ""
 
 #. translators: %s - link to WPForms.com docs page.
 #: includes/admin/admin.php:330
-#, php-format
 msgid "Something went wrong. Please try again, and if the problem persists, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">contact our support team</a>."
 msgstr ""
 
 #. translators: %1$s - WPForms plugin name; %2$s - WPForms.com URL to a related doc.
 #: includes/admin/admin.php:625
-#, php-format
 msgid "Your site is running an outdated version of PHP that is no longer supported and may cause issues with %1$s. <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Read more</a> for additional information."
 msgstr ""
 
@@ -425,7 +415,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com contact page URL.
 #: includes/admin/admin.php:676
-#, php-format
 msgid "Thank you for considering upgrading. If you have any questions, please <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">let us know</a>."
 msgstr ""
 
@@ -436,19 +425,16 @@ msgstr ""
 #. translators: %s - WPForms.com upgrade from Lite to paid docs page URL.
 #: includes/admin/admin.php:707
 #: includes/admin/admin.php:757
-#, php-format
 msgid "Check out <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation</a> for step-by-step instructions."
 msgstr ""
 
 #. translators: %s - WPForms.com contact page URL.
 #: includes/admin/admin.php:724
-#, php-format
 msgid "If you have any questions or issues just <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">let us know</a>."
 msgstr ""
 
 #. translators: %s - license level, WPForms Pro or WPForms Elite.
 #: includes/admin/admin.php:745
-#, php-format
 msgid "After purchasing a license, just <strong>enter your license key on the WPForms Settings page</strong>. This will let your site automatically upgrade to %s! (Don't worry, all your forms and settings will be preserved.)"
 msgstr ""
 
@@ -690,14 +676,12 @@ msgstr ""
 
 #. translators: %1$s - data source name (e.g., Categories, Posts), %2$s - data source type (e.g., post type, taxonomy), %3$s - display limit, %4$s - total number of items.
 #: includes/admin/builder/class-builder.php:871
-#, php-format
 msgid "The %1$s %2$s contains over %3$s items (%4$s). This may make the field difficult for your visitors to use and/or cause the form to be slow."
 msgstr ""
 
 #. translators: %1$s - data source name (e.g., Categories, Posts), %2$s - data source type (e.g., post type, taxonomy).
 #: includes/admin/builder/class-builder.php:878
 #: includes/fields/class-base.php:4947
-#, php-format
 msgid "This field will not be displayed in your form since there are no %2$s belonging to %1$s."
 msgstr ""
 
@@ -741,37 +725,31 @@ msgstr ""
 
 #. translators: %s - field label.
 #: includes/admin/builder/class-builder.php:898
-#, php-format
 msgid "%s is already at the end."
 msgstr ""
 
 #. translators: %s - field label.
 #: includes/admin/builder/class-builder.php:900
-#, php-format
 msgid "%s is already at the start."
 msgstr ""
 
 #. translators: %1$s - field label, %2$d - new field position, %3$d - total number of fields.
 #: includes/admin/builder/class-builder.php:902
-#, php-format
 msgid "%1$s moved to position %2$d of %3$d."
 msgstr ""
 
 #. translators: %1$s - field label, %2$d - new field position, %3$d - total number of fields, %4$s - Layout or Repeater field label.
 #: includes/admin/builder/class-builder.php:904
-#, php-format
 msgid "%1$s moved into %4$s, position %2$d of %3$d."
 msgstr ""
 
 #. translators: %1$s - field label, %2$d - new field position, %3$d - total number of fields, %4$s - Layout or Repeater field label.
 #: includes/admin/builder/class-builder.php:906
-#, php-format
 msgid "%1$s moved out of %4$s, position %2$d of %3$d."
 msgstr ""
 
 #. translators: %1$s - field label, %2$d - new field position, %3$d - total number of fields, %4$s - Layout or Repeater field label.
 #: includes/admin/builder/class-builder.php:908
-#, php-format
 msgid "%1$s moved past %4$s, position %2$d of %3$d."
 msgstr ""
 
@@ -905,7 +883,6 @@ msgstr ""
 
 #. translators: %s - number of fields.
 #: includes/admin/builder/class-builder.php:951
-#, php-format
 msgid "Are you sure you want to delete these %s fields?"
 msgstr ""
 
@@ -931,7 +908,6 @@ msgstr ""
 
 #. translators: %s - number of fields.
 #: includes/admin/builder/class-builder.php:957
-#, php-format
 msgid "Are you sure you want to duplicate these %s fields?"
 msgstr ""
 
@@ -1034,7 +1010,6 @@ msgstr ""
 
 #. translators: %s - marketing or gateway integration name.
 #: includes/admin/builder/class-builder.php:979
-#, php-format
 msgid "Some third-party integrations require entry storage. If you’d like to continue, you’ll first need to disable %s."
 msgstr ""
 
@@ -1049,7 +1024,6 @@ msgstr ""
 
 #. translators: %s - marketing integration name.
 #: includes/admin/builder/class-builder.php:985
-#, php-format
 msgid "In order to complete your form's %s integration, please check that all required (*) fields have been filled out."
 msgstr ""
 
@@ -1123,7 +1097,6 @@ msgstr ""
 #: includes/fields/class-checkbox.php:1147
 #: includes/fields/class-radio.php:165
 #: includes/fields/class-radio.php:741
-#, php-format
 msgid "Choice %s"
 msgstr ""
 
@@ -1137,7 +1110,6 @@ msgstr ""
 #: src/Forms/Fields/PaymentTotal/Field.php:691
 #: src/SmartTags/SmartTag/OrderSummary.php:209
 #: src/SmartTags/SmartTag/OrderSummary.php:284
-#, php-format
 msgid "Item %s"
 msgstr ""
 
@@ -1262,7 +1234,6 @@ msgstr ""
 
 #. translators: %1$s - from value %2$s - to value.
 #: includes/admin/builder/class-builder.php:1044
-#, php-format
 msgid "Please enter a valid value or change the Increment. The nearest valid values are %1$s and %2$s."
 msgstr ""
 
@@ -1273,37 +1244,31 @@ msgstr ""
 
 #. translators: %s - Integration name.
 #: includes/admin/builder/class-builder.php:1053
-#, php-format
 msgid "%s connection"
 msgstr ""
 
 #. translators: %s - link to the WPForms.com doc article.
 #: includes/admin/builder/class-builder.php:1062
-#, php-format
 msgid "Disabling entry storage for this form will completely prevent any new submissions from getting saved to your site. If you still intend to keep a record of entries through notification emails, then please <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">test your form</a> to ensure emails are sent reliably."
 msgstr ""
 
 #. translators: %1$s - link to the plugin search page, %2$s - link to the WPForms.com doc article.
 #: includes/admin/builder/class-builder.php:1082
-#, php-format
 msgid "This feature cannot be used at this time because the Akismet plugin <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">has not been installed</a>. For information on how to use this feature, please <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">refer to our documentation</a>."
 msgstr ""
 
 #. translators: %1$s - link to the plugin page, %2$s - link to the WPForms.com doc article.
 #: includes/admin/builder/class-builder.php:1103
-#, php-format
 msgid "This feature cannot be used at this time because the Akismet plugin <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">has not been activated</a>. For information on how to use this feature, please <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">refer to our documentation</a>."
 msgstr ""
 
 #. translators: %1$s - link to the Akismet settings page, %2$s - link to the WPForms.com doc article.
 #: includes/admin/builder/class-builder.php:1124
-#, php-format
 msgid "This feature cannot be used at this time because the Akismet plugin <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">has not been properly configured</a>. For information on how to use this feature, please <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">refer to our documentation</a>."
 msgstr ""
 
 #. translators: %1$s - Documentation page URL.
 #: includes/admin/builder/class-builder.php:1145
-#, php-format
 msgid "The form cannot be saved due to a <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">403 error</a>."
 msgstr ""
 
@@ -1424,7 +1389,6 @@ msgstr ""
 #: src/Integrations/PayPalCommerce/Process/Process.php:1279
 #: src/Integrations/Square/Process.php:762
 #: src/Integrations/Stripe/Fields/PaymentElementCreditCard.php:145
-#, php-format
 msgid "Field #%d"
 msgstr ""
 
@@ -1559,7 +1523,6 @@ msgstr ""
 
 #. translators: %s - Payment gateway name, e.g. "Stripe".
 #: includes/admin/builder/panels/class-base.php:215
-#, php-format
 msgid "Your form must be saved before you can connect to %s. Save and continue?"
 msgstr ""
 
@@ -1573,7 +1536,6 @@ msgstr ""
 
 #. translators: %s - WPForms contact support link.
 #: includes/admin/builder/panels/class-base.php:447
-#, php-format
 msgid "If the issue persists, <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">please contact support</a>."
 msgstr ""
 
@@ -1596,13 +1558,11 @@ msgstr ""
 
 #. translators: %s - Cmd or Ctrl key.
 #: includes/admin/builder/panels/class-fields.php:104
-#, php-format
 msgid "Field copied. Use %1$s + V to paste."
 msgstr ""
 
 #. translators: %d - number of fields, %s - Cmd or Ctrl key.
 #: includes/admin/builder/panels/class-fields.php:106
-#, php-format
 msgid "%1$d fields copied. Use %2$s + V to paste."
 msgstr ""
 
@@ -1645,7 +1605,6 @@ msgstr ""
 
 #. translators: %s - unavailable field name.
 #: includes/admin/builder/panels/class-fields.php:604
-#, php-format
 msgid "Unfortunately, the %s field is not available and will be ignored on the front end."
 msgstr ""
 
@@ -1697,7 +1656,6 @@ msgstr ""
 
 #. translators: %s - total number of choices.
 #: includes/admin/builder/panels/class-fields.php:764
-#, php-format
 msgid "Showing the first 20 choices.<br> All %s choices will be displayed when viewing the form."
 msgstr ""
 
@@ -1747,7 +1705,6 @@ msgstr ""
 
 #. translators: %s - addons page URL.
 #: includes/admin/builder/panels/class-payments.php:87
-#, php-format
 msgid "It seems you do not have any payment addons activated. You can head over to the <a href=\"%s\">Addons page</a> to install and activate the addon for your payment service."
 msgstr ""
 
@@ -1769,7 +1726,6 @@ msgstr ""
 
 #. translators: %s - connection type.
 #: includes/admin/builder/panels/class-providers.php:60
-#, php-format
 msgid "Enter a %s nickname"
 msgstr ""
 
@@ -1804,7 +1760,6 @@ msgstr ""
 
 #. translators: %s - plugin admin area Addons page.
 #: includes/admin/builder/panels/class-providers.php:129
-#, php-format
 msgid "It seems you do not have any marketing addons activated. You can head over to the <a href=\"%s\">Addons page</a> to install and activate the addon for your provider."
 msgstr ""
 
@@ -1838,7 +1793,6 @@ msgstr ""
 
 #. translators: %1$s - revision date, %2$s - revision time, %3$s - "Restore this revision" link, %4$s - "go back to the current version" link.
 #: includes/admin/builder/panels/class-revisions.php:182
-#, php-format
 msgid "You’re currently viewing a form revision from %1$s at %2$s. %3$s or %4$s."
 msgstr ""
 
@@ -2024,13 +1978,11 @@ msgstr ""
 
 #. translators: %1$s - create a template doc link, %2$s - Contact us page link.
 #: includes/admin/builder/panels/class-setup.php:85
-#, php-format
 msgid "To speed up the process, you can select from one of our pre-made templates, start with a <a href=\"#\" class=\"wpforms-trigger-blank\">blank form</a> or <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">create your own</a>."
 msgstr ""
 
 #. translators: %1$s - create a template doc link, %2$s - Contact us page link.
 #: includes/admin/builder/panels/class-setup.php:103
-#, php-format
 msgid "Have a suggestion for a new template? <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">We’d love to hear it</a>!"
 msgstr ""
 
@@ -2047,7 +1999,6 @@ msgstr ""
 
 #. translators: %1$s - current license type, %2$s - suggested license type.
 #: includes/admin/class-about.php:141
-#, php-format
 msgid "%1$s vs %2$s"
 msgstr ""
 
@@ -2065,7 +2016,6 @@ msgstr ""
 
 #. translators: %1$s - WPBeginner URL, %2$s - OptinMonster URL, %3$s - MonsterInsights URL.
 #: includes/admin/class-about.php:282
-#, php-format
 msgid "WPForms is brought to you by the same team that’s behind the largest WordPress resource site, <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">WPBeginner</a>, the most popular lead-generation software, <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">OptinMonster</a>, the best WordPress analytics plugin, <a href=\"%3$s\" target=\"_blank\" rel=\"noopener noreferrer\">MonsterInsights</a>, and more!"
 msgstr ""
 
@@ -2083,7 +2033,6 @@ msgstr ""
 
 #. translators: %s - status label.
 #: includes/admin/class-about.php:359
-#, php-format
 msgid "Status: %s"
 msgstr ""
 
@@ -2140,14 +2089,12 @@ msgstr ""
 
 #. translators: %s - stars.
 #: includes/admin/class-about.php:552
-#, php-format
 msgid "We know that you will truly love WPForms. It has over <strong>13,000+ five star ratings</strong> (%s) and is active on over 6 million websites."
 msgstr ""
 
 #. translators: %s - number of templates.
 #: includes/admin/class-about.php:575
 #: lite/wpforms-lite.php:752
-#, php-format
 msgid "%s customizable form templates"
 msgstr ""
 
@@ -2263,7 +2210,6 @@ msgstr ""
 
 #. translators: %s - next license level.
 #: includes/admin/class-about.php:857
-#, php-format
 msgid "Get WPForms %s Today and Unlock all the Powerful Features"
 msgstr ""
 
@@ -2547,7 +2493,6 @@ msgstr ""
 
 #. translators: %s - number of templates.
 #: includes/admin/class-about.php:1266
-#, php-format
 msgid "All Form Templates including Bonus %s pre-made form templates"
 msgstr ""
 
@@ -2782,13 +2727,11 @@ msgstr ""
 
 #. translators: %s - number of addons.
 #: includes/admin/class-about.php:1801
-#, php-format
 msgid "PDF, Calculations, Form Abandonment, Conversational Forms, Lead Forms, Frontend Post Submission, User Registration, Geolocation, Google Sheets, Coupons, Dropbox, Google Calendar, Google Drive, Airtable, Notion, and more (%1$s+ total)"
 msgstr ""
 
 #. translators: %s - number of addons.
 #: includes/admin/class-about.php:1824
-#, php-format
 msgid "PDF, Calculations, Form Abandonment, Conversational Forms, Lead Forms, Frontend Post Submission, User Registration, Geolocation, Webhooks, Google Sheets, Coupons, Dropbox, Google Calendar, Google Drive, Entry Automation, Airtable, Notion, and more (%1$s+ total)"
 msgstr ""
 
@@ -2803,7 +2746,6 @@ msgstr ""
 
 #. translators: %s - WPForms documentation URL.
 #: includes/admin/class-editor.php:117
-#, php-format
 msgid "Heads up! Don't forget to test your form. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Check out our complete guide</a>!"
 msgstr ""
 
@@ -2821,7 +2763,6 @@ msgstr ""
 
 #. translators: %s - WPForms Builder page.
 #: includes/admin/class-editor.php:146
-#, php-format
 msgid "Whoops, you haven't created a form yet. Want to <a href=\"%s\">give it a go</a>?"
 msgstr ""
 
@@ -2995,7 +2936,6 @@ msgstr ""
 
 #. translators: $1$s - WPForms plugin name, $2$s - WP.org review link, $3$s - WP.org review link.
 #: includes/admin/class-review.php:275
-#, php-format
 msgid "Please rate %1$s <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">&#9733;&#9733;&#9733;&#9733;&#9733;</a> on <a href=\"%3$s\" target=\"_blank\" rel=\"noopener\">WordPress.org</a> to help us spread the word."
 msgstr ""
 
@@ -3018,7 +2958,6 @@ msgstr ""
 
 #. translators: %1$s - WPForms.com doc page URL; %2$s - button text.
 #: includes/admin/class-settings.php:117
-#, php-format
 msgid "It looks like you've downgraded to an older version of WPForms. We recommend always using the latest version as some features may not function as expected in older versions. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener\">%2$s</a>"
 msgstr ""
 
@@ -3083,7 +3022,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com form styling setting URL.
 #: includes/admin/class-settings.php:418
-#, php-format
 msgid "Determines which CSS files to load and use for the site. \"Base and Form Theme Styling\" is recommended, unless you are experienced with CSS or instructed by support to change settings. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
@@ -3119,13 +3057,11 @@ msgstr ""
 
 #. translators: %s - WPForms.com GDPR documentation URL.
 #: includes/admin/class-settings.php:458
-#, php-format
 msgid "Enable GDPR related features and enhancements. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
 #. translators: %s - WPForms.com smart tags documentation URL.
 #: includes/admin/class-settings.php:479
-#, php-format
 msgid "%1$s These messages are displayed to the users as they fill out a form in real-time. Messages can include plain text and/or %2$sSmart Tags%3$s."
 msgstr ""
 
@@ -3175,7 +3111,6 @@ msgstr ""
 #. translators: %s - suggested email address.
 #: includes/admin/class-settings.php:506
 #: src/Frontend/Frontend.php:1856
-#, php-format
 msgid "Did you mean %s?"
 msgstr ""
 
@@ -3253,7 +3188,6 @@ msgstr ""
 
 #. translators: %1$s - characters limit, %2$s - number of characters left.
 #: includes/admin/class-settings.php:557
-#, php-format
 msgid "Limit is %1$s characters. Characters remaining: %2$s."
 msgstr ""
 
@@ -3263,7 +3197,6 @@ msgstr ""
 
 #. translators: %1$s - words limit, %2$s - number of words left.
 #: includes/admin/class-settings.php:567
-#, php-format
 msgid "Limit is %1$s words. Words remaining: %2$s."
 msgstr ""
 
@@ -3298,7 +3231,6 @@ msgstr ""
 
 #. translators: %s - value to compare with.
 #: includes/admin/class-settings.php:589
-#, php-format
 msgid "Please enter a value greater than or equal to %s."
 msgstr ""
 
@@ -3308,7 +3240,6 @@ msgstr ""
 
 #. translators: %s - value to compare with.
 #: includes/admin/class-settings.php:598
-#, php-format
 msgid "Please enter a value less than or equal to %s."
 msgstr ""
 
@@ -3393,7 +3324,6 @@ msgstr ""
 
 #. translators: %s - WPForms Setup Wizard link.
 #: includes/admin/class-welcome.php:257
-#, php-format
 msgid "Prefer a guided setup? Launch the %s to configure your site step-by-step."
 msgstr ""
 
@@ -3582,7 +3512,6 @@ msgstr ""
 
 #. translators: %s - ID of a setting.
 #: includes/admin/settings-api.php:97
-#, php-format
 msgid "The callback function used for the %s setting is missing."
 msgstr ""
 
@@ -3592,7 +3521,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com upgrade URL.
 #: includes/admin/settings-api.php:134
-#, php-format
 msgid "To unlock more features consider <strong><a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-upgrade-modal\">upgrading to PRO</a></strong>."
 msgstr ""
 
@@ -3649,7 +3577,6 @@ msgstr ""
 #: src/Admin/Tools/Importers/NinjaForms.php:441
 #: src/Admin/Tools/Importers/PirateForms.php:467
 #: src/Integrations/AI/Admin/Ajax/Forms.php:239
-#, php-format
 msgid "New Entry: %s"
 msgstr ""
 
@@ -3670,7 +3597,6 @@ msgstr ""
 
 #. translators: %s - URL the to list of Zaps.
 #: includes/class-form.php:1215
-#, php-format
 msgid "Head over to the Zapier settings in the Marketing tab or visit your <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Zapier account</a> to restore them."
 msgstr ""
 
@@ -3684,7 +3610,6 @@ msgstr ""
 
 #. translators: %s - error unique ID.
 #: includes/class-process.php:300
-#, php-format
 msgid "Missing form data on form submission process %s"
 msgstr ""
 
@@ -3698,13 +3623,11 @@ msgstr ""
 
 #. translators: %s - URL to the WForms Logs admin page.
 #: includes/class-process.php:313
-#, php-format
 msgid "Check the WPForms &raquo; Tools &raquo; <a href=\"%s\">Logs</a> for more details."
 msgstr ""
 
 #. translators: %s - error unique ID.
 #: includes/class-process.php:328
-#, php-format
 msgid "Error ID: %s."
 msgstr ""
 
@@ -3740,7 +3663,6 @@ msgstr ""
 
 #. translators: %s - The CAPTCHA provider name.
 #: includes/class-process.php:1150
-#, php-format
 msgid "%s verification failed, please try again later."
 msgstr ""
 
@@ -3754,32 +3676,27 @@ msgstr ""
 
 #. translators: %1$.3f - total size of the selected files in megabytes, %2$.3f - allowed file upload limit in megabytes.
 #: includes/class-process.php:1876
-#, php-format
 msgid "The total size of the selected files %1$.3f MB exceeds the allowed limit %2$.3f MB."
 msgstr ""
 
 #. translators: %s - form name.
 #: includes/class-process.php:2010
 #: lite/wpforms-lite.php:130
-#, php-format
 msgid "New %s Entry"
 msgstr ""
 
 #. translators: %1$s - notification ID, %2$s - notification name.
 #: includes/class-process.php:2103
-#, php-format
 msgid "Notification #%1$s (\"%2$s\"): invalid Send To addresses were removed."
 msgstr ""
 
 #. translators: %1$s - notification ID, %2$s - notification name.
 #: includes/class-process.php:2150
-#, php-format
 msgid "Notification #%1$s (\"%2$s\"): invalid CC addresses were removed."
 msgstr ""
 
 #. translators: %1$s - notification ID, %2$s - notification name.
 #: includes/class-process.php:2179
-#, php-format
 msgid "Notification #%1$s (\"%2$s\") was not sent: no valid recipient address."
 msgstr ""
 
@@ -3864,7 +3781,6 @@ msgstr ""
 #. translators: %d - field ID.
 #: includes/emails/class-emails.php:745
 #: includes/emails/class-emails.php:826
-#, php-format
 msgid "Field ID #%s"
 msgstr ""
 
@@ -3876,7 +3792,6 @@ msgstr ""
 #. translators: %s - link to the site.
 #: includes/emails/templates/footer-default.php:39
 #: templates/emails/general-footer.php:24
-#, php-format
 msgid "Sent from %s"
 msgstr ""
 
@@ -3889,7 +3804,6 @@ msgstr ""
 #: src/Integrations/PayPalCommerce/Process/Base.php:290
 #: src/Integrations/PayPalCommerce/Process/Process.php:1310
 #: src/Integrations/Square/Process.php:803
-#, php-format
 msgid "Choice %d"
 msgstr ""
 
@@ -3955,7 +3869,6 @@ msgstr ""
 
 #. translators: %1$s - source name, %2$s - type name.
 #: includes/fields/class-base.php:1777
-#, php-format
 msgid "Choices are dynamically populated from the %1$s %2$s. Go to the Advanced tab to change this."
 msgstr ""
 
@@ -4179,13 +4092,11 @@ msgstr ""
 
 #. translators: %s - dynamic source type name.
 #: includes/fields/class-base.php:2694
-#, php-format
 msgid "Select %s to use for auto-populating field choices."
 msgstr ""
 
 #. translators: %s - dynamic source type name.
 #: includes/fields/class-base.php:2697
-#, php-format
 msgid "Dynamic %s Source"
 msgstr ""
 
@@ -4278,13 +4189,11 @@ msgstr ""
 
 #. translators: %d - choice number.
 #: includes/fields/class-base.php:4992
-#, php-format
 msgid "Item %d"
 msgstr ""
 
 #. translators: %1$s - limit, %2$s - total number of choices.
 #: includes/fields/class-base.php:5367
-#, php-format
 msgid "Showing the first %1$s choices.<br> All %2$s choices will be displayed when viewing the form."
 msgstr ""
 
@@ -4624,7 +4533,6 @@ msgstr ""
 
 #. translators: %1$s - Number slider selected value, %2$s - its minimum value, %3$s - its maximum value.
 #: includes/fields/class-number-slider.php:102
-#, php-format
 msgid "%1$s (%2$s min / %3$s max)"
 msgstr ""
 
@@ -4650,7 +4558,6 @@ msgstr ""
 
 #. translators: %s - value.
 #: includes/fields/class-number-slider.php:259
-#, php-format
 msgid "Selected Value: %s"
 msgstr ""
 
@@ -4692,7 +4599,6 @@ msgstr ""
 
 #. translators: %s - URL to WPForms.com doc article.
 #: includes/fields/class-select.php:286
-#, php-format
 msgid "For details, including how this looks and works for your site's visitors, please check out <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our doc</a>."
 msgstr ""
 
@@ -4751,7 +4657,6 @@ msgstr ""
 #. translators: %s - limit characters number.
 #: includes/fields/class-text.php:543
 #: includes/fields/class-textarea.php:369
-#, php-format
 msgid "Text can't exceed %d character."
 msgid_plural "Text can't exceed %d characters."
 msgstr[0] ""
@@ -4760,7 +4665,6 @@ msgstr[1] ""
 #. translators: %s - limit words number.
 #: includes/fields/class-text.php:550
 #: includes/fields/class-textarea.php:376
-#, php-format
 msgid "Text can't exceed %d word."
 msgid_plural "Text can't exceed %d words."
 msgstr[0] ""
@@ -6066,7 +5970,6 @@ msgstr ""
 #: src/Admin/Payments/Views/Single.php:1074
 #: src/Admin/Revisions.php:341
 #: templates/admin/payments/single/log.php:34
-#, php-format
 msgid "%1$s at %2$s"
 msgstr ""
 
@@ -6087,19 +5990,16 @@ msgstr ""
 
 #. translators: %s: License name.
 #: includes/functions/education.php:83
-#, php-format
 msgid "Upgrade to WPForms %s"
 msgstr ""
 
 #. translators: %d - post ID.
 #: includes/functions/form-fields.php:365
-#, php-format
 msgid "#%d (no title)"
 msgstr ""
 
 #. translators: %d - taxonomy term ID.
 #: includes/functions/form-fields.php:386
-#, php-format
 msgid "#%d (no name)"
 msgstr ""
 
@@ -6293,7 +6193,6 @@ msgstr ""
 
 #. translators: %1$s - payment amount; %2$d - payment quantity.
 #: includes/functions/payments.php:883
-#, php-format
 msgid "%1$s &times; %2$d"
 msgstr ""
 
@@ -6370,25 +6269,21 @@ msgstr ""
 
 #. translators: %s - Name field label.
 #: includes/providers/class-base.php:507
-#, php-format
 msgid "%s (Full)"
 msgstr ""
 
 #. translators: %s - Name field label.
 #: includes/providers/class-base.php:522
-#, php-format
 msgid "%s (First)"
 msgstr ""
 
 #. translators: %s - Name field label.
 #: includes/providers/class-base.php:538
-#, php-format
 msgid "%s (Middle)"
 msgstr ""
 
 #. translators: %s - Name field label.
 #: includes/providers/class-base.php:554
-#, php-format
 msgid "%s (Last)"
 msgstr ""
 
@@ -6432,7 +6327,6 @@ msgstr ""
 
 #. translators: %s - provider type.
 #: includes/providers/class-base.php:1166
-#, php-format
 msgid "Add New %s"
 msgstr ""
 
@@ -6453,7 +6347,6 @@ msgstr ""
 #: includes/providers/class-base.php:1324
 #: includes/providers/class-base.php:1407
 #: src/Providers/Provider/Settings/PageIntegrations.php:180
-#, php-format
 msgid "Connected on: %1$s"
 msgstr ""
 
@@ -6468,7 +6361,6 @@ msgstr ""
 #. translators: %s - provider name.
 #: includes/providers/class-base.php:1355
 #: src/Providers/Provider/Settings/PageIntegrations.php:294
-#, php-format
 msgid "Connect to %s"
 msgstr ""
 
@@ -6481,7 +6373,6 @@ msgstr ""
 #: includes/providers/class-base.php:1382
 #: lite/templates/education/admin/settings/integrations-item.php:36
 #: src/Providers/Provider/Settings/PageIntegrations.php:79
-#, php-format
 msgid "Integrate %s with WPForms"
 msgstr ""
 
@@ -6553,7 +6444,6 @@ msgstr ""
 
 #. translators: %1$s - Documentation URL.
 #: includes/providers/class-constant-contact.php:703
-#, php-format
 msgid "If you need help connecting WPForms to Constant Contact, <a href=\"%1$s\" rel=\"noopener noreferrer\" target=\"_blank\">read our documentation</a>."
 msgstr ""
 
@@ -6567,7 +6457,6 @@ msgstr ""
 
 #. translators: %s - WPForms Constant Contact internal URL.
 #: includes/providers/class-constant-contact.php:827
-#, php-format
 msgid "Learn More about the <a href=\"%s\">power of email marketing</a>"
 msgstr ""
 
@@ -6598,7 +6487,6 @@ msgstr ""
 
 #. translators: %s - addon title.
 #: lite/templates/admin/addons.php:49
-#, php-format
 msgid "%s logo"
 msgstr ""
 
@@ -6657,7 +6545,6 @@ msgstr ""
 
 #. translators: %d - backed up entries count.
 #: lite/templates/admin/entries/overview/modal.php:50
-#, php-format
 msgid "%d entry has been backed up"
 msgid_plural "%d entries have been backed up"
 msgstr[0] ""
@@ -6665,7 +6552,6 @@ msgstr[1] ""
 
 #. translators: %s - time when Lite Connect was enabled.
 #: lite/templates/admin/entries/overview/modal.php:64
-#, php-format
 msgid "since you enabled Lite Connect on %s"
 msgstr ""
 
@@ -6759,7 +6645,6 @@ msgstr ""
 
 #. translators: %1$s - bold Lite Connect label, %2$s - Terms of Service link.
 #: lite/templates/admin/setup-wizard/welcome.php:110
-#, php-format
 msgid "I agree to enable %1$s to securely back up my entries and unlock the WPForms AI experience, per the %2$s. You can disable this at any time in WPForms settings."
 msgstr ""
 
@@ -6845,7 +6730,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com Upgrade page URL.
 #: lite/templates/education/admin/notice-bar.php:21
-#, php-format
 msgid "<strong>You're using WPForms Lite.</strong> To unlock more features consider <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">upgrading to Pro</a> for 50%% off."
 msgstr ""
 
@@ -6918,7 +6802,6 @@ msgstr ""
 #. translators: %s - WPForms Terms of Service link.
 #: lite/templates/education/builder/lite-connect/ai-modal.php:62
 #: lite/templates/education/lite-connect-modal.php:69
-#, php-format
 msgid "By enabling Lite Connect you agree to our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a> and to share your information with WPForms."
 msgstr ""
 
@@ -6963,13 +6846,11 @@ msgstr ""
 
 #. translators: %s - link to the WPForms.com doc article.
 #: lite/wpforms-lite.php:160
-#, php-format
 msgid "Notifications are emails sent when a form is submitted. By default, these emails include entry details. For setup and customization options, including a video overview, please <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">see our tutorial</a>."
 msgstr ""
 
 #. translators: 1$s, %2$s - links to the WPForms.com doc articles.
 #: lite/wpforms-lite.php:175
-#, php-format
 msgid "After saving these settings, be sure to <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">test a form submission</a>. This lets you see how emails will look, and to ensure that they <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">are delivered successfully</a>."
 msgstr ""
 
@@ -7007,7 +6888,6 @@ msgstr ""
 
 #. translators: %s - <email@example.com>.
 #: lite/wpforms-lite.php:345
-#, php-format
 msgid "Enter the email address or email address with recipient's name in \"First Last %s\" format."
 msgstr ""
 
@@ -7017,7 +6897,6 @@ msgstr ""
 
 #. translators: %s - {all_fields} Smart Tag.
 #: lite/wpforms-lite.php:380
-#, php-format
 msgid "To display all form fields, use the %s Smart Tag."
 msgstr ""
 
@@ -7083,7 +6962,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com docs page URL.
 #: lite/wpforms-lite.php:691
-#, php-format
 msgid "You've just turned off notification emails for this form. Since entries are not stored in WPForms Lite, notification emails are recommended for collecting entry details. For setup steps, <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">please see our notification tutorial</a>."
 msgstr ""
 
@@ -7099,7 +6977,6 @@ msgstr ""
 
 #. translators: %s - star icons.
 #: lite/wpforms-lite.php:734
-#, php-format
 msgid "We know that you will truly love WPForms. It has over 13,000+ five star ratings (%s) and is active on over 6 million websites."
 msgstr ""
 
@@ -7127,7 +7004,6 @@ msgstr ""
 #. translators: %s - addon name.
 #: src/Admin/Addons/Addons.php:537
 #: src/Admin/Education/AddonsItemBase.php:154
-#, php-format
 msgid "%s addon"
 msgstr ""
 
@@ -7323,7 +7199,6 @@ msgstr ""
 
 #. translators: %d - form ID.
 #: src/Admin/AdminBarMenu.php:651
-#, php-format
 msgid "Form ID: %d"
 msgstr ""
 
@@ -7337,7 +7212,6 @@ msgstr ""
 
 #. translators: %d - number of forms upgraded to modern anti-spam protection.
 #: src/Admin/AntiSpamUpgrade.php:209
-#, php-format
 msgid "%d form"
 msgid_plural "%d forms"
 msgstr[0] ""
@@ -7345,7 +7219,6 @@ msgstr[1] ""
 
 #. translators: %s - number of upgraded forms, for example "3 forms".
 #: src/Admin/AntiSpamUpgrade.php:226
-#, php-format
 msgid "We upgraded %s from legacy anti-spam to modern anti-spam protection, which blocks significantly more spam. The form&#8217;s previous version is saved as a revision you can restore anytime."
 msgid_plural "We upgraded %s from legacy anti-spam to modern anti-spam protection, which blocks significantly more spam. Each form&#8217;s previous version is saved as a revision you can restore anytime."
 msgstr[0] ""
@@ -7357,7 +7230,6 @@ msgstr ""
 
 #. translators: %d - number of forms still using legacy anti-spam protection.
 #: src/Admin/AntiSpamUpgrade.php:346
-#, php-format
 msgid "%d form still uses legacy anti-spam protection."
 msgid_plural "%d forms still use legacy anti-spam protection."
 msgstr[0] ""
@@ -7422,7 +7294,6 @@ msgstr ""
 
 #. translators: %d - maximum limit value.
 #: src/Admin/Builder/Ajax/TemplatesLoader.php:175
-#, php-format
 msgid "Limit must be between 1 and %d."
 msgstr ""
 
@@ -7808,7 +7679,6 @@ msgstr ""
 
 #. translators: %s - destination URL encoded in the QR code.
 #: src/Admin/Builder/Settings/QrCode.php:332
-#, php-format
 msgid "QR code linking to %s"
 msgstr ""
 
@@ -7889,10 +7759,10 @@ msgstr ""
 #: src/Admin/Builder/Settings/Themes.php:243
 #: src/Integrations/Elementor/Elementor.php:251
 #: src/Integrations/Gutenberg/FormSelector.php:444
-#, php-format
 msgid "Are you sure you want to delete the %1$s theme?"
 msgstr ""
 
+#. Translators: %1$s: Theme name.
 #: src/Admin/Builder/Settings/Themes.php:244
 #: src/Integrations/Elementor/Elementor.php:252
 #: src/Integrations/Gutenberg/FormSelector.php:445
@@ -7948,7 +7818,6 @@ msgstr ""
 
 #. translators: %s - URL to the documentation.
 #: src/Admin/Builder/Settings/Themes.php:331
-#, php-format
 msgid "Customize the look and feel of your form with premade themes or simple style settings that allow you to use your own colors to match your brand. Themes and style settings are also available in the Block Editor and Elementor, where you can see a realtime preview. <a href=\"%s\" target=\"_blank\">Learn more about styling your forms</a>."
 msgstr ""
 
@@ -8207,6 +8076,7 @@ msgstr ""
 msgid "Choose Image"
 msgstr ""
 
+#. Translators: %1$s: Opening anchor tag, %2$s: Closing anchor tag.
 #: src/Admin/Builder/Settings/Themes.php:1182
 #: src/Integrations/Elementor/WidgetModern.php:715
 #: src/Integrations/Gutenberg/FormSelector.php:538
@@ -8320,31 +8190,26 @@ msgstr ""
 
 #. translators: %1$s - template name, %2$s - addon name(s).
 #: src/Admin/Builder/Templates.php:224
-#, php-format
 msgid "The %1$s template requires the %2$s. Would you like to install and activate it?"
 msgstr ""
 
 #. translators: %1$s - template name, %2$s - addon name(s).
 #: src/Admin/Builder/Templates.php:226
-#, php-format
 msgid "The %1$s template requires the %2$s. Would you like to install and activate all the required addons?"
 msgstr ""
 
 #. translators: %1$s - template name, %2$s - addon name(s).
 #: src/Admin/Builder/Templates.php:228
-#, php-format
 msgid "The %1$s template requires the %2$s. Would you like to activate it?"
 msgstr ""
 
 #. translators: %s - addon name(s).
 #: src/Admin/Builder/Templates.php:231
-#, php-format
 msgid "To use all of the features in this template, you'll need the %s. Contact your site administrator to install it, then try opening this template again."
 msgstr ""
 
 #. translators: %s - addon name(s).
 #: src/Admin/Builder/Templates.php:235
-#, php-format
 msgid "To use all of the features in this template, you'll need the %s. Contact your site administrator to install them, then try opening this template again."
 msgstr ""
 
@@ -8355,7 +8220,6 @@ msgstr ""
 
 #. translators: %d - templates count.
 #: src/Admin/Builder/Templates.php:1153
-#, php-format
 msgid "Get Access to Our Complete Library of %d+ Form Templates"
 msgstr ""
 
@@ -8365,7 +8229,6 @@ msgstr ""
 
 #. translators: %d - templates count.
 #: src/Admin/Builder/Templates.php:1174
-#, php-format
 msgid "Get Access to Our Library of %d+ Pre-Made Form Templates"
 msgstr ""
 
@@ -8578,7 +8441,6 @@ msgstr ""
 
 #. translators: %1$s - Store Spam Entries setting name, %2$s - ActiveLayer plugin name.
 #: src/Admin/Dashboard/StatCards.php:452
-#, php-format
 msgid "Enable %1$s in your form settings, or install %2$s for the best protection."
 msgstr ""
 
@@ -8592,7 +8454,6 @@ msgstr ""
 
 #. translators: %d - number of days.
 #: src/Admin/Dashboard/Widget.php:270
-#, php-format
 msgid "Last %d day"
 msgid_plural "Last %d days"
 msgstr[0] ""
@@ -8722,7 +8583,6 @@ msgstr ""
 #. translators: %1$s - Zapier, %2$s - Uncanny Automator, %3$s - Make (each emphasised).
 #: src/Admin/Dashboard/Widgets/Integrations.php:149
 #: src/SetupChecklist/Page.php:184
-#, php-format
 msgid "30+ native integrations, plus thousands more via %1$s, %2$s, and %3$s."
 msgstr ""
 
@@ -8775,7 +8635,6 @@ msgstr ""
 #: src/Admin/Dashboard/Widgets/Payments.php:494
 #: src/Admin/Payments/Views/Overview/Table.php:832
 #: src/Admin/Revisions.php:336
-#, php-format
 msgid "%s ago"
 msgstr ""
 
@@ -8804,7 +8663,6 @@ msgstr ""
 #. translators: %1$s - the linked "WPConsent" plugin name; %2$s - the italic "or…" continuation.
 #: src/Admin/Dashboard/Widgets/SpamSecurity.php:172
 #: src/Admin/Dashboard/Widgets/SpamSecurity.php:215
-#, php-format
 msgid "%1$s installed and configured, %2$s"
 msgstr ""
 
@@ -8823,13 +8681,11 @@ msgstr ""
 
 #. translators: %1$s - the linked "Captcha" label.
 #: src/Admin/Dashboard/Widgets/SpamSecurity.php:184
-#, php-format
 msgid "%1$s service enabled"
 msgstr ""
 
 #. translators: %1$s - the linked "GDPR Enhancements" setting name.
 #: src/Admin/Dashboard/Widgets/SpamSecurity.php:227
-#, php-format
 msgid "%1$s enabled"
 msgstr ""
 
@@ -8858,7 +8714,6 @@ msgstr ""
 #: src/Admin/Dashboard/Widgets/Traits/EntriesEducationTrait.php:82
 #: src/Lite/Admin/Education/Admin/DidYouKnow.php:159
 #: src/Lite/Admin/Education/LiteConnect.php:294
-#, php-format
 msgid "%d entry backed up"
 msgid_plural "%d entries backed up"
 msgstr[0] ""
@@ -8867,7 +8722,6 @@ msgstr[1] ""
 #. translators: %1$s - time when Lite Connect was enabled.
 #: src/Admin/Dashboard/Widgets/Traits/EntriesEducationTrait.php:96
 #: src/Lite/Admin/Education/Admin/DidYouKnow.php:173
-#, php-format
 msgid "since %1$s"
 msgstr ""
 
@@ -8916,7 +8770,6 @@ msgstr ""
 #. translators: %1$s - link to create a new form.
 #: src/Admin/Education/Admin/EditPost.php:212
 #: src/Admin/Education/Admin/EditPost.php:238
-#, php-format
 msgid "Did you know that with <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">WPForms</a>, you can create an easy-to-use contact form in a matter of minutes?"
 msgstr ""
 
@@ -9099,7 +8952,6 @@ msgstr ""
 
 #. translators: %1$s - opening addon link tag, %2$s - closing addon link tag.
 #: src/Admin/Education/Builder/AddonBanners.php:98
-#, php-format
 msgid "%1$sForm Abandonment%2$s helps save leads you would have otherwise lost."
 msgstr ""
 
@@ -9114,13 +8966,11 @@ msgstr ""
 
 #. translators: %1$s - opening addon link tag, %2$s - closing addon link tag.
 #: src/Admin/Education/Builder/AddonBanners.php:111
-#, php-format
 msgid "%1$sSave and Resume%2$s lets respondents finish it later instead of abandoning a long form."
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/Builder/AddonBanners.php:242
-#, php-format
 msgid "Learn more about the %s addon"
 msgstr ""
 
@@ -9130,25 +8980,21 @@ msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/Builder/AddonBanners.php:300
-#, php-format
 msgid "Explore the %s addon settings"
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/Builder/AddonBanners.php:363
-#, php-format
 msgid "Activate the %s addon"
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/Builder/AddonBanners.php:368
-#, php-format
 msgid "Install and activate the %s addon"
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/Builder/AddonBanners.php:372
-#, php-format
 msgid "Upgrade to Pro and unlock the %s addon"
 msgstr ""
 
@@ -9181,7 +9027,6 @@ msgstr ""
 
 #. translators: %1$s - link to the WPForms.com doc article.
 #: src/Admin/Education/Builder/Calculations.php:118
-#, php-format
 msgid "Easily create advanced calculations with WPForms AI. Head over to the <a href=\"#advanced-tab\">Advanced Tab</a> to get started or read <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation</a> to learn more."
 msgstr ""
 
@@ -9195,7 +9040,6 @@ msgstr ""
 
 #. translators: %1$s - link to the WPForms.com doc article.
 #: src/Admin/Education/Builder/Calculations.php:161
-#, php-format
 msgid "Easily perform calculations based on user input. Head over to the <a href=\"#advanced-tab\">Advanced Tab</a> to get started or read <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation</a> to learn more."
 msgstr ""
 
@@ -9254,25 +9098,21 @@ msgstr ""
 
 #. translators: %1$s - CAPTCHA settings page URL, %2$s - WPForms.com doc URL.
 #: src/Admin/Education/Builder/Captcha.php:160
-#, php-format
 msgid "Please complete the setup in your <a href=\"%1$s\" target=\"_blank\">WPForms Settings</a>, and check out <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">our guide</a> to learn about available CAPTCHA solutions."
 msgstr ""
 
 #. translators: %s - CAPTCHA name.
 #: src/Admin/Education/Builder/Captcha.php:189
-#, php-format
 msgid "%s has been enabled for this form. Don't forget to save your form!"
 msgstr ""
 
 #. translators: %s - CAPTCHA name.
 #: src/Admin/Education/Builder/Captcha.php:194
-#, php-format
 msgid "Are you sure you want to disable %s for this form?"
 msgstr ""
 
 #. translators: %1$s - ActiveLayer marketing site URL.
 #: src/Admin/Education/Builder/Captcha.php:226
-#, php-format
 msgid "Captchas can reduce form completions by up to 40%%. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">ActiveLayer</a> catches bots invisibly, without asking your visitors to prove they're human."
 msgstr ""
 
@@ -9379,7 +9219,6 @@ msgstr ""
 
 #. translators: %1$s - link to the WPForms.com doc article.
 #: src/Admin/Education/Builder/Quiz.php:102
-#, php-format
 msgid "Easily create interactive quizzes. Add true or false, multiple choice, or checkbox questions. Set correct answers and automatically score submissions. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more about the Quiz Addon</a>"
 msgstr ""
 
@@ -9609,7 +9448,6 @@ msgstr ""
 
 #. translators: %1$s - Payments page URL.
 #: src/Admin/Education/Pointers/Payment.php:130
-#, php-format
 msgid "Now available for you: create forms that accept credit cards, Apple Pay, and Google Pay payments. Visit our new <a href=\"%1$s\" id=\"wpforms-education-pointers-payments\">Payments area</a> to get started."
 msgstr ""
 
@@ -9638,7 +9476,6 @@ msgstr ""
 
 #. translators: %1$s - opening link tag, %2$s - closing link tag.
 #: src/Admin/Education/Promo/SugarCalendar/FieldsPanel.php:67
-#, php-format
 msgid "Your form collects the sign-ups, %1$sSugar Calendar Events%2$s handles the event around it: public calendar, RSVPs, tickets, and reminders."
 msgstr ""
 
@@ -9648,13 +9485,11 @@ msgstr ""
 
 #. translators: %1$s - opening link tag, %2$s - closing link tag.
 #: src/Admin/Education/Promo/SugarCalendar/TemplatesGrid.php:84
-#, php-format
 msgid "A registration form is a great start. %1$sSugar Calendar Events%2$s runs the event itself. Publish it on a calendar people can find, take RSVPs or sell tickets, and remind everyone who signed up."
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/StringsTrait.php:32
-#, php-format
 msgid "The %s is installed but not activated. Would you like to activate it?"
 msgstr ""
 
@@ -9673,7 +9508,6 @@ msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/StringsTrait.php:42
-#, php-format
 msgid "The %s is not installed. Would you like to install and activate it?"
 msgstr ""
 
@@ -9695,19 +9529,16 @@ msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/StringsTrait.php:66
-#, php-format
 msgid "The %s is not installed. Please install and activate it to use this feature."
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/StringsTrait.php:76
-#, php-format
 msgid "The %s is not installed. Please contact the site administrator."
 msgstr ""
 
 #. translators: %s - addon name.
 #: src/Admin/Education/StringsTrait.php:88
-#, php-format
 msgid "The %s is not activated. Please contact the site administrator."
 msgstr ""
 
@@ -9733,31 +9564,26 @@ msgstr ""
 
 #. translators: %s - "Activate your license" link HTML.
 #: src/Admin/Education/StringsTrait.php:137
-#, php-format
 msgid "Already purchased? %s to unlock this feature."
 msgstr ""
 
 #. translators: %s - level name, either Pro or Elite.
 #: src/Admin/Education/StringsTrait.php:183
-#, php-format
 msgid "is a %s Feature"
 msgstr ""
 
 #. translators: %s - level name, either Pro or Elite.
 #: src/Admin/Education/StringsTrait.php:189
-#, php-format
 msgid "are a %s Feature"
 msgstr ""
 
 #. translators: %1$s - addon name, %2$s - level name, either Pro or Elite.
 #: src/Admin/Education/StringsTrait.php:195
-#, php-format
 msgid "We're sorry, the %1$s is not available on your plan. Please upgrade to the %2$s plan to unlock all these awesome features."
 msgstr ""
 
 #. translators: %1$s - addon name, %2$s - level name, either Pro or Elite.
 #: src/Admin/Education/StringsTrait.php:202
-#, php-format
 msgid "We're sorry, %1$s are not available on your plan. Please upgrade to the %2$s plan to unlock all these awesome features."
 msgstr ""
 
@@ -9767,7 +9593,6 @@ msgstr ""
 
 #. translators: %s - level name, either Pro or Elite.
 #: src/Admin/Education/StringsTrait.php:214
-#, php-format
 msgid "Upgrade to %s"
 msgstr ""
 
@@ -9854,7 +9679,6 @@ msgstr ""
 
 #. translators: %1$d - restored forms count.
 #: src/Admin/Forms/BulkActions.php:425
-#, php-format
 msgid "%1$d form was successfully restored."
 msgid_plural "%1$d forms were successfully restored."
 msgstr[0] ""
@@ -9862,7 +9686,6 @@ msgstr[1] ""
 
 #. translators: %1$d - deleted forms count.
 #: src/Admin/Forms/BulkActions.php:430
-#, php-format
 msgid "%1$d form was successfully permanently deleted."
 msgid_plural "%1$d forms were successfully permanently deleted."
 msgstr[0] ""
@@ -9870,7 +9693,6 @@ msgstr[1] ""
 
 #. translators: %1$d - duplicated forms count.
 #: src/Admin/Forms/BulkActions.php:435
-#, php-format
 msgid "%1$d form was successfully duplicated."
 msgid_plural "%1$d forms were successfully duplicated."
 msgstr[0] ""
@@ -9878,7 +9700,6 @@ msgstr[1] ""
 
 #. translators: %1$d - trashed forms count.
 #: src/Admin/Forms/BulkActions.php:440
-#, php-format
 msgid "%1$d form was successfully moved to Trash."
 msgid_plural "%1$d forms were successfully moved to Trash."
 msgstr[0] ""
@@ -9886,7 +9707,6 @@ msgstr[1] ""
 
 #. translators: %1$d - restored templates count.
 #: src/Admin/Forms/BulkActions.php:467
-#, php-format
 msgid "%1$d template was successfully restored."
 msgid_plural "%1$d templates were successfully restored."
 msgstr[0] ""
@@ -9894,7 +9714,6 @@ msgstr[1] ""
 
 #. translators: %1$d - deleted templates count.
 #: src/Admin/Forms/BulkActions.php:472
-#, php-format
 msgid "%1$d template was successfully permanently deleted."
 msgid_plural "%1$d templates were successfully permanently deleted."
 msgstr[0] ""
@@ -9902,7 +9721,6 @@ msgstr[1] ""
 
 #. translators: %1$d - duplicated templates count.
 #: src/Admin/Forms/BulkActions.php:477
-#, php-format
 msgid "%1$d template was successfully duplicated."
 msgid_plural "%1$d templates were successfully duplicated."
 msgstr[0] ""
@@ -9910,7 +9728,6 @@ msgstr[1] ""
 
 #. translators: %1$d - trashed templates count.
 #: src/Admin/Forms/BulkActions.php:482
-#, php-format
 msgid "%1$d template was successfully moved to Trash."
 msgid_plural "%1$d templates were successfully moved to Trash."
 msgstr[0] ""
@@ -9925,13 +9742,11 @@ msgstr ""
 
 #. translators: %1$s - Post created date.
 #: src/Admin/Forms/ListTable.php:165
-#, php-format
 msgid "Created<br/>%1$s"
 msgstr ""
 
 #. translators: %1$s - Post modified date.
 #: src/Admin/Forms/ListTable.php:173
-#, php-format
 msgid "Last Modified<br/>%1$s"
 msgstr ""
 
@@ -10002,7 +9817,6 @@ msgstr ""
 
 #. translators: %1$d - number of forms found, %2$s - search term.
 #: src/Admin/Forms/Search.php:232
-#, php-format
 msgid "Found <strong>%1$d form</strong> containing <em>\"%2$s\"</em>"
 msgid_plural "Found <strong>%1$d forms</strong> containing <em>\"%2$s\"</em>"
 msgstr[0] ""
@@ -10051,7 +9865,6 @@ msgstr ""
 
 #. translators: %d - number of forms selected for Bulk Edit.
 #: src/Admin/Forms/Tags.php:266
-#, php-format
 msgid "<strong>%d forms</strong> selected for Bulk Edit."
 msgstr ""
 
@@ -10074,7 +9887,6 @@ msgstr ""
 
 #. translators: %d - number of forms selected for Bulk Edit.
 #: src/Admin/Forms/Tags.php:277
-#, php-format
 msgid "You have <strong>%d tags</strong> selected for deletion."
 msgstr ""
 
@@ -10088,7 +9900,6 @@ msgstr ""
 
 #. translators: %d - number of deleted tags.
 #: src/Admin/Forms/Tags.php:286
-#, php-format
 msgid "%d tags were successfully deleted."
 msgstr ""
 
@@ -10131,13 +9942,11 @@ msgstr ""
 
 #. translators: %s - delay in formatted time.
 #: src/Admin/Forms/UserTemplates.php:188
-#, php-format
 msgid "Form template entries are for testing purposes and will be automatically deleted after %s."
 msgstr ""
 
 #. translators: %s - delay in formatted time.
 #: src/Admin/Forms/UserTemplates.php:242
-#, php-format
 msgid "Form template entries are for testing purposes. This entry will be automatically deleted in %s."
 msgstr ""
 
@@ -10229,7 +10038,6 @@ msgstr ""
 
 #. translators: %1$d - number of forms found in the trash, %2$s - search term.
 #: src/Admin/Forms/Views.php:742
-#, php-format
 msgid "Found <strong>%1$d form</strong> in <em>the trash</em> containing <em>\"%2$s\"</em>"
 msgid_plural "Found <strong>%1$d forms</strong> in <em>the trash</em> containing <em>\"%2$s\"</em>"
 msgstr[0] ""
@@ -10279,7 +10087,6 @@ msgstr ""
 
 #. translators: %s - number of templates.
 #: src/Admin/Notifications/EventDriven.php:549
-#, php-format
 msgid "We’re grateful that you chose WPForms for your website! Now that you’ve installed the plugin, you’re less than 5 minutes away from publishing your first form. To make it easy, we’ve got %s form templates to get you started!"
 msgstr ""
 
@@ -10517,13 +10324,11 @@ msgstr ""
 
 #. translators: %1$s - Lite plugin download URL.
 #: src/Admin/Pages/Page.php:437
-#, php-format
 msgid "Could not install the plugin automatically. Please <a href=\"%1$s\">download</a> it and install it manually."
 msgstr ""
 
 #. translators: %1$s - Plugins page URL.
 #: src/Admin/Pages/Page.php:449
-#, php-format
 msgid "Could not activate the plugin. Please activate it on the <a href=\"%1$s\">Plugins page</a>."
 msgstr ""
 
@@ -10791,7 +10596,6 @@ msgstr ""
 
 #. translators: %1$s - create template doc link; %2$s - Contact us page link.
 #: src/Admin/Pages/Templates.php:131
-#, php-format
 msgid "Choose a template to speed up the process of creating your form. You can also start with a <a href=\"#\" class=\"wpforms-trigger-blank\">blank form</a> or <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">create your own</a>. <br>Have a suggestion for a new template? <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">We’d love to hear it</a>!"
 msgstr ""
 
@@ -10867,7 +10671,6 @@ msgstr ""
 
 #. translators: %1$s - Gateway name, %2$s - Builder URL.
 #: src/Admin/Payments/BuilderReturnNotice.php:111
-#, php-format
 msgid "You have successfully connected to <strong>%1$s</strong>. <a href=\"%2$s\">Return to your form</a> to continue editing."
 msgstr ""
 
@@ -10932,7 +10735,6 @@ msgstr ""
 
 #. translators: %1$s - WPForms.com Upgrade page URL.
 #: src/Admin/Payments/Views/Coupons/Education.php:171
-#, php-format
 msgid "With the Coupons addon, you can offer customers discounts using custom coupon codes. Create your own percentage or fixed rate discount, then add the Coupon field to any payment form. When a customer enters your unique code, they’ll receive the specified discount. You can also add limits to restrict when coupons are available and how often they can be used. The Coupons addon requires a license level of Pro or higher.%s"
 msgstr ""
 
@@ -10948,7 +10750,6 @@ msgstr ""
 
 #. translators: %d - number of deleted payments.
 #: src/Admin/Payments/Views/Overview/BulkActions.php:183
-#, php-format
 msgid "%d payment was successfully permanently deleted."
 msgid_plural "%d payments were successfully permanently deleted."
 msgstr[0] ""
@@ -10956,7 +10757,6 @@ msgstr[1] ""
 
 #. translators: %d - number of restored payments.
 #: src/Admin/Payments/Views/Overview/BulkActions.php:188
-#, php-format
 msgid "%d payment was successfully restored."
 msgid_plural "%d payments were successfully restored."
 msgstr[0] ""
@@ -10964,7 +10764,6 @@ msgstr[1] ""
 
 #. translators: %d - number of trashed payments.
 #: src/Admin/Payments/Views/Overview/BulkActions.php:193
-#, php-format
 msgid "%d payment was successfully moved to the Trash."
 msgid_plural "%d payments were successfully moved to the Trash."
 msgstr[0] ""
@@ -11053,7 +10852,6 @@ msgstr ""
 
 #. translators: WPForms.com docs page URL.
 #: src/Admin/Payments/Views/Overview/Page.php:676
-#, php-format
 msgid "Deleting one or more selected payments may prevent processing of future subscription renewals. Payment filtering may also be affected. <a href=\"%1$s\" rel=\"noopener\" target=\"_blank\">Learn More</a>"
 msgstr ""
 
@@ -11124,13 +10922,11 @@ msgstr ""
 
 #. translators: %s - plural label.
 #: src/Admin/Payments/Views/Overview/Table.php:433
-#, php-format
 msgid "Multiple %s selected"
 msgstr ""
 
 #. translators: %s - plural label.
 #: src/Admin/Payments/Views/Overview/Table.php:437
-#, php-format
 msgid "All %s"
 msgstr ""
 
@@ -11252,7 +11048,6 @@ msgstr ""
 #. translators: %s - payment gateway name.
 #: src/Admin/Payments/Views/Single.php:336
 #: src/Admin/Payments/Views/Single.php:406
-#, php-format
 msgid "View in %s"
 msgstr ""
 
@@ -11290,13 +11085,11 @@ msgstr ""
 
 #. translators: %s - credit card expiry date.
 #: src/Admin/Payments/Views/Single.php:717
-#, php-format
 msgid "Expires %s"
 msgstr ""
 
 #. translators: %s - credit card expiry date.
 #: src/Admin/Payments/Views/Single.php:725
-#, php-format
 msgid "Method: %s"
 msgstr ""
 
@@ -11315,7 +11108,6 @@ msgstr ""
 
 #. translators: %d - field ID.
 #: src/Admin/Payments/Views/Single.php:1028
-#, php-format
 msgid "Field ID #%d"
 msgstr ""
 
@@ -11373,13 +11165,11 @@ msgstr ""
 
 #. translators: %1$s - CAPTCHA provider name, %2$s - link to the CAPTCHA settings screen.
 #: src/Admin/Settings/Captcha/ConfigurationError.php:151
-#, php-format
 msgid "%1$s is rejecting your secret key, so form submissions are being blocked. Please check your %2$s."
 msgstr ""
 
 #. translators: %1$s - CAPTCHA provider name, %2$s - link to the CAPTCHA settings screen.
 #: src/Admin/Settings/Captcha/ConfigurationError.php:164
-#, php-format
 msgid "We couldn't reach %1$s to verify your secret key. Test a form submission to confirm your CAPTCHA is working, or review your %2$s."
 msgstr ""
 
@@ -11417,7 +11207,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com CAPTCHA comparison page URL.
 #: src/Admin/Settings/Captcha/Page.php:164
-#, php-format
 msgid "Not sure which service is right for you? <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Check out our comparison</a> for more details."
 msgstr ""
 
@@ -11514,7 +11303,6 @@ msgstr ""
 
 #. translators: %1$s - WPForms.com Email settings documentation URL.
 #: src/Admin/Settings/Email.php:253
-#, php-format
 msgid "Send emails asynchronously, which can make processing faster but may delay email delivery by a minute or two. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
@@ -11528,7 +11316,6 @@ msgstr ""
 
 #. translators: %1$s - WPForms.com Email settings legacy template documentation URL.
 #: src/Admin/Settings/Email.php:304
-#, php-format
 msgid "Some style settings are not available when using the Legacy template. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Learn More</a>"
 msgstr ""
 
@@ -11577,7 +11364,6 @@ msgstr ""
 
 #. translators: %1$s - Email template preview URL.
 #: src/Admin/Settings/Email.php:575
-#, php-format
 msgid "<a href=\"%1$s\" class=\"wpforms-btn-preview\" target=\"_blank\" rel=\"noopener\">Preview Email Template</a>"
 msgstr ""
 
@@ -11591,7 +11377,6 @@ msgstr ""
 
 #. translators: %s - WPConsent learn-more URL.
 #: src/Admin/Settings/Gdpr/WPConsentCallout.php:86
-#, php-format
 msgid "Improve GDPR, CCPA, and privacy compliance with cookie banner and consent records. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
@@ -11601,13 +11386,11 @@ msgstr ""
 
 #. translators: %s - WPForms.com form markup setting URL.
 #: src/Admin/Settings/ModernMarkup.php:79
-#, php-format
 msgid "Check this option to use modern markup, which has increased accessibility and allows you to easily customize your forms in the block editor. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Read our form markup documentation</a> to learn more."
 msgstr ""
 
 #. translators: %s - WPForms Stripe addon URL.
 #: src/Admin/Settings/ModernMarkup.php:125
-#, php-format
 msgid "<strong>You cannot use modern markup because you’re using the deprecated Credit Card field.</strong> If you’d like to use modern markup, replace your credit card field with a payment gateway like <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Stripe</a>."
 msgstr ""
 
@@ -11713,7 +11496,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com docs URL.
 #: src/Admin/Tools/Export/Views/Templates/Page.php:165
-#, php-format
 msgid "For more information <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">see our documentation</a>."
 msgstr ""
 
@@ -11724,7 +11506,6 @@ msgstr ""
 #. translators: %s - WPForms contact page URL.
 #: src/Admin/Tools/Import/Views/Forms/Page.php:138
 #: src/Admin/Tools/Views/Importer.php:129
-#, php-format
 msgid "You can't import forms because you don't have unfiltered HTML permissions. Please contact your site administrator or <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">reach out to our support team</a>."
 msgstr ""
 
@@ -11734,7 +11515,6 @@ msgstr ""
 
 #. translators: %s - forms list page URL.
 #: src/Admin/Tools/Import/Views/Forms/Page.php:171
-#, php-format
 msgid "You can go and <a href=\"%s\">check your forms</a>."
 msgstr ""
 
@@ -11832,7 +11612,6 @@ msgstr ""
 
 #. translators: %1$s - field type, %2$s - field name if available.
 #: src/Admin/Tools/Importers/ContactForm7.php:546
-#, php-format
 msgid "%1$s Field %2$s"
 msgstr ""
 
@@ -11850,7 +11629,6 @@ msgstr ""
 
 #. translators: %s - field type.
 #: src/Admin/Tools/Importers/NinjaForms.php:508
-#, php-format
 msgid "%s Field"
 msgstr ""
 
@@ -11861,7 +11639,6 @@ msgstr ""
 
 #. translators: %s - Action Scheduler website URL.
 #: src/Admin/Tools/Views/ActionSchedulerList.php:45
-#, php-format
 msgid "WPForms is using the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Action Scheduler</a> library, which allows it to queue and process bigger tasks in the background without making your site slower for your visitors. Below you can see the list of all tasks and their status. This table can be very useful when debugging certain issues."
 msgstr ""
 
@@ -11871,7 +11648,6 @@ msgstr ""
 
 #. translators: %s - search term.
 #: src/Admin/Tools/Views/ActionSchedulerList.php:71
-#, php-format
 msgid "Search results for <strong>%s</strong>"
 msgstr ""
 
@@ -11897,7 +11673,6 @@ msgstr ""
 
 #. translators: %s - provider name.
 #: src/Admin/Tools/Views/Importer.php:242
-#, php-format
 msgid "Analyzing <span class=\"form-current\">1</span> of <span class=\"form-total\">0</span> forms from %s."
 msgstr ""
 
@@ -11919,7 +11694,6 @@ msgstr ""
 
 #. translators: %s - provider name.
 #: src/Admin/Tools/Views/Importer.php:286
-#, php-format
 msgid "Importing <span class=\"form-current\">1</span> of <span class=\"form-total\">0</span> forms from %s."
 msgstr ""
 
@@ -12059,7 +11833,6 @@ msgstr ""
 
 #. translators: %s - form template name.
 #: src/Admin/Traits/FormTemplates.php:409
-#, php-format
 msgid "%s template"
 msgstr ""
 
@@ -12199,19 +11972,16 @@ msgstr ""
 
 #. translators: %1$s - namespaced class name, %2$s - invalid email.
 #: src/Emails/Mailer.php:544
-#, php-format
 msgid "%1$s Invalid email address %2$s."
 msgstr ""
 
 #. translators: %s - namespaced class name.
 #: src/Emails/Mailer.php:553
-#, php-format
 msgid "%s Empty subject line."
 msgstr ""
 
 #. translators: %s - namespaced class name.
 #: src/Emails/Mailer.php:560
-#, php-format
 msgid "%s Empty message."
 msgstr ""
 
@@ -12221,7 +11991,6 @@ msgstr ""
 
 #. translators: %1$d - field ID.
 #: src/Emails/Notifications.php:1320
-#, php-format
 msgid "Field ID #%1$s"
 msgstr ""
 
@@ -12260,7 +12029,6 @@ msgstr ""
 
 #. translators: %s - site domain.
 #: src/Emails/Summaries.php:359
-#, php-format
 msgid "Your Weekly WPForms Summary for %s"
 msgstr ""
 
@@ -12287,7 +12055,6 @@ msgstr ""
 
 #. translators: %s - number of spam entries ever blocked.
 #: src/Emails/Summaries.php:513
-#, php-format
 msgid "%s Total"
 msgstr ""
 
@@ -12306,49 +12073,41 @@ msgstr ""
 
 #. translators: %s - number of spam entries.
 #: src/Emails/Summaries/Headlines.php:272
-#, php-format
 msgid "%s spam entries"
 msgstr ""
 
 #. translators: %s - form name.
 #: src/Emails/Summaries/Headlines.php:281
-#, php-format
 msgid "%s just had its best week yet."
 msgstr ""
 
 #. translators: %s - number of entries.
 #: src/Emails/Summaries/Headlines.php:283
-#, php-format
 msgid "%s entries and counting!"
 msgstr ""
 
 #. translators: %s - number of entries.
 #: src/Emails/Summaries/Headlines.php:288
-#, php-format
 msgid "This was your biggest week yet, with %s entries!"
 msgstr ""
 
 #. translators: %s - form name.
 #: src/Emails/Summaries/Headlines.php:293
-#, php-format
 msgid "%s is on a roll."
 msgstr ""
 
 #. translators: %s - growth percentage.
 #: src/Emails/Summaries/Headlines.php:295
-#, php-format
 msgid "Entries are up %s%% this week!"
 msgstr ""
 
 #. translators: %s - number of leads.
 #: src/Emails/Summaries/Headlines.php:300
-#, php-format
 msgid "You saved %s leads this week with Form Abandonment!"
 msgstr ""
 
 #. translators: %s - highlighted "N spam entries" phrase.
 #: src/Emails/Summaries/Headlines.php:304
-#, php-format
 msgid "Your spam protection is working hard. It blocked %s this week."
 msgstr ""
 
@@ -12358,31 +12117,26 @@ msgstr ""
 
 #. translators: %s - growth percentage.
 #: src/Emails/Summaries/Headlines.php:310
-#, php-format
 msgid "Views are up %s%% this week!"
 msgstr ""
 
 #. translators: %s - form name.
 #: src/Emails/Summaries/Headlines.php:316
-#, php-format
 msgid "Your %s is converting well."
 msgstr ""
 
 #. translators: %s - conversion rate.
 #: src/Emails/Summaries/Headlines.php:318
-#, php-format
 msgid "%s%% of visitors completed it!"
 msgstr ""
 
 #. translators: %s - number of entries.
 #: src/Emails/Summaries/Milestones.php:352
-#, php-format
 msgid "You just hit %s entries! 🎉"
 msgstr ""
 
 #. translators: %s - form name.
 #: src/Emails/Summaries/Milestones.php:358
-#, php-format
 msgid "%s just hit its conversion goal! 🎉"
 msgstr ""
 
@@ -12422,7 +12176,6 @@ msgstr ""
 
 #. translators: %s - Upgrade to Pro URL.
 #: src/Emails/Summaries/Slot/Blocks/LiteConnectPrompt.php:82
-#, php-format
 msgid "Lite Connect is saving your entries securely in the cloud. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade to Pro</a> to keep them permanently and manage them right inside WordPress."
 msgstr ""
 
@@ -12432,7 +12185,6 @@ msgstr ""
 
 #. translators: %1$s - Enable Lite Connect URL, %2$s - Upgrade to Pro URL.
 #: src/Emails/Summaries/Slot/Blocks/LiteConnectPrompt.php:95
-#, php-format
 msgid "<a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Enable Lite Connect</a> to start storing entries. When you’re ready to manage them inside WordPress, <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade to Pro</a> and we’ll import them in seconds!"
 msgstr ""
 
@@ -12798,7 +12550,6 @@ msgstr ""
 
 #. translators: %d - option number.
 #: src/Forms/Fields/Addons/Ranking/Field.php:758
-#, php-format
 msgid "Option %d"
 msgstr ""
 
@@ -12875,7 +12626,6 @@ msgstr ""
 
 #. translators: %s - subfield name, e.g., state, country.
 #: src/Forms/Fields/Address/Field.php:765
-#, php-format
 msgid "--- Select %s ---"
 msgstr ""
 
@@ -12935,7 +12685,6 @@ msgstr ""
 #. translators: %s - max upload size.
 #: src/Forms/Fields/Camera/Field.php:269
 #: src/Forms/Fields/FileUpload/Field.php:156
-#, php-format
 msgid "Enter the max size of each file, in megabytes, to allow. If left blank, the value defaults to the maximum size the server allows which is %s."
 msgstr ""
 
@@ -13246,7 +12995,6 @@ msgstr ""
 #. translators: %1$s: Choose File to Upload opening tag, %2$s: Choose File to Upload closing tag.
 #: src/Forms/Fields/FileUpload/Field.php:392
 #: templates/fields/file-upload/file-upload-backend.php:23
-#, php-format
 msgid "Drag & Drop File or %1$sChoose File to Upload%2$s"
 msgid_plural "Drag & Drop Files or %1$sChoose Files to Upload%2$s"
 msgstr[0] ""
@@ -13254,14 +13002,12 @@ msgstr[1] ""
 
 #. translators: %1$s: Choose Files to Upload opening tag, %2$s: Choose Files to Upload closing tag.
 #: src/Forms/Fields/FileUpload/Field.php:398
-#, php-format
 msgid "Drag & Drop Files or %1$sChoose Files to Upload%2$s"
 msgstr ""
 
 #. translators: %1$s: Choose File to Upload opening tag, %2$s: Closing tag, %3$s: Capture With Camera opening tag.
 #: src/Forms/Fields/FileUpload/Field.php:404
 #: templates/fields/file-upload/file-upload-backend.php:19
-#, php-format
 msgid "Drag & Drop File, %1$sChoose File to Upload%2$s, or %3$sCapture With Camera%2$s"
 msgid_plural "Drag & Drop Files, %1$sChoose Files to Upload%2$s, or %3$sCapture With Camera%2$s"
 msgstr[0] ""
@@ -13269,13 +13015,11 @@ msgstr[1] ""
 
 #. translators: %1$s: Choose Files to Upload opening tag, %2$s: Closing tag, %3$s: Capture With Camera opening tag.
 #: src/Forms/Fields/FileUpload/Field.php:411
-#, php-format
 msgid "Drag & Drop Files, %1$sChoose Files to Upload%2$s, or %3$sCapture With Camera%2$s"
 msgstr ""
 
 #. translators: % - max number of files as a template string (not a number), replaced by a number later.
 #: src/Forms/Fields/FileUpload/Field.php:417
-#, php-format
 msgid "You can upload up to %s files."
 msgstr ""
 
@@ -13321,7 +13065,6 @@ msgstr ""
 
 #. translators: %1$s - addons list.
 #: src/Forms/Fields/Helpers/RequirementsAlerts.php:59
-#, php-format
 msgid "The following addons require an update to support product quantities: %1$s"
 msgstr ""
 
@@ -13331,7 +13074,6 @@ msgstr ""
 
 #. translators: %1$s - addon name.
 #: src/Forms/Fields/Helpers/RequirementsAlerts.php:143
-#, php-format
 msgid "You're using an older version of the %1$s addon that does not support the Repeater field."
 msgstr ""
 
@@ -13483,7 +13225,6 @@ msgstr ""
 
 #. translators: %1$s - current step in multipage form, %2$d - total number of pages.
 #: src/Forms/Fields/Pagebreak/Field.php:878
-#, php-format
 msgid "Step %1$s of %2$d"
 msgstr ""
 
@@ -13605,7 +13346,6 @@ msgstr ""
 
 #. translators: %s - Single item field price label.
 #: src/Forms/Fields/PaymentSingle/Field.php:287
-#, php-format
 msgid "Price: %s"
 msgstr ""
 
@@ -13639,7 +13379,6 @@ msgstr ""
 
 #. translators: %1$s - the default minimum price.
 #: src/Forms/Fields/PaymentSingle/Field.php:440
-#, php-format
 msgid "Requiring a minimum price of at least %1$s helps protect you against card testing by fraudsters."
 msgstr ""
 
@@ -13649,13 +13388,11 @@ msgstr ""
 
 #. translators: %1$s - Item Price value.
 #: src/Forms/Fields/PaymentSingle/Field.php:506
-#, php-format
 msgid "Price: <span class=\"price\">%1$s</span>"
 msgstr ""
 
 #. translators: %1$s - Minimum Price value.
 #: src/Forms/Fields/PaymentSingle/Field.php:543
-#, php-format
 msgid "Minimum Price: <span class=\"min-price\">%1$s</span>"
 msgstr ""
 
@@ -13677,7 +13414,6 @@ msgstr ""
 
 #. translators: %1$s - Minimum Price value.
 #: src/Forms/Fields/PaymentSingle/Field.php:755
-#, php-format
 msgid "Minimum Price: %1$s"
 msgstr ""
 
@@ -13977,14 +13713,12 @@ msgstr ""
 
 #. translators: %s - link to the Media Library.
 #: src/Forms/Fields/Traits/FileEntriesEditTrait.php:105
-#, php-format
 msgid "Please use the default <a href=\"%s\">WordPress Media</a> interface to remove this file."
 msgstr ""
 
 #. translators: %d - page number.
 #: src/Forms/Fields/Traits/IndicatorRendererTrait.php:42
 #: src/Forms/Fields/Traits/IndicatorRendererTrait.php:94
-#, php-format
 msgid "Go to page %d"
 msgstr ""
 
@@ -14006,7 +13740,6 @@ msgstr ""
 
 #. translators: %1$s - Field name.
 #: src/Forms/Fields/Traits/ProField.php:263
-#, php-format
 msgid "%1$s is a Pro Feature"
 msgstr ""
 
@@ -14021,31 +13754,26 @@ msgstr ""
 
 #. translators: %1$s - Field name.
 #: src/Forms/Fields/Traits/ProField.php:272
-#, php-format
 msgid "Upgrade to gain access to the %1$s field and dozens of other powerful features to help you build smarter forms and grow your business."
 msgstr ""
 
 #. translators: %1$s - Addon name.
 #: src/Forms/Fields/Traits/ProField.php:276
-#, php-format
 msgid "You have access to the %1$s, but it's not currently installed."
 msgstr ""
 
 #. translators: %1$s - Addon name.
 #: src/Forms/Fields/Traits/ProField.php:280
-#, php-format
 msgid "You have access to the %1$s, but it's not currently activated."
 msgstr ""
 
 #. translators: %1$s - Addon name.
 #: src/Forms/Fields/Traits/ProField.php:284
-#, php-format
 msgid "The %1$s is not compatible with this version of WPForms and requires an update."
 msgstr ""
 
 #. translators: %1$s - Addon name.
 #: src/Forms/Fields/Traits/ProField.php:288
-#, php-format
 msgid "The %1$s requires configuration before this field can be used."
 msgstr ""
 
@@ -14099,7 +13827,6 @@ msgstr ""
 
 #. translators: %s - WPForms Support URL.
 #: src/Forms/IconChoices.php:507
-#, php-format
 msgid "There was an error installing the icon library. Please try again later or <a href=\"%s\" target=\"_blank\" rel=\"noreferrer noopener\">contact support</a> if the issue persists."
 msgstr ""
 
@@ -14162,7 +13889,6 @@ msgstr ""
 
 #. translators: %s - form name.
 #: src/Forms/Preview.php:178
-#, php-format
 msgid "%s Template Preview"
 msgstr ""
 
@@ -14173,7 +13899,6 @@ msgstr ""
 #. translators: %s - form name.
 #: src/Forms/Preview.php:184
 #: src/Forms/Preview.php:390
-#, php-format
 msgid "%s Preview"
 msgstr ""
 
@@ -14195,7 +13920,6 @@ msgstr ""
 
 #. translators: %s - WPForms doc link.
 #: src/Forms/Preview.php:298
-#, php-format
 msgid "For form testing tips, check out our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">complete guide!</a>"
 msgstr ""
 
@@ -14205,7 +13929,6 @@ msgstr ""
 
 #. translators: %s - time period, e.g. 24 hours.
 #: src/Forms/Preview.php:347
-#, php-format
 msgid "Entries are automatically deleted after %s."
 msgstr ""
 
@@ -14223,7 +13946,6 @@ msgstr ""
 
 #. translators: placeholders are links.
 #: src/Forms/Token.php:412
-#, php-format
 msgid "Please check out our %1$stroubleshooting guide%2$s for details on resolving this issue."
 msgstr ""
 
@@ -14237,7 +13959,6 @@ msgstr ""
 
 #. translators: %s - URL to a non-amp version of a page with the form.
 #: src/Frontend/Amp.php:95
-#, php-format
 msgid "<a href=\"%s\">Go to the full page</a> to view and submit the form."
 msgstr ""
 
@@ -14247,7 +13968,6 @@ msgstr ""
 
 #. translators: %1$s - CAPTCHA provider name, %2$s - URL to reCAPTCHA documentation.
 #: src/Frontend/Amp.php:365
-#, php-format
 msgid "%1$s is not supported by AMP and is currently disabled.<br><a href=\"%2$s\" rel=\"noopener noreferrer\" target=\"_blank\">Upgrade to reCAPTCHA v3</a> for full AMP support. <br><em>Please note: this message is only displayed to site administrators.</em>"
 msgstr ""
 
@@ -14261,13 +13981,11 @@ msgstr ""
 
 #. translators: %1$s - character count, %2$s - character limit.
 #: src/Frontend/Frontend.php:1870
-#, php-format
 msgid "%1$s of %2$s max characters."
 msgstr ""
 
 #. translators: %1$s - word count, %2$s - word limit.
 #: src/Frontend/Frontend.php:1878
-#, php-format
 msgid "%1$s of %2$s max words."
 msgstr ""
 
@@ -14285,7 +14003,6 @@ msgstr ""
 
 #. translators: %s - URL to the troubleshooting guide.
 #: src/Frontend/Frontend.php:2183
-#, php-format
 msgid "Heads up! WPForms has detected an issue with JavaScript on this page. JavaScript is required for this form to work properly, so this form may not work as expected. See our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">troubleshooting guide</a> to learn more or contact support."
 msgstr ""
 
@@ -14463,13 +14180,11 @@ msgstr ""
 #. translators: %s - field type.
 #: src/Integrations/Abilities/FormMutator.php:222
 #: src/Integrations/Abilities/FormMutator.php:389
-#, php-format
 msgid "Field type \"%s\" is not available on this site."
 msgstr ""
 
 #. translators: %1$s field type, %2$s comma-separated missing prop keys.
 #: src/Integrations/Abilities/FormMutator.php:243
-#, php-format
 msgid "Required properties for field type \"%1$s\" are missing: %2$s."
 msgstr ""
 
@@ -14593,7 +14308,6 @@ msgstr ""
 #: src/Integrations/AI/Admin/Builder/FormEditor.php:285
 #: src/Integrations/AI/Admin/Builder/Forms.php:308
 #: src/Integrations/AI/Helpers.php:166
-#, php-format
 msgid "You can make up to 50 AI requests per day. If you believe this is an error, <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">please contact WPForms support</a>."
 msgstr ""
 
@@ -14884,7 +14598,6 @@ msgstr ""
 
 #. translators: %1$s - Quiz addon doc link.
 #: src/Integrations/AI/Admin/Builder/Forms.php:216
-#, php-format
 msgid "It looks like you're trying to create a quiz. Would you like to activate the <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Quiz Addon</a> and easily create graded, personality, and weighted quizzes?"
 msgstr ""
 
@@ -14975,7 +14688,6 @@ msgstr ""
 
 #. translators: %1$s - Reload link class.
 #: src/Integrations/AI/Admin/Builder/Forms.php:296
-#, php-format
 msgid "<a href=\"#\" class=\"%1$s\">Reload this window</a> and try again."
 msgstr ""
 
@@ -15076,7 +14788,6 @@ msgstr ""
 
 #. translators: %1$d - number of days within which identifiers are removed from stored prompts and AI responses, %2$d - number of days after which a stored record no longer carries the domain used for the request.
 #: src/Integrations/AI/Admin/PrivacyPolicy.php:89
-#, php-format
 msgid "Prompts and AI responses are stored on infrastructure hosted by Cloudflare and PlanetScale, and error diagnostics are sent to Sentry. All processing takes place in the United States. Within %1$d days of a request, email addresses, phone numbers, web addresses, IP addresses and payment or bank account numbers are removed from the stored prompt and response, and after %2$d days the stored record no longer carries the domain used for the request."
 msgstr ""
 
@@ -15110,7 +14821,6 @@ msgstr ""
 
 #. translators: %1$s - error code, %2$s - error message.
 #: src/Integrations/AI/API/Http/Response.php:110
-#, php-format
 msgid "API response: %1$s %2$s"
 msgstr ""
 
@@ -15168,7 +14878,6 @@ msgstr ""
 
 #. translators: %s - WPForms Geolocation settings page link.
 #: src/Integrations/AI/Helpers.php:207
-#, php-format
 msgid "The Map field needs a Places provider. Please configure Google Places or Mapbox in <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">WPForms → Settings → Geolocation</a> first."
 msgstr ""
 
@@ -15218,7 +14927,6 @@ msgstr ""
 
 #. translators: %1$s - link to the migration page, %2$s - closing HTML tag.
 #: src/Integrations/ConstantContact/V3/Migration/Migration.php:154
-#, php-format
 msgid "You need to migrate your existing forms to the new version of the Constant Contact addon. Please %1$s click here%2$s to start the migration."
 msgstr ""
 
@@ -15261,7 +14969,6 @@ msgstr ""
 
 #. translators: %s - forms overview page URL.
 #: src/Integrations/DefaultContent/DefaultContent.php:58
-#, php-format
 msgctxt "Theme starter content"
 msgid "Create your <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">contact form</a> with WPForms in minutes."
 msgstr ""
@@ -15339,7 +15046,6 @@ msgstr ""
 
 #. translators: %s - WPForms documentation link.
 #: src/Integrations/Elementor/Widget.php:179
-#, php-format
 msgid "<b>Heads up!</b> Don't forget to test your form. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Check out our complete guide!</a>"
 msgstr ""
 
@@ -15394,7 +15100,6 @@ msgstr ""
 
 #. translators: %s - WPForms documentation link.
 #: src/Integrations/Elementor/Widget.php:326
-#, php-format
 msgid "<b>Want to customize your form styles without editing CSS?</b> <p>%1$s</p> <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Learn more</a>"
 msgstr ""
 
@@ -15532,13 +15237,11 @@ msgstr ""
 
 #. Translators: %1$s: Opening strong tag, %2$s: Closing strong tag.
 #: src/Integrations/Gutenberg/FormSelector.php:535
-#, php-format
 msgid "You can use %1$sWPForms%2$s to build contact forms, surveys, payment forms, and more with just a few clicks."
 msgstr ""
 
 #. Translators: %1$s: Opening anchor tag, %2$s: Closing anchor tag.
 #: src/Integrations/Gutenberg/FormSelector.php:537
-#, php-format
 msgid "Need some help? Check out our %1$scomprehensive guide.%2$s"
 msgstr ""
 
@@ -15556,7 +15259,6 @@ msgstr ""
 
 #. translators: %s - WPForms documentation link.
 #: src/Integrations/LiteConnect/Integration.php:413
-#, php-format
 msgid "Your form entries can’t be backed up because WPForms can’t connect to the backup server. If you’d like to back up your entries, find out how to <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">fix entry backup issues</a>."
 msgstr ""
 
@@ -15650,7 +15352,6 @@ msgstr ""
 
 #. translators: %s - the WPForms Payments settings page URL.
 #: src/Integrations/PayPalCommerce/Admin/Builder/Traits/Content.php:95
-#, php-format
 msgid "Heads up! PayPal Commerce payments can't be processed because there's a problem with the connection to PayPal. Please visit the <a href='%2$s'>WPForms Settings</a> page to resolve the issue before trying again."
 msgstr ""
 
@@ -15920,25 +15621,21 @@ msgstr ""
 
 #. translators: %1$s - Selected currency on the WPForms Settings admin page.
 #: src/Integrations/PayPalCommerce/Admin/Notices.php:95
-#, php-format
 msgid "<strong>Payments Cannot Be Processed</strong><br>The currency you have set (%1$s) is not supported by PayPal Commerce. Please choose a different currency, or consider switching your payment gateway to Stripe."
 msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/PayPalCommerce/Admin/Notices.php:162
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br>3%% fee per-transaction + PayPal Commerce fees. <a href=\"%s\">Activate your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/PayPalCommerce/Admin/Notices.php:178
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + PayPal Commerce fees. <a href=\"%s\">Renew your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - WPForms.com Upgrade page URL.
 #: src/Integrations/PayPalCommerce/Admin/Notices.php:209
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + PayPal Commerce fees. <a href=\"%s\" target=\"_blank\">Upgrade to Pro</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
@@ -15970,7 +15667,6 @@ msgstr ""
 
 #. translators: %s - PayPal subscription status.
 #: src/Integrations/PayPalCommerce/Admin/Payments/SingleActionsHandler.php:174
-#, php-format
 msgid "Subscription cannot be cancelled because its PayPal status is %s. Only Active or Suspended subscriptions can be cancelled."
 msgstr ""
 
@@ -15990,7 +15686,6 @@ msgstr ""
 
 #. translators: %s - PayPal API error message.
 #: src/Integrations/PayPalCommerce/Admin/Payments/SingleActionsHandler.php:208
-#, php-format
 msgid "Unexpected error while cancelling subscription: %s"
 msgstr ""
 
@@ -16000,7 +15695,6 @@ msgstr ""
 
 #. translators: %s - PayPal API error message.
 #: src/Integrations/PayPalCommerce/Admin/Payments/SingleActionsHandler.php:255
-#, php-format
 msgid "Unexpected error while cancelling via processor: %s"
 msgstr ""
 
@@ -16044,19 +15738,16 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for PayPal Commerce payment with more details.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:191
-#, php-format
 msgid "Prevent PayPal Commerce from processing live transactions. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
 #. translators: %s - WPForms.com PayPal Commerce documentation article URL.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:226
-#, php-format
 msgid "Easily collect PayPal Checkout and credit card payments with PayPal Commerce. To get started, see our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">PayPal Commerce documentation</a>."
 msgstr ""
 
 #. translators: %s - PayPal Commerce Connected Merchant Vaulting Status.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:406
-#, php-format
 msgid "Vaulting Status: <strong>%s</strong>"
 msgstr ""
 
@@ -16074,7 +15765,6 @@ msgstr ""
 
 #. translators: %s - PayPal Commerce Mode.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:461
-#, php-format
 msgid "Connected to PayPal in <strong>%s</strong> mode."
 msgstr ""
 
@@ -16112,13 +15802,11 @@ msgstr ""
 
 #. translators: %s - WPForms Payments page URL.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:583
-#, php-format
 msgid "There’s a temporary problem with the connection to PayPal Commerce. Please click <a href=\"%s\" rel=\"noopener noreferrer\">here</a> to try again."
 msgstr ""
 
 #. translators: %s - WPForms.com PayPal Commerce documentation article URL.
 #: src/Integrations/PayPalCommerce/Admin/Settings.php:606
-#, php-format
 msgid "Securely connect to PayPal Commerce with just a few clicks to begin accepting payments! <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
@@ -16174,7 +15862,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for PayPal Commerce webhooks documentation.
 #: src/Integrations/PayPalCommerce/Admin/WebhookSettings.php:43
-#, php-format
 msgid "PayPal uses webhooks to notify WPForms when events occur in your PayPal account. Please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation on PayPal webhooks</a> for full details."
 msgstr ""
 
@@ -16198,7 +15885,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for PayPal Commerce webhooks documentation.
 #: src/Integrations/PayPalCommerce/Admin/WebhookSettings.php:79
-#, php-format
 msgid "Choose how PayPal delivers events to WPForms. If REST API support is disabled for WordPress, use the PHP listener fallback. <a href=\"%s\" rel=\"nofollow noopener\" target=\"_blank\">Learn more</a>."
 msgstr ""
 
@@ -16210,7 +15896,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com PayPal Commerce webhooks documentation url.
 #: src/Integrations/PayPalCommerce/Admin/WebhookSettings.php:102
-#, php-format
 msgid "This is the endpoint WPForms expects PayPal to deliver events to. See <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our PayPal webhooks guide</a> for details."
 msgstr ""
 
@@ -16475,7 +16160,6 @@ msgstr ""
 
 #. translators: %1$s - PayPal Developer documentation URL for domain registration.
 #: src/Integrations/PayPalCommerce/PaymentMethods/ApplePay/DomainManager.php:96
-#, php-format
 msgid "If you haven't registered your domain yet, Apple Pay may not work properly. If this notice persists, please <a href=\"%1$s\" rel=\"nofollow noopener\" target=\"_blank\">verify your domain registration.</a>"
 msgstr ""
 
@@ -16497,7 +16181,6 @@ msgstr ""
 #: src/Integrations/PayPalCommerce/Process/ProcessSingleAjax.php:171
 #: src/Integrations/Square/Process.php:712
 #: src/Integrations/Stripe/Protections/LowAmountSurgeDetector.php:439
-#, php-format
 msgid "Form #%d"
 msgstr ""
 
@@ -16551,7 +16234,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for PayPal Commerce webhooks documentation.
 #: src/Integrations/PayPalCommerce/WebhooksHealthCheck.php:216
-#, php-format
 msgid "Looks like you have a problem with your webhooks configuration. Please check and confirm that you've configured the WPForms webhooks in your PayPal account. This notice will disappear automatically when a new PayPal request comes in. See our <a href=\"%1$s\" rel=\"nofollow noopener\" target=\"_blank\">documentation</a> for more information."
 msgstr ""
 
@@ -16579,25 +16261,21 @@ msgstr ""
 
 #. translators: %1$s - WordPress site domain.
 #: src/Integrations/SMTP/Notifications.php:182
-#, php-format
 msgid "The current 'From Email' address does not match your website domain name (%1$s). This can cause your notification emails to be blocked or marked as spam."
 msgstr ""
 
 #. translators: %1$s - WP Mail SMTP install page URL.
 #: src/Integrations/SMTP/Notifications.php:192
-#, php-format
 msgid "We strongly recommend that you install the free <a href=\"%1$s\" target=\"_blank\">WP Mail SMTP</a> plugin! The Setup Wizard makes it easy to fix your emails."
 msgstr ""
 
 #. translators: %1$s - WordPress site domain.
 #: src/Integrations/SMTP/Notifications.php:208
-#, php-format
 msgid "Alternately, try using a From Address that matches your website domain (admin@%1$s)."
 msgstr ""
 
 #. translators: %1$s - fixing email delivery issues doc URL.
 #: src/Integrations/SMTP/Notifications.php:214
-#, php-format
 msgid "Please check out our <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">doc on fixing email delivery issues</a> for more details."
 msgstr ""
 
@@ -16760,7 +16438,6 @@ msgstr ""
 
 #. translators: %s - the WPForms Payments settings page URL.
 #: src/Integrations/Square/Admin/Builder/Traits/Content.php:438
-#, php-format
 msgid "First, please resolve the connection issue on the <a href='%2$s'>Payment Settings</a> page."
 msgstr ""
 
@@ -16770,7 +16447,6 @@ msgstr ""
 
 #. translators: %s - the WPForms Payments settings page URL.
 #: src/Integrations/Square/Admin/Builder/Traits/Content.php:459
-#, php-format
 msgid "Tokens must be refreshed. Please refresh them on the <a href='%2$s'>WPForms Settings</a> page."
 msgstr ""
 
@@ -16843,7 +16519,6 @@ msgstr ""
 
 #. translators: %1$s - Selected currency on the WPForms Settings admin page; %2$s - Currency of a business location.
 #: src/Integrations/Square/Admin/Notices.php:123
-#, php-format
 msgid "The currency you have set (%1$s) does not match the currency of your Square business location (%2$s). Please choose a different business location or update your WPForms currency to %2$s."
 msgstr ""
 
@@ -16854,19 +16529,16 @@ msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/Square/Admin/Notices.php:216
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br>3%% fee per-transaction + Square fees. <a href=\"%s\">Activate your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/Square/Admin/Notices.php:232
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + Square fees. <a href=\"%s\">Renew your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - WPForms.com Upgrade page URL.
 #: src/Integrations/Square/Admin/Notices.php:263
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + Square fees. <a href=\"%s\" target=\"_blank\">Upgrade to Pro</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
@@ -16900,7 +16572,6 @@ msgstr ""
 
 #. translators: %s - the Square developer dashboard URL.
 #: src/Integrations/Square/Admin/Settings.php:127
-#, php-format
 msgid "<p>To receive events, create a webhook route by providing your Personal Access Token, which you can find after registering an app on the <a href=\"%1$s\" target=\"_blank\">Square Developer Dashboard</a>. You can also set it up manually in the Advanced section.</p><p>See <a href=\"%2$s\" target=\"_blank\">our documentation</a> for details.</p>"
 msgstr ""
 
@@ -16918,31 +16589,26 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Square payment with more details.
 #: src/Integrations/Square/Admin/Settings.php:212
-#, php-format
 msgid "Prevent Square from processing live transactions. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
 #. translators: %s - WPForms.com Square documentation article URL.
 #: src/Integrations/Square/Admin/Settings.php:255
-#, php-format
 msgid "Easily collect credit card payments with Square. For getting started and more information, see our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Square documentation</a>."
 msgstr ""
 
 #. translators: %s - Square mode.
 #: src/Integrations/Square/Admin/Settings.php:372
-#, php-format
 msgid "Connected to Square in <strong>%s</strong> mode."
 msgstr ""
 
 #. translators: %1$s - Square connected account name; %2$s - Square mode.
 #: src/Integrations/Square/Admin/Settings.php:383
-#, php-format
 msgid "Connected to Square as <em>%1$s</em> in <strong>%2$s</strong> mode."
 msgstr ""
 
 #. translators: %s - WPForms.com Square documentation article URL.
 #: src/Integrations/Square/Admin/Settings.php:409
-#, php-format
 msgid "Securely connect to Square with just a few clicks to begin accepting payments! <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
@@ -16984,19 +16650,16 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Square webhooks documentation.
 #: src/Integrations/Square/Admin/WebhookSettings.php:61
-#, php-format
 msgid "Square uses webhooks to notify WPForms when an event has occurred in your Square account. Please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation on Square webhooks</a> for full details."
 msgstr ""
 
 #. translators: %s - WPForms.com URL for Square webhooks documentation.
 #: src/Integrations/Square/Admin/WebhookSettings.php:109
-#, php-format
 msgid "Choose the method of communication between Square and WPForms. If REST API support is disabled for WordPress, use PHP listener. <a href=\"%s\" rel=\"nofollow noopener\" target=\"_blank\">Learn more</a>."
 msgstr ""
 
 #. translators: %s - Square Dashboard Webhooks Settings URL.
 #: src/Integrations/Square/Admin/WebhookSettings.php:139
-#, php-format
 msgid "Ensure an endpoint with the above URL is present in the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Square webhook settings</a>."
 msgstr ""
 
@@ -17027,7 +16690,6 @@ msgstr ""
 
 #. translators: %1$s - Live Mode Endpoint ID or Test Mode Endpoint ID. %2$s - Square Dashboard Webhooks Settings URL.
 #: src/Integrations/Square/Admin/WebhookSettings.php:245
-#, php-format
 msgid "Retrieve your %1$s from your <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Square webhook settings</a>. Select the endpoint, then click Copy button."
 msgstr ""
 
@@ -17041,7 +16703,6 @@ msgstr ""
 
 #. translators: %1$s - Live Mode Signing Secret or Test Mode Signing Secret. %2$s - Square Dashboard Webhooks Settings URL.
 #: src/Integrations/Square/Admin/WebhookSettings.php:277
-#, php-format
 msgid "Retrieve your %1$s from your <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Square webhook settings</a>. Select the endpoint, then click Reveal."
 msgstr ""
 
@@ -17059,7 +16720,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Square webhooks documentation.
 #: src/Integrations/Square/Admin/WebhookSettings.php:422
-#, php-format
 msgid "To start using webhooks, please register a webhook route inside our application. You can do this by pressing the button above or setting the credentials manually. Please see <a href=\"%1$s\" target=\"_blank\">our documentation on Square webhooks</a> for full details."
 msgstr ""
 
@@ -17161,7 +16821,6 @@ msgstr ""
 
 #. translators: %s - transaction id.
 #: src/Integrations/Square/Api/Webhooks/RefundUpdated.php:55
-#, php-format
 msgid "Payment for transaction %s was not updated."
 msgstr ""
 
@@ -17298,7 +16957,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Square webhooks documentation.
 #: src/Integrations/Square/WebhooksHealthCheck.php:204
-#, php-format
 msgid "Looks like you have a problem with your webhooks configuration. Please check and confirm that you've configured the WPForms webhooks in your Square account. This notice will disappear automatically when a new Square request comes in. See our <a href=\"%1$s\" rel=\"nofollow noopener\" target=\"_blank\">documentation</a> for more information."
 msgstr ""
 
@@ -17441,19 +17099,16 @@ msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/Stripe/Admin/Notices.php:75
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br>3%% fee per-transaction + Stripe fees. <a href=\"%s\">Activate your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - general admin settings page URL.
 #: src/Integrations/Stripe/Admin/Notices.php:91
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + Stripe fees. <a href=\"%s\">Renew your license</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
 #. translators: %s - WPForms.com Upgrade page URL.
 #: src/Integrations/Stripe/Admin/Notices.php:122
-#, php-format
 msgid "<strong>Pay-as-you-go Pricing</strong><br> 3%% fee per-transaction + Stripe fees. <a href=\"%s\" target=\"_blank\">Upgrade to Pro</a> to remove additional fees and unlock powerful features."
 msgstr ""
 
@@ -17483,7 +17138,6 @@ msgstr ""
 
 #. translators: %s - Payments settings page URL.
 #: src/Integrations/Stripe/Admin/Payments/SingleActionsHandler.php:201
-#, php-format
 msgid "The used Stripe payment collection type doesn't support this action.<br><br> Please <a href='%s'>update your payment collection type</a> to continue processing payments successfully."
 msgstr ""
 
@@ -17493,7 +17147,6 @@ msgstr ""
 
 #. translators: %1$s - Selected currency on the WPForms Settings admin page.
 #: src/Integrations/Stripe/Admin/Settings.php:114
-#, php-format
 msgid "<strong>Payments Cannot Be Processed</strong><br>The currency you have set (%1$s) is not supported by Stripe. Please choose a different currency."
 msgstr ""
 
@@ -17503,7 +17156,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Stripe payments with more details.
 #: src/Integrations/Stripe/Admin/Settings.php:207
-#, php-format
 msgid "Prevent Stripe from processing live transactions. Please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation on Stripe test payments</a> for full details."
 msgstr ""
 
@@ -17521,55 +17173,46 @@ msgstr ""
 
 #. translators: %s - WPForms.com Stripe documentation article URL.
 #: src/Integrations/Stripe/Admin/Settings.php:277
-#, php-format
 msgid "Easily collect credit card payments with Stripe. For getting started and more information, see our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Stripe documentation</a>."
 msgstr ""
 
 #. translators: %1$s - Stripe account name connected, %2$s - Stripe mode connected (live or test).
 #: src/Integrations/Stripe/Admin/Settings.php:344
-#, php-format
 msgid "Connected to Stripe as <em>%1$s</em> in <strong>%2$s Mode</strong>."
 msgstr ""
 
 #. translators: %s - Stripe connect URL.
 #: src/Integrations/Stripe/Admin/Settings.php:357
-#, php-format
 msgid "<a href=\"%s\" class=\"wpforms-btn wpforms-btn-md wpforms-btn-light-grey wpforms-stripe-switch-accounts-btn\">Switch Accounts</a>"
 msgstr ""
 
 #. translators: %s - Stripe disconnect URL.
 #: src/Integrations/Stripe/Admin/Settings.php:370
-#, php-format
 msgid "<a href=\"%s\" class=\"wpforms-btn wpforms-btn-md wpforms-btn-light-grey\">Disconnect</a>"
 msgstr ""
 
 #. translators: %s - WPForms.com Stripe documentation article URL.
 #: src/Integrations/Stripe/Admin/Settings.php:398
-#, php-format
 msgid "Securely connect to Stripe with just a few clicks to begin accepting payments! <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-learn-more\">Learn More</a>"
 msgstr ""
 
 #. translators: %s - WPForms.com Stripe documentation article URL.
 #: src/Integrations/Stripe/Admin/Settings.php:430
-#, php-format
 msgid "Please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation on Stripe Credit Card field modes for full details</a>."
 msgstr ""
 
 #. translators: %s - WPForms.com URL for Stripe webhooks documentation.
 #: src/Integrations/Stripe/Admin/WebhookSettings.php:53
-#, php-format
 msgid "Stripe uses webhooks to notify WPForms when an event has occurred in your Stripe account. Please see <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">our documentation on Stripe webhooks</a> for full details."
 msgstr ""
 
 #. translators: %s - WPForms.com URL for Stripe webhooks documentation.
 #: src/Integrations/Stripe/Admin/WebhookSettings.php:86
-#, php-format
 msgid "Choose the method of communication between Stripe and WPForms. If REST API support is disabled for WordPress, use PHP listener. <a href=\"%s\" rel=\"nofollow noopener\" target=\"_blank\">Learn more</a>."
 msgstr ""
 
 #. translators: %s - Stripe Webhooks Settings url.
 #: src/Integrations/Stripe/Admin/WebhookSettings.php:107
-#, php-format
 msgid "Ensure an endpoint with the above URL is present in the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Stripe webhook settings</a>."
 msgstr ""
 
@@ -17591,7 +17234,6 @@ msgstr ""
 
 #. translators: %1$s - Live Mode Endpoint ID or Test Mode Endpoint ID. %2$s - WPForms.com Stripe documentation article URL.
 #: src/Integrations/Stripe/Admin/WebhookSettings.php:174
-#, php-format
 msgid "Retrieve your %1$s from your <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Stripe webhook settings</a>. Select the endpoint, then click Copy button."
 msgstr ""
 
@@ -17605,7 +17247,6 @@ msgstr ""
 
 #. translators: %1$s - Live Mode Signing Secret or Test Mode Signing Secret. %2$s - WPForms.com Stripe documentation article URL.
 #: src/Integrations/Stripe/Admin/WebhookSettings.php:206
-#, php-format
 msgid "Retrieve your %1$s from your <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Stripe webhook settings</a>. Select the endpoint, then click Reveal."
 msgstr ""
 
@@ -17667,7 +17308,6 @@ msgstr ""
 
 #. translators: %1$s - Stripe.com URL for domains registration documentation.
 #: src/Integrations/Stripe/DomainHealthCheck.php:140
-#, php-format
 msgid "Heads up! It looks like there's a problem with your domain verification, and Stripe Apple Pay may stop working. If this notice does not disappear in a day, <a href=\"%1$s\" rel=\"nofollow noopener\" target=\"_blank\">please register it manually.</a>"
 msgstr ""
 
@@ -17770,7 +17410,6 @@ msgstr ""
 
 #. translators: %s - error message.
 #: src/Integrations/Stripe/Process.php:1094
-#, php-format
 msgid "Payment Error: %s"
 msgstr ""
 
@@ -17801,7 +17440,6 @@ msgstr ""
 
 #. translators: %s - site name.
 #: src/Integrations/Stripe/Protections/LowAmountSurgeDetector.php:327
-#, php-format
 msgid "[%s] Possible card testing activity detected"
 msgstr ""
 
@@ -17811,13 +17449,11 @@ msgstr ""
 
 #. translators: %s - human-readable block duration (e.g. "5 mins", "1 hour").
 #: src/Integrations/Stripe/Protections/LowAmountSurgeDetector.php:367
-#, php-format
 msgid "A surge of low-amount Stripe payments was recently detected on your site. As a precaution, low-amount payments are temporarily blocked. The block will lift automatically within %s."
 msgstr ""
 
 #. translators: %1$s - link opening tag to forms overview, %2$s - closing tag.
 #: src/Integrations/Stripe/Protections/LowAmountSurgeDetector.php:373
-#, php-format
 msgid "<strong>Recommended Action:</strong> Enable the \"Minimum Price\" option on Payment Single Item fields in your %1$sforms%2$s."
 msgstr ""
 
@@ -17838,13 +17474,11 @@ msgstr ""
 
 #. translators: %s - WPForms.com URL for Stripe webhooks documentation.
 #: src/Integrations/Stripe/WebhooksHealthCheck.php:227
-#, php-format
 msgid "Heads up! Looks like you have a problem with your webhooks configuration. Please check and confirm that you've configured the WPForms webhooks in your Stripe account. This notice will disappear automatically when a new Stripe request comes in. See our <a href=\"%1$s\" rel=\"nofollow noopener\" target=\"_blank\">documentation</a> for more information."
 msgstr ""
 
 #. translators: %s - plugin name.
 #: src/Integrations/UncannyAutomator/UncannyAutomator.php:150
-#, php-format
 msgid "%s plugin"
 msgstr ""
 
@@ -17883,13 +17517,11 @@ msgstr ""
 
 #. translators: %s - URL WP Mail SMTP settings.
 #: src/Integrations/WPMailSMTP/Notifications.php:188
-#, php-format
 msgid "This setting is disabled because you have the \"Force From Name\" setting enabled in the <a href=\"%s\" target=\"_blank\">WP Mail SMTP</a> plugin."
 msgstr ""
 
 #. translators: %s - URL WP Mail SMTP settings.
 #: src/Integrations/WPMailSMTP/Notifications.php:217
-#, php-format
 msgid "This setting is disabled because you have the \"Force From Email\" setting enabled in the <a href=\"%s\" target=\"_blank\">WP Mail SMTP</a> plugin."
 msgstr ""
 
@@ -18053,7 +17685,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com announcement page URL.
 #: src/Lite/Admin/Education/Builder/Fields.php:163
-#, php-format
 msgid "They will not be present in the published form. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade now</a> to unlock these features."
 msgstr ""
 
@@ -18063,7 +17694,6 @@ msgstr ""
 
 #. translators: %s - Upgrade license page URL.
 #: src/Lite/Admin/Education/Builder/Fields.php:196
-#, php-format
 msgid "Quiz functionality will not be present in the published form. <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade now</a> to unlock the Quiz Addon."
 msgstr ""
 
@@ -18134,7 +17764,6 @@ msgstr ""
 
 #. translators: %s - time when Lite Connect was enabled.
 #: src/Lite/Admin/Education/LiteConnect.php:307
-#, php-format
 msgid "since %s"
 msgstr ""
 
@@ -18253,19 +17882,16 @@ msgstr ""
 
 #. translators: %s - WPForms support URL.
 #: src/Lite/Integrations/LiteConnect/Admin.php:99
-#, php-format
 msgid "<strong>Entry Backup Failures Detected</strong><br>Some entry backups may not have been saved. This is usually caused by a scheduling issue on your site. Please <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">contact Support</a> so we can help resolve it and ensure your entries are protected."
 msgstr ""
 
 #. translators: %s - upgrade to WPForms Pro landing page URL.
 #: src/Lite/Integrations/LiteConnect/LiteConnect.php:125
-#, php-format
 msgid "<strong>Your form entries are not being stored locally, but are backed up remotely.</strong> If you <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-upgrade-modal\">upgrade to WPForms PRO</a>, you can restore your entries and they’ll be available in the WordPress dashboard. Entry backups expire after 1 year."
 msgstr ""
 
 #. translators: %s - upgrade to WPForms Pro landing page URL.
 #: src/Lite/Integrations/LiteConnect/LiteConnect.php:140
-#, php-format
 msgid "<strong>Your form entries are not being stored in WordPress, and your entry backups are not active.</strong> If there's a problem with deliverability, you'll lose form entries. We recommend that you enable Entry Backups, especially if you're considering <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"wpforms-upgrade-modal\">upgrading to WPForms PRO</a>."
 msgstr ""
 
@@ -18323,7 +17949,6 @@ msgstr ""
 
 #. translators: %s - search query.
 #: src/Logger/ListTable.php:312
-#, php-format
 msgid "Search results for \"%s\""
 msgstr ""
 
@@ -18419,7 +18044,6 @@ msgstr ""
 
 #. translators: %s - provider name.
 #: src/Providers/Provider/Settings/FormBuilder.php:522
-#, php-format
 msgid "Get the most out of WPForms &mdash; use it with an active %s account."
 msgstr ""
 
@@ -18429,7 +18053,6 @@ msgstr ""
 
 #. translators: %1$s - Documentation URL.
 #: src/Providers/Provider/Settings/FormBuilder.php:829
-#, php-format
 msgid "Something went wrong, and we can’t connect to the provider. Please check your <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">connection settings</a>."
 msgstr ""
 
@@ -18455,7 +18078,6 @@ msgstr ""
 
 #. translators: %1$s - requirements message.
 #: src/Requirements/Requirements.php:1064
-#, php-format
 msgid "It requires %1$s."
 msgstr ""
 
@@ -18465,25 +18087,21 @@ msgstr ""
 
 #. translators: %1$s - WPForms addon name.
 #: src/Requirements/Requirements.php:1103
-#, php-format
 msgid "%1$s addon"
 msgstr ""
 
 #. translators: %1$s - WPForms plugin or addon name, %2$d - requirements message.
 #: src/Requirements/Requirements.php:1110
-#, php-format
 msgid "The %1$s requires %2$s."
 msgstr ""
 
 #. translators: %1$s - Read More link.
 #: src/Requirements/Requirements.php:1146
-#, php-format
 msgid "%1$s for additional information on PHP version."
 msgstr ""
 
 #. translators: %1$s - Read More link.
 #: src/Requirements/Requirements.php:1152
-#, php-format
 msgid "%1$s for additional information on PHP extensions."
 msgstr ""
 
@@ -18493,7 +18111,6 @@ msgstr ""
 
 #. translators: %s - PHP extension name(s).
 #: src/Requirements/Requirements.php:1253
-#, php-format
 msgid "%s PHP extension"
 msgid_plural "%s PHP extensions"
 msgstr[0] ""
@@ -18501,31 +18118,26 @@ msgstr[1] ""
 
 #. translators: %s - license name(s).
 #: src/Requirements/Requirements.php:1324
-#, php-format
 msgid "%s license"
 msgstr ""
 
 #. translators: %1$s - What is being checked (PHP, WPForms, etc.), %2$s - required version. This is used as the completion of the sentence "The {addon name} addon requires {here goes this string}".
 #: src/Requirements/Requirements.php:1433
-#, php-format
 msgid "%1$s %2$s or above"
 msgstr ""
 
 #. translators: %1$s - What is being checked (PHP, WPForms, etc.), %2$s - required version. This is used as the completion of the sentence "The {addon name} addon requires {here goes this string}".
 #: src/Requirements/Requirements.php:1435
-#, php-format
 msgid "%1$s %2$s or below"
 msgstr ""
 
 #. translators: %1$s - What is being checked (PHP, WPForms, etc.), %2$s - required version. This is used as the completion of the sentence "The {addon name} addon requires {here goes this string}".
 #: src/Requirements/Requirements.php:1438
-#, php-format
 msgid "a newer version of %1$s than %2$s"
 msgstr ""
 
 #. translators: %1$s - What is being checked (PHP, WPForms, etc.), %2$s - required version. This is used as the completion of the sentence "The {addon name} addon requires {here goes this string}".
 #: src/Requirements/Requirements.php:1440
-#, php-format
 msgid "an older version of %1$s than %2$s"
 msgstr ""
 
@@ -18535,7 +18147,6 @@ msgstr ""
 
 #. translators: %s - the detected form plugin name.
 #: src/SetupChecklist/Checklist.php:196
-#, php-format
 msgid "Import From %s"
 msgstr ""
 
@@ -18624,7 +18235,6 @@ msgstr ""
 
 #. translators: %d: setup checklist completion percentage.
 #: src/SetupChecklist/Menu.php:216
-#, php-format
 msgid "%d%% complete"
 msgstr ""
 
@@ -18671,7 +18281,6 @@ msgstr ""
 
 #. translators: %1$s - comma-separated list of plugin names linked to WordPress.org, %2$s - link to manual installation guide.
 #: src/SetupWizard/FailedInstallsNotice.php:246
-#, php-format
 msgid "Could not install the following plugins during setup: %1$s. Please download and <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">install them manually</a>."
 msgstr ""
 
@@ -18702,7 +18311,6 @@ msgstr ""
 
 #. translators: %s - Coupon value.
 #: src/SmartTags/SmartTag/OrderSummary.php:311
-#, php-format
 msgid "Coupon (%s)"
 msgstr ""
 
@@ -18833,49 +18441,41 @@ msgstr ""
 
 #. translators: %1$s - field ID, %2$s - field label.
 #: src/SmartTags/SmartTags.php:288
-#, php-format
 msgid "Field %1$s"
 msgstr ""
 
 #. translators: %1$s - field ID, %2$s - field label.
 #: src/SmartTags/SmartTags.php:290
-#, php-format
 msgid "Field value %1$s"
 msgstr ""
 
 #. translators: %1$s - field ID, %2$s - field label.
 #: src/SmartTags/SmartTags.php:292
-#, php-format
 msgid "Field HTML %1$s"
 msgstr ""
 
 #. translators: %1$s - Query String Variable.
 #: src/SmartTags/SmartTags.php:294
-#, php-format
 msgid "Query String Variable: %1$s"
 msgstr ""
 
 #. translators: %1$s - User meta key.
 #: src/SmartTags/SmartTags.php:296
-#, php-format
 msgid "User Meta: %1$s"
 msgstr ""
 
 #. translators: %1$s - Date format.
 #: src/SmartTags/SmartTags.php:298
-#, php-format
 msgid "Date: %1$s"
 msgstr ""
 
 #. translators: %1$s - Date format.
 #: src/SmartTags/SmartTags.php:300
-#, php-format
 msgid "Entry Date: %1$s"
 msgstr ""
 
 #. translators: %1$s - link to the WPForms.com doc article.
 #: src/SmartTags/SmartTags.php:314
-#, php-format
 msgid "Easily add dynamic information from various sources with <a href=\"%1$s\" target=\"_blank\" rel=\"noopener noreferrer\">Smart Tags</a>."
 msgstr ""
 
@@ -18931,7 +18531,6 @@ msgstr ""
 #. translators: %s - link to the WPForms documentation page.
 #: templates/admin/challenge/embed.php:25
 #: templates/admin/form-embed-wizard/tooltip.php:22
-#, php-format
 msgid "Click the plus button, search for WPForms, click the block to<br>embed it. <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Learn More</a>"
 msgstr ""
 
@@ -18952,7 +18551,6 @@ msgstr ""
 
 #. translators: %1$s - number of minutes in HTML container, %2$s - singular or plural form of 'minute', %3$s - number of seconds in HTML container, %4$s - singular or plural form of 'second', %5$s - 5 rating star symbols HTML.
 #: templates/admin/challenge/embed.php:61
-#, php-format
 msgid "You completed the WPForms Challenge in <b>%1$s %2$s %3$s %4$s</b>. Share your success story with other WPForms users and help us spread the word <b>by giving WPForms a 5-star rating (%5$s) on WordPress.org</b>. Thanks for your support and we look forward to bringing you more awesome features."
 msgstr ""
 
@@ -18980,7 +18578,6 @@ msgstr ""
 
 #. translators: %1$d - number of minutes, %2$s - singular or plural form of 'minute'.
 #: templates/admin/challenge/embed.php:103
-#, php-format
 msgid "We're sorry that it took longer than %1$d %2$s to publish your form. Our goal is to create the most beginner-friendly WordPress form plugin.<br>How can we help you to be successful? Please send us your feedback. Our support team is standing by to help."
 msgstr ""
 
@@ -19006,7 +18603,6 @@ msgstr ""
 
 #. translators: %1$d - number of minutes, %2$s - singular or plural form of 'minute'.
 #: templates/admin/challenge/modal.php:29
-#, php-format
 msgid "Complete the <b>WPForms Challenge</b> and get up and running within %1$d&nbsp;%2$s."
 msgstr ""
 
@@ -19028,7 +18624,6 @@ msgstr ""
 
 #. translators: %s - minutes in 2:00 format.
 #: templates/admin/challenge/modal.php:59
-#, php-format
 msgid "%s remaining"
 msgstr ""
 
@@ -19066,7 +18661,6 @@ msgstr ""
 
 #. translators: %s - the alternative that already satisfies this group, e.g. ActiveLayer.
 #: templates/admin/dashboard/sidebar/spam-security.php:78
-#, php-format
 msgid "Not needed — %s covers this."
 msgstr ""
 
@@ -19116,7 +18710,6 @@ msgstr ""
 
 #. translators: %s - Form Abandonment addon name.
 #: templates/admin/dashboard/widgets/entries-promo.php:21
-#, php-format
 msgid "Save partial-form submissions with our %s addon."
 msgstr ""
 
@@ -19134,7 +18727,6 @@ msgstr ""
 
 #. translators: %s - form title.
 #: templates/admin/dashboard/widgets/entries-table.php:146
-#, php-format
 msgid "Reset the chart to all forms (currently showing %s)"
 msgstr ""
 
@@ -19144,7 +18736,6 @@ msgstr ""
 
 #. translators: %s - form title.
 #: templates/admin/dashboard/widgets/entries-table.php:150
-#, php-format
 msgid "Show the chart for %s"
 msgstr ""
 
@@ -19162,43 +18753,36 @@ msgstr ""
 
 #. translators: %s - total number of form entries.
 #: templates/admin/dashboard/widgets/locations-chart.php:69
-#, php-format
 msgid "Top locations donut chart, %s form entries."
 msgstr ""
 
 #. translators: 1: number of days the trigger looks back, 2: language name.
 #: templates/admin/dashboard/widgets/locations-chart.php:89
-#, php-format
 msgid "A Lot of Your Visitors in the Last %1$s Days Read %2$s"
 msgstr ""
 
 #. translators: 1: language name, 2: Universally brand name.
 #: templates/admin/dashboard/widgets/locations-chart.php:91
-#, php-format
 msgid "Consider translating your website into %1$s with %2$s."
 msgstr ""
 
 #. translators: 1: number of days the trigger looks back, 2: language name, 3: another language name.
 #: templates/admin/dashboard/widgets/locations-chart.php:94
-#, php-format
 msgid "A Lot of Your Visitors in the Last %1$s Days Read %2$s and %3$s"
 msgstr ""
 
 #. translators: 1: language name, 2: another language name, 3: Universally brand name.
 #: templates/admin/dashboard/widgets/locations-chart.php:96
-#, php-format
 msgid "Consider translating your website into %1$s and %2$s with %3$s."
 msgstr ""
 
 #. translators: 1: share of visitors, formatted as a percentage, 2: number of days the trigger looks back.
 #: templates/admin/dashboard/widgets/locations-chart.php:99
-#, php-format
 msgid "%1$s of Your Visitors in the Last %2$s Days Read Another Language"
 msgstr ""
 
 #. translators: %s - Universally brand name.
 #: templates/admin/dashboard/widgets/locations-chart.php:101
-#, php-format
 msgid "Consider translating your website with %s."
 msgstr ""
 
@@ -19211,13 +18795,11 @@ msgstr ""
 #. translators: 1: PayPal brand (icon + name), 2: Square brand (icon + name), 3: Authorize.Net brand name, 4: Paystack brand name, 5: Payment Settings page link.
 #: templates/admin/dashboard/widgets/payments-connect.php:101
 #: templates/admin/dashboard/widgets/payments-connect.php:114
-#, php-format
 msgid "WPForms also supports %1$s, %2$s, %3$s, and %4$s. Go to %5$s to configure."
 msgstr ""
 
 #. translators: 1: PayPal brand (icon + name), 2: Square brand (icon + name), 3: Authorize.Net brand name, 4: Payment Settings page link.
 #: templates/admin/dashboard/widgets/payments-connect.php:127
-#, php-format
 msgid "WPForms also supports %1$s, %2$s, and %3$s. Go to %4$s to configure."
 msgstr ""
 
@@ -19228,7 +18810,6 @@ msgstr ""
 
 #. translators: %s is the stat card label (e.g. "Total Sales").
 #: templates/admin/dashboard/widgets/payments.php:48
-#, php-format
 msgid "Payments trend chart for %s."
 msgstr ""
 
@@ -19246,7 +18827,6 @@ msgstr ""
 
 #. translators: %s - URL to the documentation article.
 #: templates/admin/empty-states/no-forms.php:32
-#, php-format
 msgid "Need some help? Check out our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">comprehensive guide</a>."
 msgstr ""
 
@@ -19260,7 +18840,6 @@ msgstr ""
 
 #. translators: %s - URL to the documentation article.
 #: templates/admin/empty-states/no-user-templates.php:27
-#, php-format
 msgid "Need some help? Check out our <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">documentation</a>."
 msgstr ""
 
@@ -19288,7 +18867,6 @@ msgstr ""
 
 #. translators: %s - URL to the comprehensive guide.
 #: templates/admin/empty-states/payments/get-started.php:119
-#, php-format
 msgid "Need some help? Check out our <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">comprehensive payments guide.</a>"
 msgstr ""
 
@@ -19306,7 +18884,6 @@ msgstr ""
 
 #. translators: %s - URL to the comprehensive guide.
 #: templates/admin/empty-states/payments/no-payments.php:36
-#, php-format
 msgid "Need some help? Check out our <a href=\"%s\" rel=\"noopener noreferrer\" target=\"_blank\">comprehensive guide.</a>"
 msgstr ""
 
@@ -19320,7 +18897,6 @@ msgstr ""
 
 #. translators: %s - link to the embed documentation.
 #: templates/admin/form-embed-wizard/popup.php:71
-#, php-format
 msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Read documentation</a> to learn about all the ways you can embed forms."
 msgstr ""
 
@@ -19442,7 +19018,6 @@ msgstr ""
 
 #. translators: %s - WPBeginners.com Guide to Email Lists URL.
 #: templates/admin/pages/constant-contact.php:68
-#, php-format
 msgid "For more details, see this guide on <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">why building your email list is so important</a>."
 msgstr ""
 
@@ -19556,7 +19131,6 @@ msgstr ""
 
 #. translators: %d - number of payments found.
 #: templates/admin/payments/reset-filter-notice.php:23
-#, php-format
 msgid "Found <strong>%d payment</strong>"
 msgid_plural "Found <strong>%d payments</strong>"
 msgstr[0] ""
@@ -19605,7 +19179,6 @@ msgstr ""
 
 #. translators: %1$d - current number of payment, %2$d - total number of payments.
 #: templates/admin/payments/single/heading-navigation.php:32
-#, php-format
 msgid "Payment %1$d of %2$d"
 msgstr ""
 
@@ -19648,7 +19221,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com Setup hCaptcha URL.
 #: templates/admin/settings/hcaptcha-description.php:17
-#, php-format
 msgid "For more details on how hCaptcha works, as well as a step by step setup guide, please check out our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>."
 msgstr ""
 
@@ -19678,7 +19250,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com Setup reCAPTCHA URL.
 #: templates/admin/settings/recaptcha-description.php:45
-#, php-format
 msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Read our walk through</a> to learn more and for step-by-step directions."
 msgstr ""
 
@@ -19688,7 +19259,6 @@ msgstr ""
 
 #. translators: %s - WPForms.com Setup Cloudflare Turnstile URL.
 #: templates/admin/settings/turnstile-description.php:17
-#, php-format
 msgid "For more details on how Turnstile works, as well as a step by step setup guide, please check out our <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">documentation</a>."
 msgstr ""
 
@@ -19723,13 +19293,11 @@ msgstr ""
 
 #. translators: %1$s - Coupons, %2$s - Calculations (each the emphasised addon name).
 #: templates/admin/setup-checklist/payment.php:35
-#, php-format
 msgid "Works seamlessly with the %1$s and %2$s addons."
 msgstr ""
 
 #. translators: %1$s - PayPal icon, %2$s - Square icon, %3$s - Payment Settings link.
 #: templates/admin/setup-checklist/payment.php:86
-#, php-format
 msgid "WPForms also supports other payment gateways, including %1$s PayPal, %2$s Square, Authorize.net, Mercado Pago, and Paystack which can be configured from %3$s."
 msgstr ""
 
@@ -19803,7 +19371,6 @@ msgstr ""
 
 #. translators: %s: WPVibe.ai inline link.
 #: templates/admin/tools/ai-mcp.php:99
-#, php-format
 msgid "Connect your WordPress site and WPForms to AI assistants like Claude, ChatGPT, Cursor, and more. Ask them to find submissions, build forms, or edit fields in plain English. No copy-pasting, no exports. Connect them with the free %s plugin."
 msgstr ""
 
@@ -19883,7 +19450,6 @@ msgstr ""
 
 #. translators: %1$s - link to the update Internet Explorer page, %2$s - link to the browse happy page.
 #: templates/builder/fullscreen/ie-notice.php:22
-#, php-format
 msgid "The Internet Explorer browser no more supported.<br>Our form builder is optimized for modern browsers.<br>Please <a href=\"%1$s\" target=\"_blank\" rel=\"nofollow noopener\">install Microsoft Edge</a> or learn<br>how to <a href=\"%2$s\" target=\"_blank\" rel=\"nofollow noopener\">browse happy</a>."
 msgstr ""
 
@@ -19937,7 +19503,6 @@ msgstr ""
 
 #. translators: %1$s - Opening anchor tag, %2$s - Closing anchor tag.
 #: templates/builder/notifications/email-template-link.php:20
-#, php-format
 msgid "Select a template to use for this notification or %1$sview templates%2$s."
 msgstr ""
 
@@ -19956,7 +19521,6 @@ msgstr ""
 #. translators: %s - form revision author name.
 #: templates/builder/revisions/list.php:37
 #: templates/builder/revisions/list.php:71
-#, php-format
 msgid "by %s"
 msgstr ""
 
@@ -19979,7 +19543,6 @@ msgstr ""
 
 #. translators: %d - maximum number of revisions to keep.
 #: templates/builder/revisions/notice-limited.php:26
-#, php-format
 msgid "Revisions are enabled, but they’re limited to %d. You can increase this by making a simple change to your WordPress configuration."
 msgstr ""
 
@@ -19993,7 +19556,6 @@ msgstr ""
 
 #. translators: %s - WPForms documentation link.
 #: templates/builder/themes/notices.php:40
-#, php-format
 msgid "<h4>Want to customize your form styles without editing CSS?</h4> <p>%1$s</p> <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Go to Settings</a>"
 msgstr ""
 
@@ -20013,7 +19575,6 @@ msgstr ""
 
 #. translators: %s - Plugins page url.
 #: templates/builder/themes/notices.php:99
-#, php-format
 msgid "<h4>Update Available</h4> <p>%1$s</p> <a href=\"%2$s\" target=\"_blank\" rel=\"noopener noreferrer\">Update Now</a>"
 msgstr ""
 
@@ -20035,20 +19596,17 @@ msgstr ""
 
 #. translators: %s - WPForms.com Upgrade page URL.
 #: templates/education/admin/payments/single-page.php:29
-#, php-format
 msgid "<a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">Upgrade to Pro!</a>"
 msgstr ""
 
 #. translators: %1$s - link to WPForms SMTP page.
 #: templates/education/admin/settings/smtp-notice.php:20
-#, php-format
 msgid "Solve common email deliverability issues for good. <a href=\"%1$s\" target=\"%2$s\" rel=\"noopener noreferrer\">Get WP Mail SMTP!</a>"
 msgstr ""
 
 #. translators: %1$s - site URL; %2$s - site title.
 #: templates/emails/classic-footer.php:26
 #: templates/emails/compact-footer.php:26
-#, php-format
 msgid "Sent from <a href=\"%1$s\">%2$s</a>"
 msgstr ""
 
@@ -20091,13 +19649,11 @@ msgstr ""
 
 #. translators: %1$s - site name, %2$s - link to Settings → Misc to manage weekly emails.
 #: templates/emails/summary-footer-plain.php:18
-#, php-format
 msgid "This email was auto-generated and sent from %1$s. Manage Email Summaries: %2$s"
 msgstr ""
 
 #. translators: %1$s - site name linked to the site URL, %2$s - link to Settings → Misc to manage weekly emails.
 #: templates/emails/summary-footer.php:23
-#, php-format
 msgid "This email was auto-generated and sent from %1$s. <a href=\"%2$s\">Manage Email Summaries</a>"
 msgstr ""
 
@@ -20139,7 +19695,6 @@ msgstr ""
 
 #. translators: %s - URL to the documentation article.
 #: templates/integrations/elementor/no-forms.php:51
-#, php-format
 msgid "Need some help? Check out our <a href=\"%s\" class=\"wpforms-comprehensive-link\" target=\"_blank\" rel=\"noopener noreferrer\">comprehensive guide</a>."
 msgstr ""
 
@@ -20187,7 +19742,6 @@ msgstr ""
 #. translators: %1$s - formatted threshold amount (e.g. $3.00), %2$s - human-readable block duration (e.g. "5 mins", "1 hour").
 #: templates/integrations/stripe/emails/stripe-card-testing-alert-body-plain.php:25
 #: templates/integrations/stripe/emails/stripe-card-testing-alert-body.php:42
-#, php-format
 msgid "As a precaution, WPForms has temporarily blocked all Stripe payments with an amount at or below %1$s for the next %2$s. Payments above this threshold continue to process normally. The block will lift automatically."
 msgstr ""
 
@@ -20226,7 +19780,6 @@ msgstr ""
 #. translators: %s - site name.
 #: templates/integrations/stripe/emails/stripe-card-testing-alert-footer-plain.php:17
 #: templates/integrations/stripe/emails/stripe-card-testing-alert-footer.php:23
-#, php-format
 msgid "This email was auto-generated by WPForms and sent from %s."
 msgstr ""
 
@@ -20264,7 +19817,6 @@ msgstr ""
 
 #. translators: %s - WPCode library website URL.
 #: templates/integrations/wpcode/code-snippets.php:58
-#, php-format
 msgid "Using WPCode, you can install WPForms code snippets with 1 click directly from this page or the <a href=\"%s\" target=\"_blank\" rel=\"noopener noreferrer\">WPCode library</a>."
 msgstr ""
 
@@ -20286,7 +19838,6 @@ msgstr ""
 
 #. translators: %s - Path to installed plugins.
 #: wpforms.php:175
-#, php-format
 msgid "Your site already has WPForms Pro activated. If you want to switch to WPForms Lite, please first go to %s and deactivate WPForms. Then, you can activate WPForms Lite."
 msgstr ""
 

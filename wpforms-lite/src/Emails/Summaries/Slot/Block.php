@@ -9,14 +9,14 @@ namespace WPForms\Emails\Summaries\Slot;
  * filter adds has to implement it, which is why the interface exists next to the single
  * AbstractBlock implementation the bundled blocks extend.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 interface Block {
 
 	/**
 	 * Unique block id, also the template partial suffix and the tracking key.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -27,7 +27,7 @@ interface Block {
 	 *
 	 * The id for most blocks; blocks with meaningful variants fold the variant in.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Variant rendered.
 	 *
@@ -38,7 +38,7 @@ interface Block {
 	/**
 	 * Slot the block renders in. One of the Pipeline::SLOT_* constants.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return string
 	 */
@@ -47,7 +47,7 @@ interface Block {
 	/**
 	 * Priority within the slot. Lower wins.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */
@@ -56,7 +56,7 @@ interface Block {
 	/**
 	 * Decide whether the block shows and in which variant.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -71,7 +71,7 @@ interface Block {
 	 * list of paragraphs), `main` and `alt` buttons as [ `text`, `url` ], optional `icon`,
 	 * `icon_width`, `icon_height`, `icon_dark` and `layout`. Extra keys are block-specific.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Variant resolved by get_state(), or the preview default when forced.
@@ -83,7 +83,7 @@ interface Block {
 	/**
 	 * Record that the block went out in a sent email.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Variant that was sent.

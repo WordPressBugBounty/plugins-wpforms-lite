@@ -13,35 +13,35 @@ use WPForms\Pro\Emails\ReengagementAlert;
  *
  * The detection rules and copy stay in ReengagementAlert; this block only places them in the top slot.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class ActivityDropoff extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'activity_dropoff';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 20;
 
 	/**
 	 * Alert arguments resolved by get_state(), so the detection queries run once.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array|null
 	 */
@@ -50,7 +50,7 @@ class ActivityDropoff extends AbstractBlock {
 	/**
 	 * Visible when a re-engagement state applies; the variant is its slug.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -70,7 +70,7 @@ class ActivityDropoff extends AbstractBlock {
 	/**
 	 * Alert arguments. A forced preview honors `$variant` so tenure copy can be inspected.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Alert slug.

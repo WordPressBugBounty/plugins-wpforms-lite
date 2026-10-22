@@ -416,7 +416,7 @@ class Task {
 	 * Throttled to one log entry per task action per hour, since on a broken
 	 * environment the same failure repeats on almost every request.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $reason The reason why the task was not registered.
 	 */
@@ -431,7 +431,7 @@ class Task {
 		/**
 		 * Filter the interval between logged registration failures of the same task.
 		 *
-		 * @since {VERSION}
+		 * @since 2.0.3
 		 *
 		 * @param int    $interval Throttle interval in seconds. Default HOUR_IN_SECONDS.
 		 * @param string $action   Task action name.

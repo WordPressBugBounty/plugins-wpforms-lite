@@ -10,28 +10,28 @@ use WPForms\Helpers\EventCounter;
  * Same pattern as the builder adoption tooltips: `[ key => [ event => count ] ]` in a
  * non-autoloaded option, exposed to the weekly payload through a dedicated filter.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Tracking {
 
 	/**
 	 * Option holding the counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const OPTION = 'wpforms_email_summaries_events';
 
 	/**
 	 * Event recorded when a block goes out in a sent summary.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const EVENT_SHOWN = 'shown';
 
 	/**
 	 * Counters store.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var EventCounter
 	 */
@@ -40,7 +40,7 @@ class Tracking {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function __construct() {
 
@@ -50,7 +50,7 @@ class Tracking {
 	/**
 	 * Initialize.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function init(): void {
 
@@ -60,7 +60,7 @@ class Tracking {
 	/**
 	 * Register hooks.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function hooks(): void {
 
@@ -70,7 +70,7 @@ class Tracking {
 	/**
 	 * Increment a counter.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key   Block key.
 	 * @param string $event Event name.
@@ -83,7 +83,7 @@ class Tracking {
 	/**
 	 * All counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -95,7 +95,7 @@ class Tracking {
 	/**
 	 * Add the counters to the weekly usage tracking payload.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array|mixed $data Counters collected so far.
 	 *

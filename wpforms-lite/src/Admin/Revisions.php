@@ -366,7 +366,7 @@ class Revisions {
 	/**
 	 * Get the name to credit a revision to.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $author_id Revision author ID.
 	 *

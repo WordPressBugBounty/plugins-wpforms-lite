@@ -451,7 +451,7 @@ class Helpers {
 	 * Return a formatted amount required by Square API.
 	 *
 	 * @since 1.9.5
-	 * @since {VERSION} Added the `$currency` parameter.
+	 * @since 2.0.3 Added the `$currency` parameter.
 	 *
 	 * @param string $amount   Price amount.
 	 * @param string $currency Currency the amount is formatted in. Defaults to the current currency.

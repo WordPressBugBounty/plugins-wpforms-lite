@@ -1457,7 +1457,7 @@ class UsageTracking implements IntegrationInterface {
 	/**
 	 * Get weekly summary email block counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -1466,7 +1466,7 @@ class UsageTracking implements IntegrationInterface {
 		/**
 		 * Filter weekly summary email block counters for usage tracking.
 		 *
-		 * @since {VERSION}
+		 * @since 2.0.3
 		 *
 		 * @param array $events Per-block event counters.
 		 */

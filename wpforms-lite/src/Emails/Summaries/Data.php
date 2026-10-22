@@ -12,14 +12,14 @@ use WPForms\Helpers\PaymentGatewayDetector;
  * Lite-safe base. The Lite and Pro subclasses supply the entries domain, the same way
  * the Dashboard cache is split.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Data {
 
 	/**
 	 * Resolve the registered metrics source, Lite or Pro depending on the edition.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return Data
 	 */
@@ -33,7 +33,7 @@ class Data {
 	/**
 	 * Collect every metric for a week in a flat array the templates and blocks consume.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -78,7 +78,7 @@ class Data {
 	/**
 	 * Lifetime totals the milestones are judged against.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array Keys: `lifetime_entries`, `lifetime_leads` (null unless Form Abandonment is in use), `lifetime_spam`, `lifetime_payments`, `has_payments`.
 	 */
@@ -98,7 +98,7 @@ class Data {
 	/**
 	 * Forms that met their conversion goal in at least one week on record. The base has no analytics.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string|null $to Last day to scan, Y-m-d; today when null.
 	 *
@@ -112,7 +112,7 @@ class Data {
 	/**
 	 * Entries ever collected. The base has no entries source; each edition supplies its own.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */
@@ -124,7 +124,7 @@ class Data {
 	/**
 	 * Abandoned entries ever captured. Null when Form Abandonment is not in use.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int|null
 	 */
@@ -136,7 +136,7 @@ class Data {
 	/**
 	 * Spam entries ever blocked. Null when the edition does not record spam.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int|null
 	 */
@@ -151,7 +151,7 @@ class Data {
 	 * Index 0 is the given week, 1 the week before, and so on. Each item maps form_id => count;
 	 * an edition with site-wide history only uses form_id 0. The base has no history.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week  Most recent week.
 	 * @param int  $weeks Number of weeks including the given one.
@@ -166,7 +166,7 @@ class Data {
 	/**
 	 * Conversion-rate goal set for a form on the Analytics page, in percent. Null when none.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form ID.
 	 *
@@ -183,7 +183,7 @@ class Data {
 	 * Each row carries `form_id`, `title`, `edit_url`, `entries`, `entries_previous`, `trends`.
 	 * The base has no entries source; each edition supplies its own.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -197,7 +197,7 @@ class Data {
 	/**
 	 * Entries backed up by Lite Connect during the week. Null when not applicable.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -211,7 +211,7 @@ class Data {
 	/**
 	 * Spam entries blocked during the week. Null when the edition does not record spam.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $aggregates Dashboard aggregates for the week.
 	 *
@@ -225,7 +225,7 @@ class Data {
 	/**
 	 * Abandoned entries captured during the week. Null when Form Abandonment is not in use.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -239,7 +239,7 @@ class Data {
 	/**
 	 * Whether the license tier may see conversion rates.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -251,7 +251,7 @@ class Data {
 	/**
 	 * Dashboard aggregates for a week, from the shared cache.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to aggregate.
 	 *
@@ -267,7 +267,7 @@ class Data {
 	/**
 	 * Get the Dashboard cache service.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return Cache|null
 	 */
@@ -287,7 +287,7 @@ class Data {
 	 * CURRENT value — ( current - previous ) / current — unlike `percent_delta()`, which
 	 * divides by the previous value. Kept as-is for parity with the Payments Overview page.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -303,7 +303,7 @@ class Data {
 	 *
 	 * PayPal Standard has no global settings, so the shared detector cannot see it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool
 	 */
@@ -324,7 +324,7 @@ class Data {
 	/**
 	 * Whether any published form passes the given test on its decoded data.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param callable $test Receives the decoded form data, returns whether it matches.
 	 *
@@ -350,7 +350,7 @@ class Data {
 	/**
 	 * Map raw entries-report rows to the per-form breakdown row shape.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $rows Raw rows keyed by form ID, as the edition's entries report returns them.
 	 *
@@ -377,7 +377,7 @@ class Data {
 	/**
 	 * Add the per-form analytics, conversion and payments columns to the form rows.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $forms Form rows keyed by form ID.
 	 * @param Week  $week  Week to report on.
@@ -414,7 +414,7 @@ class Data {
 	/**
 	 * Count live, published payments per form for a week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $form_ids Form IDs to count for.
 	 * @param Week  $week     Week to report on.
@@ -443,7 +443,7 @@ class Data {
 	/**
 	 * Live, published payments ever recorded.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */
@@ -457,7 +457,7 @@ class Data {
 	/**
 	 * Date condition selecting the payments created during a week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to select.
 	 *
@@ -478,7 +478,7 @@ class Data {
 	 * Uses the same secondary conditions and failed-status exclusion as the Payments
 	 * Overview "Total Payments" card, so the two never disagree.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $select Aggregate list. Trusted literal.
 	 * @param string $where  Extra prepared conditions, each starting with ` AND`.
@@ -518,7 +518,7 @@ class Data {
 	/**
 	 * Week-over-week change in percent, the way the current summary computes trends.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $current  This week's value.
 	 * @param int $previous Last week's value.
@@ -537,7 +537,7 @@ class Data {
 	/**
 	 * Normalize a tile delta to an int, keeping null for "not reported".
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param mixed $delta Raw delta.
 	 *

@@ -3,7 +3,7 @@ Contributors: wpforms, smub
 Tags: contact form, contact form plugin, forms, form builder, custom form
 Requires at least: 5.5
 Tested up to: 7.1
-Stable tag: 2.0.3-RC5
+Stable tag: 2.0.3
 Requires PHP: 7.2
 License: GNU General Public License v2.0 or later
 

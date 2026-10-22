@@ -912,7 +912,7 @@ class WPForms_Field_Radio extends WPForms_Field {
 	 * Prefixes the Other option value with its label (e.g. "Other: text"),
 	 * so the `{field_id}` smart tag output is consistent with the Checkboxes field.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string|mixed $value     Field value.
 	 * @param int          $field_id  Field ID.

@@ -6,7 +6,7 @@
  * (payments education, Lite Connect). The compact variant is a single row with the text on the
  * left and the link on the right. The bar variant is a compact row with stacked copy and an icon.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @var array  $block       Block arguments: `title`, `content` (string or list of paragraphs), `main` and `alt`
  *                          as [ 'text', 'url' ], optional `icon`, `icon_width`, `icon_height`, `icon_dark`
@@ -38,7 +38,7 @@ $callout_icon_size = $is_bar ? 52 : 32;
 /**
  * Render the icon glyph inside its tinted circle.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param string $icon   Icon URL.
  * @param int    $width  Glyph width.

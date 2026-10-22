@@ -8,14 +8,14 @@ namespace WPForms\Helpers;
  * The store is `[ key => [ event => count ] ]`, the shape the weekly summary and the
  * builder adoption tooltips report through Usage Tracking.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class EventCounter {
 
 	/**
 	 * Option holding the counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var string
 	 */
@@ -24,7 +24,7 @@ class EventCounter {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $option Option holding the counters.
 	 */
@@ -36,7 +36,7 @@ class EventCounter {
 	/**
 	 * All counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -48,7 +48,7 @@ class EventCounter {
 	/**
 	 * Increment one counter.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key   Counter key.
 	 * @param string $event Event name.

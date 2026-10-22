@@ -16,7 +16,7 @@ class AntiSpam {
 	/**
 	 * Settings keys holding the legacy anti-spam protection.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const LEGACY_KEYS = [ 'honeypot', 'antispam' ];
 
@@ -314,7 +314,7 @@ class AntiSpam {
 		 * Filters whether the modern Anti-Spam is enabled.
 		 *
 		 * @since 1.9.0
-		 * @since {VERSION} Added the `$form_data` parameter.
+		 * @since 2.0.3 Added the `$form_data` parameter.
 		 *
 		 * @param bool  $is_enabled True if the modern Anti-Spam is enabled, false otherwise.
 		 * @param array $form_data  Form data.
@@ -410,7 +410,7 @@ class AntiSpam {
 	 * The keys are switched off, not dropped: the builder renders a legacy toggle for
 	 * every key that is present, and that toggle is what keeps the setting reachable.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array|mixed $form      Post data about to be saved.
 	 * @param array       $form_data Form data.
@@ -454,7 +454,7 @@ class AntiSpam {
 	/**
 	 * Get the settings of the form as it is stored, before the save in progress.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form ID.
 	 *
@@ -480,7 +480,7 @@ class AntiSpam {
 	 * Honeypot::render() and Token::validate(), so any other stored value is
 	 * inert and must not count as active protection.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $form_data Form data.
 	 *
@@ -506,7 +506,7 @@ class AntiSpam {
 	 * is dispatched: migrations run inside plugins_loaded, before a theme's
 	 * functions.php exists, so a filter added there would never be seen.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int   $form_id   Form ID.
 	 * @param array $form_data Form data.
@@ -518,7 +518,7 @@ class AntiSpam {
 		/**
 		 * Filters whether a form may be auto-upgraded to modern anti-spam protection.
 		 *
-		 * @since {VERSION}
+		 * @since 2.0.3
 		 *
 		 * @param bool  $allowed   Whether the upgrade is allowed. Default true.
 		 * @param int   $form_id   Form ID.

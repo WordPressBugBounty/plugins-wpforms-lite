@@ -822,7 +822,7 @@ function wpforms_flatten_field_value( $value ): string {
  * that allows users to enter custom text. By default, Radio and Checkbox fields
  * support this feature.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @param array $field Field data.
  *
@@ -838,7 +838,7 @@ function wpforms_field_supports_other_choice( array $field ): bool {
 	 * This allows addons or custom field types to add or remove support for
 	 * the Other choice feature.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $supported_types Array of field type slugs that support Other choice.
 	 * @param array $field           Field settings.

@@ -11,35 +11,35 @@ use WPForms\Emails\Summaries\Slot\Pipeline;
 /**
  * Milestone headline: a first or a threshold the site just reached. Each fires once.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Milestone extends AbstractBlock {
 
 	/**
 	 * Block id.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ID = 'milestone';
 
 	/**
 	 * Slot.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const SLOT = Pipeline::SLOT_TOP;
 
 	/**
 	 * Priority.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRIORITY = 30;
 
 	/**
 	 * Milestone rules and store.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Milestones
 	 */
@@ -48,7 +48,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * Milestone resolved by get_state().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array|null
 	 */
@@ -57,7 +57,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * Constructor.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Milestones|null $milestones Rules and store. Defaults to the registered service.
 	 */
@@ -69,7 +69,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * Visible when a new milestone was reached; the variant is its key.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 *
@@ -89,7 +89,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * Milestone copy; a forced preview renders the requested or the first-entry milestone.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Milestone key.
@@ -108,7 +108,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * The milestone key prefixed with the block id, e.g. `milestone_entries_100`.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $variant Milestone key.
 	 *
@@ -122,7 +122,7 @@ class Milestone extends AbstractBlock {
 	/**
 	 * Spend the milestone.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Context $context Summary context.
 	 * @param string  $variant Milestone key.

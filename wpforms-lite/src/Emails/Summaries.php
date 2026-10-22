@@ -31,7 +31,7 @@ class Summaries {
 	/**
 	 * Slot pipeline built for the current run, kept so the send can be recorded.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Pipeline|null
 	 */
@@ -40,7 +40,7 @@ class Summaries {
 	/**
 	 * Slot context built for the current run.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var Context|null
 	 */
@@ -49,7 +49,7 @@ class Summaries {
 	/**
 	 * Resolved slot blocks for the current run.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var array
 	 */
@@ -58,7 +58,7 @@ class Summaries {
 	/**
 	 * Notification blocks store built for the current run.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @var NotificationBlocks|null
 	 */
@@ -395,7 +395,7 @@ class Summaries {
 	/**
 	 * Build the template arguments. Shared by the cron and the preview so the two never drift.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param bool       $is_preview Whether the email is being previewed.
 	 * @param Week|null  $week       Reported week, when the caller already resolved it.
@@ -461,7 +461,7 @@ class Summaries {
 	 * Primary call to action: All Forms, where the per-form Analytics links live, when the tier can open
 	 * them; the WPForms Dashboard otherwise. Analytics has no site-wide page to link to.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -485,7 +485,7 @@ class Summaries {
 	 *
 	 * Each tile: `label`, `value` (formatted), `delta` (percent or null), `note`.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -533,7 +533,7 @@ class Summaries {
 	/**
 	 * Build one tile.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string     $label Tile label.
 	 * @param int|string $value Count, or an already formatted amount.
@@ -560,7 +560,7 @@ class Summaries {
 	 * Both editions, the payments table exists on Lite too. A connected gateway with no payments yet
 	 * gets the educational block instead, never a zeros row.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -574,7 +574,7 @@ class Summaries {
 	/**
 	 * Metrics source. The registry resolves the Lite or Pro implementation.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return Data
 	 */
@@ -586,7 +586,7 @@ class Summaries {
 	/**
 	 * Blocks competing for the email slots.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -595,7 +595,7 @@ class Summaries {
 		/**
 		 * Filters the blocks competing for the weekly summary slots.
 		 *
-		 * @since {VERSION}
+		 * @since 2.0.3
 		 *
 		 * @param array $blocks Block instances implementing the Block interface.
 		 */
@@ -619,7 +619,7 @@ class Summaries {
 	/**
 	 * A preview URL parameter, e.g. the block or variant to force. Nonce checked in is_preview().
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $name Query parameter name.
 	 *

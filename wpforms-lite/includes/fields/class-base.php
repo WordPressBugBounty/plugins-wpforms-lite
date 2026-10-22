@@ -284,7 +284,7 @@ abstract class WPForms_Field {
 	/**
 	 * The other option builder assets.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function other_option_builder_assets(): void {
 
@@ -4379,7 +4379,7 @@ abstract class WPForms_Field {
 	 * non-empty trimmed value server-side. Read-only fields are skipped because
 	 * saving a read-only field strips the required flag.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int          $field_id     Field ID.
 	 * @param string|array $field_submit Submitted value.
@@ -5250,7 +5250,7 @@ abstract class WPForms_Field {
 	/**
 	 * Sanitize an amount stored in the form data, parsing it with the form's saved currency.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param mixed      $amount    Stored amount, cast to a string.
 	 * @param array|null $form_data Form data and settings, when available in the calling context.
@@ -5273,7 +5273,7 @@ abstract class WPForms_Field {
 	/**
 	 * Get the label of the payment choice whose amount matches a prefilled value.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $raw_value Raw prefilled value.
 	 * @param array  $choices   Field choices.

@@ -11,63 +11,63 @@ namespace WPForms\Emails\Summaries;
  * week so a first or a threshold reached during it still gets its celebration. A fresh install passes
  * nothing and starts empty.
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Milestones {
 
 	/**
 	 * Option holding the spent milestones: key => timestamp.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const OPTION = 'wpforms_email_summaries_milestones';
 
 	/**
 	 * Lifetime entry thresholds, highest first.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const ENTRY_THRESHOLDS = [ 1000, 500, 100 ];
 
 	/**
 	 * First entry ever.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const FIRST_ENTRY = 'first_entry';
 
 	/**
 	 * First payment ever.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const FIRST_PAYMENT = 'first_payment';
 
 	/**
 	 * First abandoned entry captured.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const FIRST_LEAD = 'first_lead';
 
 	/**
 	 * Prefix for entries threshold milestone keys.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PREFIX_ENTRIES = 'entries_';
 
 	/**
 	 * Prefix for conversion goal milestone keys.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PREFIX_GOAL = 'goal_';
 
 	/**
 	 * Store key marking a baseline taken on Pro, over the entries table rather than Lite's counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public const PRO_BASELINE = 'pro_baseline';
 
@@ -75,7 +75,7 @@ class Milestones {
 	 * Nothing to do on load. The baseline is taken by the upgrade migration and, as a fallback, on
 	 * the summary send path, so the non-autoloaded option is never queried on unrelated requests.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	public function init(): void {
 	}
@@ -88,7 +88,7 @@ class Milestones {
 	 * the reported week and its metrics instead: what that week added is discounted, so a first or a
 	 * threshold reached during it still fires. A repeat pass only adds keys, it never un-spends one.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array     $data Metrics from Data::for_week(), empty for the launch snapshot.
 	 * @param Week|null $week Reported week, bounding the goal history; null scans up to today.
@@ -123,7 +123,7 @@ class Milestones {
 	 *
 	 * Lite counts entries from its own counters, which Pro never updates, so Pro baselines once more.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param mixed $spent  The stored option, false when it does not exist.
 	 * @param bool  $is_pro Whether Pro is running.
@@ -138,7 +138,7 @@ class Milestones {
 	/**
 	 * Lifetime totals as they stood before the reported week, which the week's metrics are subtracted from.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $lifetime Totals from Data::lifetime().
 	 * @param array $data     Metrics from Data::for_week(), empty for the launch snapshot.
@@ -157,7 +157,7 @@ class Milestones {
 	/**
 	 * The highest milestone the site qualifies for and has not celebrated yet.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -184,7 +184,7 @@ class Milestones {
 	/**
 	 * Record a milestone as celebrated.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key Milestone key.
 	 */
@@ -217,7 +217,7 @@ class Milestones {
 	 *
 	 * First entry, first payment, first lead, conversion goal, then the entry thresholds highest first.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week(), or Data::lifetime() alone.
 	 *
@@ -254,7 +254,7 @@ class Milestones {
 	/**
 	 * Milestone key for an entries threshold.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $threshold Threshold.
 	 *
@@ -268,7 +268,7 @@ class Milestones {
 	/**
 	 * Milestone key for a form's conversion goal.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $form_id Form id.
 	 *
@@ -282,7 +282,7 @@ class Milestones {
 	/**
 	 * Goal milestones for every form that met its goal, when the tier may see conversion.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -308,7 +308,7 @@ class Milestones {
 	/**
 	 * Whether the week may reveal conversion rates: the tier includes them and the license is not lapsed.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $data Metrics from Data::for_week().
 	 *
@@ -322,7 +322,7 @@ class Milestones {
 	/**
 	 * Whether a form row converted at or above the goal set for it.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $form Form row from Data::for_week().
 	 *
@@ -336,7 +336,7 @@ class Milestones {
 	/**
 	 * Copy for a milestone. Placeholder wording pending the content review the spec mandates.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $key  Milestone key.
 	 * @param array  $data Metrics from Data::for_week().
@@ -377,7 +377,7 @@ class Milestones {
 	/**
 	 * Spent milestones: key => timestamp.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return array
 	 */
@@ -389,7 +389,7 @@ class Milestones {
 	/**
 	 * Form title with a fallback for preview data.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $form Form row.
 	 *

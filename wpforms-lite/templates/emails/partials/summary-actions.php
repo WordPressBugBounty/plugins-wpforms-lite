@@ -2,7 +2,7 @@
 /**
  * Email Summary actions partial: the main button with an optional secondary text link.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @var string $prefix     Card class prefix: `summary-callout` or `summary-promo`.
  * @var string $tone       Button tone, e.g. `orange` or `blue`.

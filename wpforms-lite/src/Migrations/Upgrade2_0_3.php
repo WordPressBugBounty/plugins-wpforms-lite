@@ -10,7 +10,7 @@ use WPForms\Migrations\Tasks\AntiSpamUpgradeTask;
 /**
  * Class upgrade for 2.0.3 release.
  *
- * @since {VERSION}
+ * @since 2.0.3
  *
  * @noinspection PhpUnused
  */
@@ -19,7 +19,7 @@ class Upgrade2_0_3 extends UpgradeBase {
 	/**
 	 * Run upgrade.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return bool|null Upgrade result:
 	 *                   true  - the upgrade completed successfully,
@@ -58,7 +58,7 @@ class Upgrade2_0_3 extends UpgradeBase {
 	 * setting is read with it rather than with whatever currency the site runs later. The forms
 	 * themselves are not touched.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function record_legacy_form_currency(): void {
 
@@ -75,7 +75,7 @@ class Upgrade2_0_3 extends UpgradeBase {
 	 *
 	 * Idempotent: set_stripe_key() clears the legacy setting, so a rerun finds nothing to move.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 */
 	private function encrypt_stripe_connect_tokens(): void {
 

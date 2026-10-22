@@ -12,7 +12,7 @@ use WPForms\Lite\Reports\EntriesCount;
 /**
  * Weekly summary metrics (Lite).
  *
- * @since {VERSION}
+ * @since 2.0.3
  */
 class Data extends BaseData {
 
@@ -21,7 +21,7 @@ class Data extends BaseData {
 	 *
 	 * Lite keeps no dated entries, so the week itself cannot narrow the counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on. Unused on Lite.
 	 *
@@ -35,7 +35,7 @@ class Data extends BaseData {
 	/**
 	 * Entries ever collected: the sum of the per-form lifetime counters.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @return int
 	 */
@@ -50,7 +50,7 @@ class Data extends BaseData {
 	 * The endpoint serves a trailing window from today, so the window is stretched back to
 	 * cover the reported weeks and the days after the week end are dropped. No per-form history.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week  Most recent week.
 	 * @param int  $weeks Number of weeks including the given one.
@@ -67,7 +67,7 @@ class Data extends BaseData {
 	/**
 	 * Entries backed up by Lite Connect during the week. Null when Lite Connect is off.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week Week to report on.
 	 *
@@ -87,7 +87,7 @@ class Data extends BaseData {
 	/**
 	 * Lite Connect stats covering a week and the weeks before it. Null when Lite Connect is off.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param Week $week  Most recent week.
 	 * @param int  $weeks Number of weeks including the given one.
@@ -104,7 +104,7 @@ class Data extends BaseData {
 	/**
 	 * Sum a day series into weekly buckets ending on the week's last day. Index 0 is the given week.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $days  Items with `date` (Y-m-d) and `count`.
 	 * @param Week  $week  Most recent week.
@@ -139,7 +139,7 @@ class Data extends BaseData {
 	 *
 	 * Computed in UTC so a DST switch between the two dates cannot shorten a day.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $from Start date, Y-m-d.
 	 * @param string $to   End date, Y-m-d.
@@ -158,7 +158,7 @@ class Data extends BaseData {
 	/**
 	 * Lite Connect stats for a trailing window. Null when Lite Connect is off.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param int $days Trailing window length in days.
 	 *

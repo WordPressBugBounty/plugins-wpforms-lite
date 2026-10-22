@@ -85,7 +85,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	 * Adds size-{small|medium|large} to the Checkbox field container in the Builder
 	 * when the "Add Other Choice" option is enabled.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $css   Existing class string.
 	 * @param array  $field Field data and settings.
@@ -724,7 +724,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	 * Generates HTML for the text input that allows users to enter custom text
 	 * when the "Other" choice is selected.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array  $field     Field data and settings.
 	 * @param array  $choice    Current choice data.
@@ -756,7 +756,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 		 *
 		 * This filter allows modifying what value should be prefilled for the Other choice input.
 		 *
-		 * @since {VERSION}
+		 * @since 2.0.3
 		 *
 		 * @param string $default_value Default value for the "Other" choice input.
 		 * @param array  $field         Field data and settings.
@@ -798,7 +798,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	 * Processes the custom text entered for the Other choice and adds it to the
 	 * field data with proper formatting.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array  &$data               Field data array (passed by reference).
 	 * @param array  $field               Field settings.
@@ -825,7 +825,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	/**
 	 * Build the final value string including the formatted Other choice.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $current_value Current value string.
 	 * @param string $other_label   Other choice label.
@@ -857,7 +857,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	/**
 	 * Format the Other label and value into a single string.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $label Other choice label.
 	 * @param string $value Submitted value.
@@ -884,7 +884,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	 * to ensure proper export functionality with multiple columns. It stores both
 	 * the normalized value for matching and the full formatted value for display.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array|mixed $field Entry field data.
 	 *
@@ -936,7 +936,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	/**
 	 * Find the Other choice in the field choices.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $field Field settings.
 	 *
@@ -967,7 +967,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	 * returns raw values, where the Other line holds the static configured value
 	 * and silently drops the typed custom text.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param array $field     Field settings.
 	 * @param array $form_data Form data.
@@ -992,7 +992,7 @@ class WPForms_Field_Checkbox extends WPForms_Field {
 	/**
 	 * Replace the Other choice's static value line with the formatted typed text.
 	 *
-	 * @since {VERSION}
+	 * @since 2.0.3
 	 *
 	 * @param string $value     Raw values string, one value per line.
 	 * @param array  $field     Entry field data.
