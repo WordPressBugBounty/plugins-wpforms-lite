@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit74da323fdee1fb5e92b0c5723e907303
+class ComposerStaticInit9cdfc57d819eb6e1a062968df8386cef
 {
     public static $files = array (
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
@@ -13,14 +13,14 @@ class ComposerStaticInit74da323fdee1fb5e92b0c5723e907303
     );
 
     public static $prefixLengthsPsr4 = array (
-        'W' => 
+        'W' =>
         array (
             'WPForms\\Tests\\Unit\\' => 19,
             'WPForms\\Tests\\Integration\\' => 26,
             'WPForms\\Scoper\\' => 15,
             'WPForms\\' => 8,
         ),
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
@@ -29,32 +29,32 @@ class ComposerStaticInit74da323fdee1fb5e92b0c5723e907303
     );
 
     public static $prefixDirsPsr4 = array (
-        'WPForms\\Tests\\Unit\\' => 
+        'WPForms\\Tests\\Unit\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests/unit',
         ),
-        'WPForms\\Tests\\Integration\\' => 
+        'WPForms\\Tests\\Integration\\' =>
         array (
             0 => __DIR__ . '/../..' . '/tests/integration',
         ),
-        'WPForms\\Scoper\\' => 
+        'WPForms\\Scoper\\' =>
         array (
             0 => __DIR__ . '/../..' . '/../.php-scoper',
         ),
-        'WPForms\\' => 
+        'WPForms\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
             1 => __DIR__ . '/../..' . '/src',
         ),
-        'Symfony\\Polyfill\\Php80\\' => 
+        'Symfony\\Polyfill\\Php80\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
         ),
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Symfony\\Polyfill\\Mbstring\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
         ),
-        'Symfony\\Polyfill\\Iconv\\' => 
+        'Symfony\\Polyfill\\Iconv\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-iconv',
         ),
@@ -3009,9 +3009,9 @@ class ComposerStaticInit74da323fdee1fb5e92b0c5723e907303
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit74da323fdee1fb5e92b0c5723e907303::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit74da323fdee1fb5e92b0c5723e907303::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit74da323fdee1fb5e92b0c5723e907303::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit9cdfc57d819eb6e1a062968df8386cef::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit9cdfc57d819eb6e1a062968df8386cef::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit9cdfc57d819eb6e1a062968df8386cef::$classMap;
 
         }, null, ClassLoader::class);
     }
